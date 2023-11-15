@@ -15,6 +15,7 @@ namespace ThreeLittleBerkana
             selectRandomObjects;
 
         public static bool _setupArea;
+        public static bool _levelDesignArea;
         //bool manualSetup;
         //int numberOfObjectsToFind;
 
@@ -85,6 +86,11 @@ namespace ThreeLittleBerkana
                         }
                     }
                 }
+            }
+            _levelDesignArea = EditorGUILayout.Foldout(_levelDesignArea, "Level Design", true, EditorStyles.foldout);
+            if (_levelDesignArea)
+            {
+
             }
             serializedObject.Update();
             serializedObject.ApplyModifiedProperties();
