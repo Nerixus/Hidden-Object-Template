@@ -1,0 +1,3442 @@
+fileFormatVersion: 2
+guid: 7f26cd3ac0573904b8d5b3e2401f9ce2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Bird-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1117
+      y: 3882
+      width: 167
+      height: 192
+    spriteID: d258f2d3838511d4b949687b94f36ec5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -632, y: 2912}
+  - name: Bat-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1311
+      y: 3891
+      width: 151
+      height: 180
+    spriteID: ee1320856c13e5c47be932eecd592654
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 241, y: 2825}
+  - name: Butterfly-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2103
+      y: 3491
+      width: 85
+      height: 50
+    spriteID: 710463aa0c690af4094edb882f05f2c4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 983, y: 2728}
+  - name: Flowers-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2161
+      y: 4063
+      width: 52
+      height: 28
+    spriteID: 605a7067361d54543b84d36df66b2825
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -125, y: 4063}
+  - name: Bush-03-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2226
+      y: 2322
+      width: 1043
+      height: 330
+    spriteID: db09a6a89843d054ea5697ca91590940
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 869, y: 2322}
+  - name: Bush-02-SO_C1S1 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2477
+      y: 1362
+      width: 906
+      height: 601
+    spriteID: 4862ad9236b695f4d9b00cf87537bdbd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2477, y: 1362}
+  - name: Bush-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1362
+      width: 1342
+      height: 703
+    spriteID: 2730145c0d525df458a6eaf28e95cbdc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -902, y: 1362}
+  - name: CoffeeMaker-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1477
+      y: 3901
+      width: 142
+      height: 185
+    spriteID: 898b59321c187bc4d967c494434aa8f3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 402, y: 3653}
+  - name: X-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4019
+      y: 1727
+      width: 56
+      height: 123
+    spriteID: 1350ad4c63b033d4f98d257a2e39ac85
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1950, y: 950}
+  - name: WomansPurse-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3515
+      y: 2073
+      width: 197
+      height: 211
+    spriteID: 8ab9c41e6dec9c8478f6d1e8bef1ff2e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3001, y: 1846}
+  - name: TreeCrown-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1205
+      y: 2322
+      width: 1013
+      height: 340
+    spriteID: f66ddfa241d129443b031c73cc559799
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -182, y: 1312}
+  - name: Rock
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3158
+      y: 2959
+      width: 453
+      height: 207
+    spriteID: 2286dc114e962b44a8265fcfa9e74b9e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2044, y: 2959}
+  - name: Broom-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2644
+      y: 2959
+      width: 213
+      height: 553
+    spriteID: 982c09a7ecf5b80499febeca7b71db0e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 769, y: 2708}
+  - name: TreeHole-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4019
+      y: 1549
+      width: 71
+      height: 170
+    spriteID: f1339a32232402741b0d0e548677be66
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1968, y: 1038}
+  - name: TreeTrunk-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3531
+      y: 4
+      width: 477
+      height: 1004
+    spriteID: ad0d4087ec7950b419c8b650cff45640
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1649, y: -182}
+  - name: BirdNest-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2872
+      y: 3721
+      width: 119
+      height: 99
+    spriteID: 73323c62791f037449fdad275b66e3a8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 889, y: 2738}
+  - name: Branch-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 759
+      y: 2959
+      width: 383
+      height: 414
+    spriteID: faabc8c8d34788945bdbbbecafd5b494
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -979, y: 2051}
+  - name: RockSide-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3810
+      y: 1952
+      width: 233
+      height: 108
+    spriteID: 87a8b83c09e1e6a4c97bbe4d9a1807d7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1643, y: 1564}
+  - name: Footprints-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3937
+      y: 3558
+      width: 133
+      height: 118
+    spriteID: 9982ccdd85f8c66419aca094d6f2c981
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2255, y: 3343}
+  - name: LanternLight-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 3350
+      width: 300
+      height: 168
+    spriteID: 2276d135ccc7b2a44834fe818a841c59
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 704, y: 3010}
+  - name: Lantern-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3472
+      y: 3386
+      width: 132
+      height: 158
+    spriteID: 6bd538958abad09488c70d7ffdcd60f1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1633, y: 3013}
+  - name: WineBottle-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2589
+      y: 3558
+      width: 259
+      height: 115
+    spriteID: 03ab7f6928bc2ec41a4a5923af28f055
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1876, y: 3358}
+  - name: PocketWatch-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3677
+      y: 3636
+      width: 95
+      height: 71
+    spriteID: 13578f557fdc3934580eb991902e5cb4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2106, y: 3381}
+  - name: Rocks-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1906
+      y: 3670
+      width: 218
+      height: 152
+    spriteID: 04b6ff4aa378c9c44a131c40d41b21c7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -276, y: 3463}
+  - name: Wrench-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2477
+      y: 1971
+      width: 158
+      height: 85
+    spriteID: 40fcd16de616a3f4798b87489ec06bda
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1329, y: 1721}
+  - name: Hammer-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3059
+      y: 3558
+      width: 209
+      height: 115
+    spriteID: 671be320f4415a742be5ce5b71b0195a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1715, y: 3355}
+  - name: ToolBox-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3720
+      y: 2073
+      width: 236
+      height: 154
+    spriteID: e24c92661ae4ca4418b79d908c7f2608
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2472, y: 1815}
+  - name: Bricks-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3497
+      y: 3558
+      width: 172
+      height: 111
+    spriteID: 4d11e4d488047a2499ffb27ba8b79e2c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2331, y: 3213}
+  - name: Pick-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2865
+      y: 2959
+      width: 285
+      height: 378
+    spriteID: 03344f6e707718341818ab94392c0688
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1559, y: 2594}
+  - name: BasketOfOranges-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2377
+      y: 3558
+      width: 204
+      height: 155
+    spriteID: fcec53107ff871b4ea455ad9190a8134
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2030, y: 3275}
+  - name: Glass-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2518
+      y: 3721
+      width: 117
+      height: 111
+    spriteID: 2be35d087cdced54a943f45bb0e208b8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1535, y: 3491}
+  - name: Package-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3276
+      y: 3558
+      width: 213
+      height: 104
+    spriteID: 457e3f9e78294d64aa243ed277dd479b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1810, y: 3255}
+  - name: MansHat-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3124
+      y: 3721
+      width: 85
+      height: 103
+    spriteID: 1a2dc0793e3ab2f42b718ec32892cd41
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1158, y: 3011}
+  - name: Dog-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 2959
+      width: 310
+      height: 383
+    spriteID: 87874ff0ea39dff4e9ba27863c920f53
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 501, y: 2537}
+  - name: CeramicClue-CO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3158
+      y: 3386
+      width: 306
+      height: 156
+    spriteID: adec13d98d8351c43af325453d4cc604
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1744, y: 2978}
+  - name: Boots-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2377
+      y: 3721
+      width: 133
+      height: 106
+    spriteID: e1f4bc53557afd349a91695ba02208ac
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 701, y: 3238}
+  - name: Gloves-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2643
+      y: 3721
+      width: 102
+      height: 127
+    spriteID: 4579a84415a7ee64298edcd1698268e4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1291, y: 3155}
+  - name: Sand-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2226
+      y: 2660
+      width: 567
+      height: 230
+    spriteID: 64e7a725f9ca0954da296e8c13adfcb8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1792, y: 2375}
+  - name: KathysDiary-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3619
+      y: 3448
+      width: 157
+      height: 100
+    spriteID: 765be65256f6e2844a5b8deaf4943e3d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2463, y: 2877}
+  - name: Wheelbarrow-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3277
+      y: 2322
+      width: 695
+      height: 366
+    spriteID: a52b5ca980f9040458ff89ba4a0d1205
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2242, y: 1997}
+  - name: GardenShovel-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 859
+      y: 3825
+      width: 59
+      height: 102
+    spriteID: a23b84ff15ccf53429c7c984dc70ab45
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -748, y: 3334}
+  - name: PearlNeckace-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1981
+      y: 3491
+      width: 114
+      height: 56
+    spriteID: aaf59594610bcff46bd0c9f3075d1510
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1379, y: 3257}
+  - name: PicnicBlanket-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2412
+      y: 907
+      width: 1043
+      height: 375
+    spriteID: e4dbe98798f3c63449058c5594b30bcb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2217, y: 854}
+  - name: BoxPile-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1778
+      y: 3558
+      width: 120
+      height: 290
+    spriteID: cfa202c3437e1c74ab22f1fb2d48791a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -502, y: 3097}
+  - name: Rake-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1117
+      y: 3558
+      width: 186
+      height: 316
+    spriteID: b8c2324ef9d9ab646bf55267668807e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1097, y: 3041}
+  - name: GasCan-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 665
+      y: 3825
+      width: 186
+      height: 225
+    spriteID: 8efb90fdc07aabd49a7a7700933f0d5f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -347, y: 3462}
+  - name: PileOfBooks-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3176
+      y: 2222
+      width: 206
+      height: 86
+    spriteID: e0dc377fc154fe64eb6021ce8631dcbd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2296, y: 1827}
+  - name: WhiskyBottle-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2362
+      y: 3856
+      width: 77
+      height: 144
+    spriteID: 273f3553b75fc334a8f0098843a1a6cc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1590, y: 3431}
+  - name: Tire_01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1981
+      y: 2959
+      width: 337
+      height: 358
+    spriteID: 67f4f8e0ddaaeed42a22bfc1f495fc70
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1792, y: 2639}
+  - name: FenceSegment-08-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1906
+      y: 3558
+      width: 331
+      height: 104
+    spriteID: f35ba473e97d8eb4f997b5bfc5a7c264
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 495, y: 3079}
+  - name: PoliceBaton-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4019
+      y: 1362
+      width: 72
+      height: 179
+    spriteID: 8b1a7305e8b7bd04c9490677f8e334e4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2356, y: 858}
+  - name: Fence-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3531
+      y: 1016
+      width: 520
+      height: 338
+    spriteID: 17559d81d977df942bd027c0c146d1a7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1989, y: 563}
+  - name: FenceSegment-06-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2921
+      y: 2222
+      width: 247
+      height: 82
+    spriteID: b868bffadf1b30e4a9cb39c581a36bca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1179, y: 1700}
+  - name: FenceSegment-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 759
+      y: 3381
+      width: 370
+      height: 147
+    spriteID: dde12d947f9b01f4da71bc27666739ec
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 759, y: 3090}
+  - name: FenceSegment-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1150
+      y: 3348
+      width: 378
+      height: 132
+    spriteID: a733bf8c61017684ba35b170b4354388
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 780, y: 3004}
+  - name: FenceSegment-03-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2921
+      y: 2073
+      width: 586
+      height: 141
+    spriteID: f0d1437061ec5114598eeb783c9a5f40
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2173, y: 1676}
+  - name: FenceSegment-04-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3391
+      y: 1952
+      width: 411
+      height: 94
+    spriteID: f1e05ef051b41a4478570542472c6aa7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2057, y: 1471}
+  - name: MagnifyingGlass-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1778
+      y: 4028
+      width: 118
+      height: 55
+    spriteID: 40a75697b145b494f8aa124bc387d219
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 65, y: 3610}
+  - name: Flowers-01-SO_C1S1_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 403
+      y: 3558
+      width: 254
+      height: 276
+    spriteID: 33d4985fdf153e74e867bc1941b9d82e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 252, y: 2524}
+  - name: RopeLadder_01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2856
+      y: 3558
+      width: 195
+      height: 135
+    spriteID: 99d9832622b841e4195a7f31eba74c0e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1070, y: 3237}
+  - name: Well-01-SO-C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1892
+      y: 1909
+      width: 516
+      height: 113
+    spriteID: f0d1b9ded51aefd4cb9fe764e8582f3b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 274, y: 1601}
+  - name: Cat-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2246
+      y: 3856
+      width: 108
+      height: 136
+    spriteID: ecb1ef3b7eebfa449b6b9d8fbe19ee1a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 527, y: 3309}
+  - name: ClimbingPlant-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 403
+      y: 3842
+      width: 229
+      height: 244
+    spriteID: 74881546dcc6d0e4db719a330fc12713
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 253, y: 2969}
+  - name: LionHead-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1778
+      y: 3856
+      width: 126
+      height: 164
+    spriteID: c8b4fa9c770728943be46985c2910105
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1497, y: 3217}
+  - name: Sculpture-01-SO-C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2073
+      width: 709
+      height: 878
+    spriteID: 077cc0c41fdd82046b7c26261684afeb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1738}
+  - name: Squirrel-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3964
+      y: 2073
+      width: 118
+      height: 199
+    spriteID: f22ad1d77a0cec840b8b998a7f327a9c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3499, y: 1065}
+  - name: Box-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2801
+      y: 2660
+      width: 410
+      height: 253
+    spriteID: ed828205c96083e4da5fc51d705b3d55
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2490, y: 2275}
+  - name: Tree-02-SO-C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 721
+      y: 2073
+      width: 476
+      height: 877
+    spriteID: f5f1ac96b3370dd4bb7eedded1fab2a8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 721, y: 1600}
+  - name: TruckTarp-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1205
+      y: 2670
+      width: 605
+      height: 279
+    spriteID: de42f4c566d0e1344b1443cc9c4f4d14
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 633, y: 1599}
+  - name: TruckTarp-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2412
+      y: 4
+      width: 1111
+      height: 895
+    spriteID: 0bb858a6a6e5b02448056511d3507118
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2338, y: -451}
+  - name: Posters-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1574
+      y: 3360
+      width: 387
+      height: 153
+    spriteID: a31404a86a65d9a4d97d8b2b39efb3ce
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 892, y: 2748}
+  - name: Crow-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2999
+      y: 3721
+      width: 117
+      height: 99
+    spriteID: 415a2348bc687db46958d45cf3811662
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1677, y: 2988}
+  - name: Snail-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1912
+      y: 4020
+      width: 111
+      height: 65
+    spriteID: 0c6fecb39e8c1f642afcbc5892776448
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1516, y: 3249}
+  - name: TruckFender-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1354
+      y: 1909
+      width: 530
+      height: 156
+    spriteID: 63a017b23d795074a9c693694401edf8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1354, y: 1269}
+  - name: TruckSideDoor-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1354
+      y: 1362
+      width: 1115
+      height: 539
+    spriteID: 955a9cd103a415849a7a2564dd0a98c4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1286, y: 815}
+  - name: TruckRearWheels-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1150
+      y: 2959
+      width: 416
+      height: 381
+    spriteID: bd91cebaab678ae47a429dc424b3f80c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 519, y: 2529}
+  - name: TruckRearWheels-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3813
+      y: 2959
+      width: 211
+      height: 345
+    spriteID: 6e1195e087673dd4e8e3455b7f97c980
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3518, y: 2544}
+  - name: TruckRearWheels-03-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2161
+      y: 3856
+      width: 77
+      height: 199
+    spriteID: c06fcb88914fb97458f2d01dc2a9a0e2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2161, y: 3333}
+  - name: TruckBottom-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3277
+      y: 2696
+      width: 536
+      height: 250
+    spriteID: ff670489792517d40b52f02ed49c93c5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3214, y: 2132}
+  - name: WateringCan-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 935
+      y: 3952
+      width: 170
+      height: 121
+    spriteID: 387912234a4ae254fbe353fd4be466e9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 389, y: 3124}
+  - name: Bags-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1981
+      y: 3325
+      width: 304
+      height: 158
+    spriteID: 361a27d63e60652468db58b57be0c8a3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1375, y: 2539}
+  - name: TruckBox-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3158
+      y: 3174
+      width: 397
+      height: 204
+    spriteID: 7c590e2c541b5f843b7c3cd3195a1f35
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2726, y: 2368}
+  - name: Rope-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1628
+      y: 3846
+      width: 108
+      height: 195
+    spriteID: ecf58739e9c5b0249889340c14c3b1f9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 841, y: 2957}
+  - name: Shovel-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2245
+      y: 3558
+      width: 124
+      height: 273
+    spriteID: 01f8b5456df55d94598d8ce0365caf4e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1390, y: 2765}
+  - name: Planks-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1311
+      y: 3558
+      width: 158
+      height: 325
+    spriteID: 1208e8a8526e5814d87e273ed340874d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 398, y: 2768}
+  - name: TruckHooks-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1912
+      y: 3856
+      width: 128
+      height: 156
+    spriteID: e472836a28e558d47b972e9e914b2029
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1300, y: 2868}
+  - name: Bucket-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2132
+      y: 3670
+      width: 102
+      height: 151
+    spriteID: 9631445cca758ff4b936f39bf5592aaa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1131, y: 2890}
+  - name: TruckInside-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3391
+      y: 1362
+      width: 620
+      height: 582
+    spriteID: 95181e2b46ab71a41b267aaec2fd54fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2823, y: 597}
+  - name: Sign-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2753
+      y: 3721
+      width: 111
+      height: 115
+    spriteID: 0bcd6e3d564b0984ea26656b48ba42ff
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1562, y: 3070}
+  - name: Fence-03-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1818
+      y: 2670
+      width: 397
+      height: 274
+    spriteID: 588b59bf19aa59044b4947bbebf751ed
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 753, y: 2201}
+  - name: Balloons-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2048
+      y: 3856
+      width: 105
+      height: 188
+    spriteID: e4653656f41267443bc40b7ef0e336fd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 669, y: 2935}
+  - name: StreetLantern-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2959
+      width: 391
+      height: 649
+    spriteID: 7c85808cc44f580469a5a7ade27763a4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1187, y: 2362}
+  - name: BankPiece-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3720
+      y: 2235
+      width: 171
+      height: 64
+    spriteID: b7066982200a9f1488d6012b1a90ee8e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1687, y: 1577}
+  - name: Suitcase-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3390
+      y: 2222
+      width: 109
+      height: 79
+    spriteID: 51ce0d26678626646b954e6a5964dacd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1932, y: 1601}
+  - name: Bank-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3813
+      y: 3312
+      width: 260
+      height: 238
+    spriteID: d305fdd74e5e8b247bdcdb5f5bcfeb63
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1673, y: 2785}
+  - name: FenceSegment-09-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3677
+      y: 3558
+      width: 252
+      height: 70
+    spriteID: 80b670c320b8f2e4fb9112198c08dbcb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1688, y: 3006}
+  - name: FenceSegment-10-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3780
+      y: 3636
+      width: 140
+      height: 47
+    spriteID: c52abb50ad143624099ea9c32d8bdf7f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1535, y: 3056}
+  - name: Police-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3616
+      width: 356
+      height: 463
+    spriteID: 727154440cfdeef48872918f04657fe8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1509, y: 3112}
+  - name: Police-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3980
+      y: 2322
+      width: 77
+      height: 329
+    spriteID: 410949b09fdf9a74490630186f2b7357
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1977, y: 1735}
+  - name: SuspiciousMan-01-CO_S1C1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3619
+      y: 2959
+      width: 186
+      height: 481
+    spriteID: 10176fd0a1aea76458f3151a0e507640
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2483, y: 2454}
+  - name: Pennants-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2865
+      y: 3345
+      width: 226
+      height: 190
+    spriteID: b4b83f30cc0e87c40822744d7665f640
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1073, y: 2464}
+  - name: SmallTree-03-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 403
+      y: 2959
+      width: 348
+      height: 591
+    spriteID: b51db1ac2e0b0524abcd520ae9455feb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1305, y: 2339}
+  - name: Sculpture-03-SO-C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 665
+      y: 3558
+      width: 262
+      height: 259
+    spriteID: 9b1f9b03a18c2754abe3edc99693b8bf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1388, y: 2944}
+  - name: Sculpture-02-SO-C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1574
+      y: 2959
+      width: 399
+      height: 393
+    spriteID: 341648fbd6cf0a44fbe83bf4dfb05cae
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 569, y: 2384}
+  - name: OldBike-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3821
+      y: 2696
+      width: 243
+      height: 214
+    spriteID: ae4ea74453a39834bab12b687744eba3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2418, y: 2075}
+  - name: SmallTree-02-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 935
+      y: 3558
+      width: 174
+      height: 386
+    spriteID: 0ccbb4777f255344a88eca16a6b5882b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1291, y: 2900}
+  - name: Ladder-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1477
+      y: 3558
+      width: 143
+      height: 335
+    spriteID: d7a3ae4aec0031b41b712f3b8f97822b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -185, y: 2930}
+  - name: LongSquareBush-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1205
+      y: 2073
+      width: 1708
+      height: 241
+    spriteID: 7c4eb0516caf6874289b9a073b7aec71
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 513, y: 1457}
+  - name: FrenchFlag-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1628
+      y: 3558
+      width: 142
+      height: 280
+    spriteID: 73d41b61fa735ee44b023c44e14a2c80
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 76, y: 2772}
+  - name: OmegaSymbol-01-HO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2246
+      y: 4000
+      width: 97
+      height: 91
+    spriteID: e2d153d334813914aa809a21787e260d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1021, y: 2931}
+  - name: Background-01-SO_C1S1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 2400
+      height: 1350
+    spriteID: dfe1369bdd0fdcc4697d8e880344098d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 1
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 33
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 4096
+  importedTextureHeight: 4096
+  documentSize: {x: 2400, y: 1350}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 4096
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 1
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Front
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 402
+    mosaicPosition: {x: 0, y: 0}
+  - name: Bird-01-HO_C1S1
+    spriteName: Bird-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d258f2d3838511d4b949687b94f36ec5
+    layerID: 6841
+    mosaicPosition: {x: 1117, y: 3882}
+  - name: Bat-01-HO_C1S1
+    spriteName: Bat-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ee1320856c13e5c47be932eecd592654
+    layerID: 7456
+    mosaicPosition: {x: 1311, y: 3891}
+  - name: Butterfly-01-HO_C1S1
+    spriteName: Butterfly-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 710463aa0c690af4094edb882f05f2c4
+    layerID: 3506
+    mosaicPosition: {x: 2103, y: 3491}
+  - name: Flowers-01-SO_C1S1
+    spriteName: Flowers-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 605a7067361d54543b84d36df66b2825
+    layerID: 2571
+    mosaicPosition: {x: 2161, y: 4063}
+  - name: Bush-03-SO_C1S1
+    spriteName: Bush-03-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: db09a6a89843d054ea5697ca91590940
+    layerID: 13077
+    mosaicPosition: {x: 2226, y: 2322}
+  - name: Bush-02-SO_C1S1 copy
+    spriteName: Bush-02-SO_C1S1 copy
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4862ad9236b695f4d9b00cf87537bdbd
+    layerID: 17480
+    mosaicPosition: {x: 2477, y: 1362}
+  - name: Bush-02-SO_C1S1
+    spriteName: Bush-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2730145c0d525df458a6eaf28e95cbdc
+    layerID: 2570
+    mosaicPosition: {x: 4, y: 1362}
+  - name: CoffeeMaker-01-HO_C1S1
+    spriteName: CoffeeMaker-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 898b59321c187bc4d967c494434aa8f3
+    layerID: 8171
+    mosaicPosition: {x: 1477, y: 3901}
+  - name: X-01-HO_C1S1
+    spriteName: X-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1350ad4c63b033d4f98d257a2e39ac85
+    layerID: 5373
+    mosaicPosition: {x: 4019, y: 1727}
+  - name: WomansPurse-01-HO_C1S1
+    spriteName: WomansPurse-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8ab9c41e6dec9c8478f6d1e8bef1ff2e
+    layerID: 4602
+    mosaicPosition: {x: 3515, y: 2073}
+  - name: TreeCrown-01-SO_C1S1
+    spriteName: TreeCrown-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f66ddfa241d129443b031c73cc559799
+    layerID: 3086
+    mosaicPosition: {x: 1205, y: 2322}
+  - name: Rock
+    spriteName: Rock
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2286dc114e962b44a8265fcfa9e74b9e
+    layerID: 12917
+    mosaicPosition: {x: 3158, y: 2959}
+  - name: Broom-01-HO_C1S1
+    spriteName: Broom-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 982c09a7ecf5b80499febeca7b71db0e
+    layerID: 3333
+    mosaicPosition: {x: 2644, y: 2959}
+  - name: TreeHole-01-HO_C1S1
+    spriteName: TreeHole-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f1339a32232402741b0d0e548677be66
+    layerID: 3083
+    mosaicPosition: {x: 4019, y: 1549}
+  - name: TreeTrunk-01-SO_C1S1
+    spriteName: TreeTrunk-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ad0d4087ec7950b419c8b650cff45640
+    layerID: 3080
+    mosaicPosition: {x: 3531, y: 4}
+  - name: BirdNest-01-HO_C1S1
+    spriteName: BirdNest-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 73323c62791f037449fdad275b66e3a8
+    layerID: 3334
+    mosaicPosition: {x: 2872, y: 3721}
+  - name: Branch-01-SO_C1S1
+    spriteName: Branch-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: faabc8c8d34788945bdbbbecafd5b494
+    layerID: 2562
+    mosaicPosition: {x: 759, y: 2959}
+  - name: RockSide-01-SO_C1S1
+    spriteName: RockSide-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 87a8b83c09e1e6a4c97bbe4d9a1807d7
+    layerID: 10176
+    mosaicPosition: {x: 3810, y: 1952}
+  - name: Center
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 414
+    mosaicPosition: {x: 0, y: 0}
+  - name: Footprints-01-HO_C1S1
+    spriteName: Footprints-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 9982ccdd85f8c66419aca094d6f2c981
+    layerID: 8020
+    mosaicPosition: {x: 3937, y: 3558}
+  - name: LanternLight-02-SO_C1S1
+    spriteName: LanternLight-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 2276d135ccc7b2a44834fe818a841c59
+    layerID: 7181
+    mosaicPosition: {x: 2326, y: 3350}
+  - name: Lantern-02-SO_C1S1
+    spriteName: Lantern-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 6bd538958abad09488c70d7ffdcd60f1
+    layerID: 2580
+    mosaicPosition: {x: 3472, y: 3386}
+  - name: WineBottle-01-HO_C1S1
+    spriteName: WineBottle-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 03ab7f6928bc2ec41a4a5923af28f055
+    layerID: 6105
+    mosaicPosition: {x: 2589, y: 3558}
+  - name: PocketWatch-01-HO_C1S1
+    spriteName: PocketWatch-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 13578f557fdc3934580eb991902e5cb4
+    layerID: 15192
+    mosaicPosition: {x: 3677, y: 3636}
+  - name: Rocks-01-SO_C1S1
+    spriteName: Rocks-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 04b6ff4aa378c9c44a131c40d41b21c7
+    layerID: 2583
+    mosaicPosition: {x: 1906, y: 3670}
+  - name: Wrench-01-HO_C1S1
+    spriteName: Wrench-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 40fcd16de616a3f4798b87489ec06bda
+    layerID: 14947
+    mosaicPosition: {x: 2477, y: 1971}
+  - name: Hammer-01-HO_C1S1
+    spriteName: Hammer-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 671be320f4415a742be5ce5b71b0195a
+    layerID: 14455
+    mosaicPosition: {x: 3059, y: 3558}
+  - name: ToolBox-01-HO_C1S1
+    spriteName: ToolBox-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: e24c92661ae4ca4418b79d908c7f2608
+    layerID: 3328
+    mosaicPosition: {x: 3720, y: 2073}
+  - name: Bricks-01-HO_C1S1
+    spriteName: Bricks-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 4d11e4d488047a2499ffb27ba8b79e2c
+    layerID: 4598
+    mosaicPosition: {x: 3497, y: 3558}
+  - name: Pick-01-HO_C1S1
+    spriteName: Pick-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 03344f6e707718341818ab94392c0688
+    layerID: 15711
+    mosaicPosition: {x: 2865, y: 2959}
+  - name: BasketOfOranges-01-HO_C1S1
+    spriteName: BasketOfOranges-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: fcec53107ff871b4ea455ad9190a8134
+    layerID: 3892
+    mosaicPosition: {x: 2377, y: 3558}
+  - name: Glass-01-HO_C1S1
+    spriteName: Glass-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 2be35d087cdced54a943f45bb0e208b8
+    layerID: 5988
+    mosaicPosition: {x: 2518, y: 3721}
+  - name: Package-01-HO_C1S1
+    spriteName: Package-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 457e3f9e78294d64aa243ed277dd479b
+    layerID: 15171
+    mosaicPosition: {x: 3276, y: 3558}
+  - name: MansHat-01-HO_C1S1
+    spriteName: MansHat-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 1a2dc0793e3ab2f42b718ec32892cd41
+    layerID: 5389
+    mosaicPosition: {x: 3124, y: 3721}
+  - name: Dog-01-HO_C1S1
+    spriteName: Dog-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 87874ff0ea39dff4e9ba27863c920f53
+    layerID: 16048
+    mosaicPosition: {x: 2326, y: 2959}
+  - name: CeramicClue-CO_C1S1
+    spriteName: CeramicClue-CO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: adec13d98d8351c43af325453d4cc604
+    layerID: 8470
+    mosaicPosition: {x: 3158, y: 3386}
+  - name: Boots-01-HO_C1S1
+    spriteName: Boots-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: e1f4bc53557afd349a91695ba02208ac
+    layerID: 8022
+    mosaicPosition: {x: 2377, y: 3721}
+  - name: Gloves-01-HO_C1S1
+    spriteName: Gloves-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 4579a84415a7ee64298edcd1698268e4
+    layerID: 3207
+    mosaicPosition: {x: 2643, y: 3721}
+  - name: Sand-01-SO_C1S1
+    spriteName: Sand-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 64e7a725f9ca0954da296e8c13adfcb8
+    layerID: 17314
+    mosaicPosition: {x: 2226, y: 2660}
+  - name: KathysDiary-01-HO_C1S1
+    spriteName: KathysDiary-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 765be65256f6e2844a5b8deaf4943e3d
+    layerID: 7457
+    mosaicPosition: {x: 3619, y: 3448}
+  - name: Wheelbarrow-01-SO_C1S1
+    spriteName: Wheelbarrow-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: a52b5ca980f9040458ff89ba4a0d1205
+    layerID: 15303
+    mosaicPosition: {x: 3277, y: 2322}
+  - name: GardenShovel-01-HO_C1S1
+    spriteName: GardenShovel-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: a23b84ff15ccf53429c7c984dc70ab45
+    layerID: 7727
+    mosaicPosition: {x: 859, y: 3825}
+  - name: PearlNeckace-01-HO_C1S1
+    spriteName: PearlNeckace-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: aaf59594610bcff46bd0c9f3075d1510
+    layerID: 7195
+    mosaicPosition: {x: 1981, y: 3491}
+  - name: PicnicBlanket-01-SO_C1S1
+    spriteName: PicnicBlanket-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: e4dbe98798f3c63449058c5594b30bcb
+    layerID: 15536
+    mosaicPosition: {x: 2412, y: 907}
+  - name: BoxPile-01-SO_C1S1
+    spriteName: BoxPile-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: cfa202c3437e1c74ab22f1fb2d48791a
+    layerID: 8316
+    mosaicPosition: {x: 1778, y: 3558}
+  - name: Rake-01-SO_C1S1
+    spriteName: Rake-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: b8c2324ef9d9ab646bf55267668807e3
+    layerID: 15506
+    mosaicPosition: {x: 1117, y: 3558}
+  - name: GasCan-01-HO_C1S1
+    spriteName: GasCan-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 8efb90fdc07aabd49a7a7700933f0d5f
+    layerID: 15208
+    mosaicPosition: {x: 665, y: 3825}
+  - name: PileOfBooks-01-HO_C1S1
+    spriteName: PileOfBooks-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: e0dc377fc154fe64eb6021ce8631dcbd
+    layerID: 8169
+    mosaicPosition: {x: 3176, y: 2222}
+  - name: WhiskyBottle-01-HO_C1S1
+    spriteName: WhiskyBottle-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 273f3553b75fc334a8f0098843a1a6cc
+    layerID: 5229
+    mosaicPosition: {x: 2362, y: 3856}
+  - name: Lateral
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 404
+    mosaicPosition: {x: 0, y: 0}
+  - name: Tire_01-HO_C1S1
+    spriteName: Tire_01-HO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: 67f4f8e0ddaaeed42a22bfc1f495fc70
+    layerID: 15163
+    mosaicPosition: {x: 1981, y: 2959}
+  - name: RailSegment-SO_C1S1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 50
+    spriteID: 00000000000000000000000000000000
+    layerID: 9277
+    mosaicPosition: {x: 0, y: 0}
+  - name: FenceSegment-08-SO_C1S1
+    spriteName: FenceSegment-08-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: f35ba473e97d8eb4f997b5bfc5a7c264
+    layerID: 9289
+    mosaicPosition: {x: 1906, y: 3558}
+  - name: PoliceBaton-01-HO_C1S1
+    spriteName: PoliceBaton-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: 8b1a7305e8b7bd04c9490677f8e334e4
+    layerID: 15842
+    mosaicPosition: {x: 4019, y: 1362}
+  - name: Fence-02-SO_C1S1
+    spriteName: Fence-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: 17559d81d977df942bd027c0c146d1a7
+    layerID: 15834
+    mosaicPosition: {x: 3531, y: 1016}
+  - name: FenceSegment-06-SO_C1S1
+    spriteName: FenceSegment-06-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: b868bffadf1b30e4a9cb39c581a36bca
+    layerID: 9288
+    mosaicPosition: {x: 2921, y: 2222}
+  - name: FenceSegment-01-SO_C1S1
+    spriteName: FenceSegment-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: dde12d947f9b01f4da71bc27666739ec
+    layerID: 9281
+    mosaicPosition: {x: 759, y: 3381}
+  - name: FenceSegment-02-SO_C1S1
+    spriteName: FenceSegment-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: a733bf8c61017684ba35b170b4354388
+    layerID: 9282
+    mosaicPosition: {x: 1150, y: 3348}
+  - name: FenceSegment-03-SO_C1S1
+    spriteName: FenceSegment-03-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: f0d1437061ec5114598eeb783c9a5f40
+    layerID: 9283
+    mosaicPosition: {x: 2921, y: 2073}
+  - name: FenceSegment-04-SO_C1S1
+    spriteName: FenceSegment-04-SO_C1S1
+    isGroup: 0
+    parentIndex: 52
+    spriteID: f1e05ef051b41a4478570542472c6aa7
+    layerID: 9284
+    mosaicPosition: {x: 3391, y: 1952}
+  - name: MagnifyingGlass-01-HO_C1S1
+    spriteName: MagnifyingGlass-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: 40a75697b145b494f8aa124bc387d219
+    layerID: 7187
+    mosaicPosition: {x: 1778, y: 4028}
+  - name: Flowers-01-SO_C1S1
+    spriteName: Flowers-01-SO_C1S1_1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: 33d4985fdf153e74e867bc1941b9d82e
+    layerID: 4361
+    mosaicPosition: {x: 403, y: 3558}
+  - name: RopeLadder_01-SO_C1S1
+    spriteName: RopeLadder_01-SO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: 99d9832622b841e4195a7f31eba74c0e
+    layerID: 4010
+    mosaicPosition: {x: 2856, y: 3558}
+  - name: Well-01-SO-C1S1
+    spriteName: Well-01-SO-C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: f0d1b9ded51aefd4cb9fe764e8582f3b
+    layerID: 4009
+    mosaicPosition: {x: 1892, y: 1909}
+  - name: Cat-01-HO_C1S1
+    spriteName: Cat-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: ecb1ef3b7eebfa449b6b9d8fbe19ee1a
+    layerID: 2809
+    mosaicPosition: {x: 2246, y: 3856}
+  - name: ClimbingPlant-01-SO_C1S1
+    spriteName: ClimbingPlant-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: 74881546dcc6d0e4db719a330fc12713
+    layerID: 5384
+    mosaicPosition: {x: 403, y: 3842}
+  - name: LionHead-01-HO_C1S1
+    spriteName: LionHead-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: c8b4fa9c770728943be46985c2910105
+    layerID: 7743
+    mosaicPosition: {x: 1778, y: 3856}
+  - name: Sculpture-01-SO-C1S1
+    spriteName: Sculpture-01-SO-C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: 077cc0c41fdd82046b7c26261684afeb
+    layerID: 3196
+    mosaicPosition: {x: 4, y: 2073}
+  - name: Squirrel-01-HO_C1S1
+    spriteName: Squirrel-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: f22ad1d77a0cec840b8b998a7f327a9c
+    layerID: 7328
+    mosaicPosition: {x: 3964, y: 2073}
+  - name: Box-01-HO_C1S1
+    spriteName: Box-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: ed828205c96083e4da5fc51d705b3d55
+    layerID: 2601
+    mosaicPosition: {x: 2801, y: 2660}
+  - name: Tree-02-SO-C1S1
+    spriteName: Tree-02-SO-C1S1
+    isGroup: 0
+    parentIndex: 50
+    spriteID: f5f1ac96b3370dd4bb7eedded1fab2a8
+    layerID: 13376
+    mosaicPosition: {x: 721, y: 2073}
+  - name: Truck-01
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 184
+    mosaicPosition: {x: 0, y: 0}
+  - name: TruckTarp-01-HO_C1S1
+    spriteName: TruckTarp-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 72
+    spriteID: de42f4c566d0e1344b1443cc9c4f4d14
+    layerID: 3503
+    mosaicPosition: {x: 1205, y: 2670}
+  - name: TruckTarp-01-SO_C1S1
+    spriteName: TruckTarp-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 72
+    spriteID: 0bb858a6a6e5b02448056511d3507118
+    layerID: 17478
+    mosaicPosition: {x: 2412, y: 4}
+  - name: Posters-01-HO_C1S1
+    spriteName: Posters-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 72
+    spriteID: a31404a86a65d9a4d97d8b2b39efb3ce
+    layerID: 8025
+    mosaicPosition: {x: 1574, y: 3360}
+  - name: Crow-01-SO_C1S1
+    spriteName: Crow-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 72
+    spriteID: 415a2348bc687db46958d45cf3811662
+    layerID: 15803
+    mosaicPosition: {x: 2999, y: 3721}
+  - name: Truck
+    spriteName: 
+    isGroup: 1
+    parentIndex: 72
+    spriteID: 00000000000000000000000000000000
+    layerID: 537
+    mosaicPosition: {x: 0, y: 0}
+  - name: Snail-01-HO_C1S1
+    spriteName: Snail-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 0c6fecb39e8c1f642afcbc5892776448
+    layerID: 7196
+    mosaicPosition: {x: 1912, y: 4020}
+  - name: TruckFender-01-SO_C1S1
+    spriteName: TruckFender-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 63a017b23d795074a9c693694401edf8
+    layerID: 534
+    mosaicPosition: {x: 1354, y: 1909}
+  - name: TruckSideDoor-01-SO_C1S1
+    spriteName: TruckSideDoor-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 955a9cd103a415849a7a2564dd0a98c4
+    layerID: 533
+    mosaicPosition: {x: 1354, y: 1362}
+  - name: TruckRearWheels-01-SO_C1S1
+    spriteName: TruckRearWheels-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: bd91cebaab678ae47a429dc424b3f80c
+    layerID: 17164
+    mosaicPosition: {x: 1150, y: 2959}
+  - name: TruckRearWheels-02-SO_C1S1
+    spriteName: TruckRearWheels-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 6e1195e087673dd4e8e3455b7f97c980
+    layerID: 17163
+    mosaicPosition: {x: 3813, y: 2959}
+  - name: TruckRearWheels-03-SO_C1S1
+    spriteName: TruckRearWheels-03-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: c06fcb88914fb97458f2d01dc2a9a0e2
+    layerID: 17162
+    mosaicPosition: {x: 2161, y: 3856}
+  - name: TruckBottom-01-SO_C1S1
+    spriteName: TruckBottom-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: ff670489792517d40b52f02ed49c93c5
+    layerID: 11909
+    mosaicPosition: {x: 3277, y: 2696}
+  - name: WateringCan-01-HO_C1S1
+    spriteName: WateringCan-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 387912234a4ae254fbe353fd4be466e9
+    layerID: 15151
+    mosaicPosition: {x: 935, y: 3952}
+  - name: Bags-01-HO_C1S1
+    spriteName: Bags-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 361a27d63e60652468db58b57be0c8a3
+    layerID: 4721
+    mosaicPosition: {x: 1981, y: 3325}
+  - name: TruckBox-01-SO_C1S1
+    spriteName: TruckBox-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 7c590e2c541b5f843b7c3cd3195a1f35
+    layerID: 529
+    mosaicPosition: {x: 3158, y: 3174}
+  - name: Rope-01-HO_C1S1
+    spriteName: Rope-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: ecf58739e9c5b0249889340c14c3b1f9
+    layerID: 4131
+    mosaicPosition: {x: 1628, y: 3846}
+  - name: Shovel-01-HO_C1S1
+    spriteName: Shovel-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 01f8b5456df55d94598d8ce0365caf4e
+    layerID: 4134
+    mosaicPosition: {x: 2245, y: 3558}
+  - name: Planks-01-SO_C1S1
+    spriteName: Planks-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 1208e8a8526e5814d87e273ed340874d
+    layerID: 527
+    mosaicPosition: {x: 1311, y: 3558}
+  - name: TruckHooks-01-SO_C1S1
+    spriteName: TruckHooks-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: e472836a28e558d47b972e9e914b2029
+    layerID: 526
+    mosaicPosition: {x: 1912, y: 3856}
+  - name: Bucket-01-HO_C1S1
+    spriteName: Bucket-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 9631445cca758ff4b936f39bf5592aaa
+    layerID: 14969
+    mosaicPosition: {x: 2132, y: 3670}
+  - name: TruckInside-01-SO_C1S1
+    spriteName: TruckInside-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 77
+    spriteID: 95181e2b46ab71a41b267aaec2fd54fb
+    layerID: 16845
+    mosaicPosition: {x: 3391, y: 1362}
+  - name: Back 01
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 418
+    mosaicPosition: {x: 0, y: 0}
+  - name: Sign-01-HO_C1S1
+    spriteName: Sign-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 0bcd6e3d564b0984ea26656b48ba42ff
+    layerID: 4976
+    mosaicPosition: {x: 2753, y: 3721}
+  - name: Fence-03-SO_C1S1
+    spriteName: Fence-03-SO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 588b59bf19aa59044b4947bbebf751ed
+    layerID: 4861
+    mosaicPosition: {x: 1818, y: 2670}
+  - name: Balloons-01-HO_C1S1
+    spriteName: Balloons-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: e4653656f41267443bc40b7ef0e336fd
+    layerID: 5745
+    mosaicPosition: {x: 2048, y: 3856}
+  - name: StreetLantern-01-SO_C1S1
+    spriteName: StreetLantern-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 7c85808cc44f580469a5a7ade27763a4
+    layerID: 7189
+    mosaicPosition: {x: 4, y: 2959}
+  - name: BankPiece-01-SO_C1S1
+    spriteName: BankPiece-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: b7066982200a9f1488d6012b1a90ee8e
+    layerID: 7201
+    mosaicPosition: {x: 3720, y: 2235}
+  - name: Suitcase-01-HO_C1S1
+    spriteName: Suitcase-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 51ce0d26678626646b954e6a5964dacd
+    layerID: 7199
+    mosaicPosition: {x: 3390, y: 2222}
+  - name: Bank-01-SO_C1S1
+    spriteName: Bank-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: d305fdd74e5e8b247bdcdb5f5bcfeb63
+    layerID: 282
+    mosaicPosition: {x: 3813, y: 3312}
+  - name: FenceSegment-09-SO_C1S1
+    spriteName: FenceSegment-09-SO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 80b670c320b8f2e4fb9112198c08dbcb
+    layerID: 9290
+    mosaicPosition: {x: 3677, y: 3558}
+  - name: FenceSegment-10-SO_C1S1
+    spriteName: FenceSegment-10-SO_C1S1
+    isGroup: 0
+    parentIndex: 94
+    spriteID: c52abb50ad143624099ea9c32d8bdf7f
+    layerID: 9291
+    mosaicPosition: {x: 3780, y: 3636}
+  - name: Back 02
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 416
+    mosaicPosition: {x: 0, y: 0}
+  - name: Police-01-SO_C1S1
+    spriteName: Police-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 727154440cfdeef48872918f04657fe8
+    layerID: 4370
+    mosaicPosition: {x: 4, y: 3616}
+  - name: Police-02-SO_C1S1
+    spriteName: Police-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 410949b09fdf9a74490630186f2b7357
+    layerID: 5626
+    mosaicPosition: {x: 3980, y: 2322}
+  - name: SuspiciousMan-01-CO_S1C1
+    spriteName: SuspiciousMan-01-CO_S1C1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 10176fd0a1aea76458f3151a0e507640
+    layerID: 15243
+    mosaicPosition: {x: 3619, y: 2959}
+  - name: Pennants-01-HO_C1S1
+    spriteName: Pennants-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: b4b83f30cc0e87c40822744d7665f640
+    layerID: 7183
+    mosaicPosition: {x: 2865, y: 3345}
+  - name: SmallTree-03-SO_C1S1
+    spriteName: SmallTree-03-SO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: b51db1ac2e0b0524abcd520ae9455feb
+    layerID: 1281
+    mosaicPosition: {x: 403, y: 2959}
+  - name: Sculpture-03-SO-C1S1
+    spriteName: Sculpture-03-SO-C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 9b1f9b03a18c2754abe3edc99693b8bf
+    layerID: 5111
+    mosaicPosition: {x: 665, y: 3558}
+  - name: Sculpture-02-SO-C1S1
+    spriteName: Sculpture-02-SO-C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 341648fbd6cf0a44fbe83bf4dfb05cae
+    layerID: 5109
+    mosaicPosition: {x: 1574, y: 2959}
+  - name: OldBike-01-HO_C1S1
+    spriteName: OldBike-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: ae4ea74453a39834bab12b687744eba3
+    layerID: 15493
+    mosaicPosition: {x: 3821, y: 2696}
+  - name: SmallTree-02-SO_C1S1
+    spriteName: SmallTree-02-SO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 0ccbb4777f255344a88eca16a6b5882b
+    layerID: 1280
+    mosaicPosition: {x: 935, y: 3558}
+  - name: Ladder-01-HO_C1S1
+    spriteName: Ladder-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: d7a3ae4aec0031b41b712f3b8f97822b
+    layerID: 5382
+    mosaicPosition: {x: 1477, y: 3558}
+  - name: LongSquareBush-01-SO_C1S1
+    spriteName: LongSquareBush-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 7c4eb0516caf6874289b9a073b7aec71
+    layerID: 15774
+    mosaicPosition: {x: 1205, y: 2073}
+  - name: FrenchFlag-01-HO_C1S1
+    spriteName: FrenchFlag-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 73d41b61fa735ee44b023c44e14a2c80
+    layerID: 3326
+    mosaicPosition: {x: 1628, y: 3558}
+  - name: OmegaSymbol-01-HO_C1S1
+    spriteName: OmegaSymbol-01-HO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: e2d153d334813914aa809a21787e260d
+    layerID: 7186
+    mosaicPosition: {x: 2246, y: 4000}
+  - name: Background-01-SO_C1S1
+    spriteName: Background-01-SO_C1S1
+    isGroup: 0
+    parentIndex: 104
+    spriteID: dfe1369bdd0fdcc4697d8e880344098d
+    layerID: 17477
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 1
+  textureAssetName: JardinTullerias-SC_C1S1_000 Texture
+  prefabAssetName: JardinTullerias-SC_C1S1_000 Prefab
+  spriteLibAssetName: JardinTullerias-SC_C1S1_000 Sprite Lib
+  secondarySpriteTextures: []

@@ -1,0 +1,3763 @@
+fileFormatVersion: 2
+guid: 032508a15f8acab4b9198ef8cc37a740
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData:
+  - name: Yellow_Currency_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1472
+      width: 197
+      height: 71
+    spriteID: 9fe5456433e87424da8ddb038ea9463c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -547, y: 219}
+  - name: Yellow_Currency_Ring
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1390
+      width: 200
+      height: 74
+    spriteID: 77428215e5cde7c4b8ac750696a73763
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -547, y: 55}
+  - name: PopUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1236
+      width: 223
+      height: 146
+    spriteID: 63c2155035bb9d443928da144c230730
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1037, y: 859}
+  - name: PopUp_Interior
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1564
+      y: 1272
+      width: 33
+      height: 30
+    spriteID: 52af5f6ed798fca42a2ac8320d182eb1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 417, y: 837}
+  - name: Pause_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 338
+      y: 1551
+      width: 70
+      height: 70
+    spriteID: 883330109083e5048a2468336de24486
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 306, y: -391}
+  - name: Hint_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1383
+      y: 807
+      width: 133
+      height: 135
+    spriteID: 351954ec6625b8d4db7b800c8e805417
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1258, y: -1101}
+  - name: Timer_background
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1743
+      width: 102
+      height: 102
+    spriteID: c0a83d13f1b48d6439a89b4724354d6c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -77, y: -177}
+  - name: Timer_Background_Interior
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1477
+      width: 82
+      height: 82
+    spriteID: cab99557f32d8ff4ba7f359c39ff563b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 645, y: -452}
+  - name: Timer_Icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1561
+      y: 954
+      width: 35
+      height: 65
+    spriteID: acd57b55f81b42a4ea5c6d46b2182814
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1081, y: -978}
+  - name: HO_Description_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1842
+      width: 102
+      height: 79
+    spriteID: 9fafbfdc9a5f2b94293f947b91dafc02
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -221, y: -87}
+  - name: Red_Exit_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 943
+      width: 84
+      height: 84
+    spriteID: 58a63802733b4bf4ab33377e7ba26fdc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: -984}
+  - name: Kathy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1853
+      width: 92
+      height: 106
+    spriteID: 6f1466c5280f4944fb48fcaf3833c18c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 172, y: 37}
+  - name: Kathy_Level_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1397
+      width: 106
+      height: 72
+    spriteID: a02005d43773d1740931c25748af057e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 887, y: -430}
+  - name: Kathy_Exp_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1142
+      y: 1397
+      width: 107
+      height: 67
+    spriteID: 5a94ddbcff536dc40bbefc24e346a6a3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 864, y: -432}
+  - name: Diamond
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 856
+      width: 90
+      height: 79
+    spriteID: b31c56a948a8a174d9d0dd056dad1fd0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 359, y: -964}
+  - name: Energy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1543
+      y: 1163
+      width: 59
+      height: 83
+    spriteID: f52ac9d07c8110a4593b90ecf8e4d65c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 865, y: -653}
+  - name: Coins
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1035
+      width: 85
+      height: 80
+    spriteID: cb53f44964ce4f247b777ba29f974b52
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 160, y: -784}
+  - name: Coins_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1483
+      y: 1397
+      width: 90
+      height: 68
+    spriteID: d229a8c7c7febaf4da2de26edc4d061c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 614, y: -428}
+  - name: Add_Currency_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1530
+      y: 1078
+      width: 76
+      height: 76
+    spriteID: daa37706db9c7c34ca10b1dc04f3f28b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 537, y: -741}
+  - name: Conector_Info_Windows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1298
+      y: 1272
+      width: 201
+      height: 36
+    spriteID: 2fe13c0cd9c41f54dba18671a6b1db7d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1253, y: -474}
+  - name: Interruptor_Back_Card
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1507
+      y: 1272
+      width: 49
+      height: 35
+    spriteID: ddc5e4c6913de36499a900bfdfd52cf3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1190, y: -477}
+  - name: Kathy_Exp_Bar_Fill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1257
+      y: 1397
+      width: 101
+      height: 66
+    spriteID: babdffd04debf9d4cbacfdb141a5d2cb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 824, y: -335}
+  - name: Play_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 739
+      y: 1794
+      width: 213
+      height: 208
+    spriteID: 0d7dc6d3df36c5e429afb97b6507981b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 720, y: 280}
+  - name: Shop
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1383
+      y: 603
+      width: 196
+      height: 196
+    spriteID: 073e75272555bc144b7da9b387ff5b36
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1122, y: -916}
+  - name: Shinies
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1561
+      y: 1027
+      width: 37
+      height: 36
+    spriteID: cba2d1ccc6eb2674294db9fa6540e0cf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 963, y: -710}
+  - name: 'Gifts '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1874
+      y: 4
+      width: 156
+      height: 150
+    spriteID: 4ebba4214709f2f4eb11920980074599
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1385, y: -1537}
+  - name: Clue_Object_Hidden_Symbol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1743
+      width: 91
+      height: 91
+    spriteID: fe8806029ffad2049a76a9db4ff136ec
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -672, y: 184}
+  - name: Star_White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 960
+      y: 1794
+      width: 56
+      height: 56
+    spriteID: 1957c6568bb5ff34f8a2d874a87eedf9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -42, y: 122}
+  - name: Star_Glow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 1873
+      width: 66
+      height: 67
+    spriteID: 3048d2c3078b5234aaca19357a03438b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -572, y: 139}
+  - name: Star_Yellow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 960
+      y: 1858
+      width: 55
+      height: 56
+    spriteID: f9f1037a99a664647adff57d280c96bf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -112, y: 150}
+  - name: Lock_Icon_Yellow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 990
+      y: 1123
+      width: 30
+      height: 43
+    spriteID: 90739c587c101a84da1a2c6ccca68204
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 81, y: -819}
+  - name: Lock_Icon_Gray
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1524
+      y: 807
+      width: 79
+      height: 115
+    spriteID: d6ead739706cb744aabd8090cc5007b8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 535, y: -1111}
+  - name: LevelSelect_Card_Border
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1394
+      width: 90
+      height: 88
+    spriteID: c57e3a959c03c1e42994090ae82f0020
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 149, y: -532}
+  - name: LevelSelect_Card_Ornament_RightLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 1236
+      width: 44
+      height: 629
+    spriteID: bf48e60bc32f8814f85d8b5fdfdc99b4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -513, y: 332}
+  - name: LevelSelect_Card_Ornament_TopBot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1163
+      width: 361
+      height: 101
+    spriteID: c09812c3672dd1940a3e69ff80efd6a3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 568, y: -262}
+  - name: LevelSelect_Play_Green
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1397
+      y: 1163
+      width: 138
+      height: 82
+    spriteID: 6eac68e4a97404b42a5da291079e021a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1372, y: -243}
+  - name: LevelSelect_Play_Blocked
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1551
+      width: 137
+      height: 80
+    spriteID: a04b68a548e611641bfadcfc3d8280f2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 11, y: 142}
+  - name: LevelSelect_Current_Level
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1443
+      y: 954
+      width: 110
+      height: 110
+    spriteID: 6de5eaf227447d349a8c1c377c1a518c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1324, y: -323}
+  - name: LevelSelect_Card_Number
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1366
+      y: 1397
+      width: 109
+      height: 60
+    spriteID: 0d964d3647273c1478703446300b9b3b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1028, y: -36}
+  - name: LevelSelect_White_Fill_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1123
+      width: 54
+      height: 40
+    spriteID: a201d69637e781e4280a68f37761340b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 894, y: -185}
+  - name: LevelSelect_Found_Clue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1639
+      width: 96
+      height: 96
+    spriteID: 6ef0e2fe063ad224ba7909a9432cdabc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -577, y: -61}
+  - name: LevelSelect_Yellow_Fill_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1929
+      width: 95
+      height: 35
+    spriteID: d4b9daa086ab2624b9af6311759797d1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 61, y: 580}
+  - name: LevelSelect_Move_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1639
+      width: 111
+      height: 96
+    spriteID: 572581e5590f29040b9537780f7f8230
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -172, y: 345}
+  - name: Paper_Tip
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1328
+      width: 129
+      height: 61
+    spriteID: 59d810433546a4e45a1f50853717d83e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 537, y: 9}
+  - name: LevelSelect_Picture_Blank_Folded
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 856
+      width: 411
+      height: 310
+    spriteID: 387aef8e4c39c6143865cd1065d301f7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 64, y: -76}
+  - name: LevelSelect_Picture_Blank
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 1174
+      width: 411
+      height: 308
+    spriteID: 033db8d5ceff5844d8571fe0ae9b8fc9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 487, y: 240}
+  - name: LevelSelect_Picture_Blocked
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 1490
+      width: 423
+      height: 296
+    spriteID: 9b87c6ea94302014f9c5e700e1a1bf17
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 499, y: 873}
+  - name: LevelSelect_Card_Pattern
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 342
+      width: 497
+      height: 886
+    spriteID: da575982fdf59ec41bdbc4a87c6fa463
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1005, y: -230}
+  - name: Dialogue_Ornament_Right-Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1174
+      width: 82
+      height: 212
+    spriteID: 9e2adb1a82a3f86498de53c403cd007e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -194, y: -627}
+  - name: Dialogue_GoldenDetail_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 1794
+      width: 222
+      height: 232
+    spriteID: a4827d3400a09324b91bb16aadf85edc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -773, y: 13}
+  - name: Dialogue_Conector_Right-Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 960
+      y: 1922
+      width: 52
+      height: 27
+    spriteID: d73d0f7a041a532408d93ad03355ad42
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -598, y: -29}
+  - name: Dialogue_GoldenDetail_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 342
+      width: 581
+      height: 253
+    spriteID: a1e0c5a331bacee478a87c7f0d1b265b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -119, y: -1151}
+  - name: Dialogue_Box
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1862
+      height: 330
+    spriteID: 04443378be37aa44fae6cb337c70b2db
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2, y: -9}
+  - name: PopUp_GoldenDetail_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1236
+      width: 181
+      height: 730
+    spriteID: 8dd1b06c0b1d70343a56ec4d01ee84d5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1826, y: -55}
+  - name: PopUp_GoldenDetail_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 603
+      width: 347
+      height: 343
+    spriteID: 7bf9a6688f2e6634d9a15992917bd226
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -605, y: -303}
+  - name: PopUp_Agree_Terms_Box
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1581
+      y: 1397
+      width: 25
+      height: 25
+    spriteID: 4eae03bdd54fe13488e87408cb8f584d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -65, y: 49}
+  - name: OrnamentsLoadingScreen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 954
+      width: 407
+      height: 116
+    spriteID: 88db27cb8075b2740aa4eecf77ec05d0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -521, y: 412}
+  - name: LoadingBar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1078
+      width: 494
+      height: 77
+    spriteID: 6b14fc8aac830584a86c85f93d94db51
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -496, y: 278}
+  - name: LoadingBarFill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1974
+      width: 483
+      height: 68
+    spriteID: 6a26038f6ec48f440950d9587016a05b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1531, y: 1270}
+  - name: PopUp_ActivityIndicator
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1874
+      y: 162
+      width: 149
+      height: 148
+    spriteID: 4c6025d0d46d4224aa58ff4b2db3b8d9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1164, y: -1485}
+  - name: PopUp_ActivityIndicator_Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1272
+      width: 262
+      height: 48
+    spriteID: 10098afc8746168428710daea411ef79
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 360, y: -309}
+  - name: Hand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 342
+      width: 511
+      height: 506
+    spriteID: 43332a52f6816a14fb822172448b406e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 53, y: -36}
+  rigSpriteImportData:
+  - name: Yellow_Currency_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1472
+      width: 197
+      height: 71
+    spriteID: 85ef92659d2c8094f9b56847fbbb9254
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -547, y: 219}
+  - name: Yellow_Currency_Ring
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1390
+      width: 200
+      height: 74
+    spriteID: e9a988f741ad163449cda541551d27e9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -547, y: 55}
+  - name: PopUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1236
+      width: 223
+      height: 146
+    spriteID: c099c07ee3a01e1479464db025e6e869
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1037, y: 859}
+  - name: PopUp_Interior
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1564
+      y: 1272
+      width: 33
+      height: 30
+    spriteID: fbb33f53f74a20b43a2e3f9d5bc4a27d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 417, y: 837}
+  - name: Pause_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 338
+      y: 1551
+      width: 70
+      height: 70
+    spriteID: d8c33a207f262e34280d9a920dfa812c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 306, y: -391}
+  - name: Hint_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1383
+      y: 807
+      width: 133
+      height: 135
+    spriteID: 8799bef1531ba9248baa21e4556f764b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1258, y: -1101}
+  - name: Timer_background
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1743
+      width: 102
+      height: 102
+    spriteID: 6bab3c78ec0b73249a5229ae96e0bcef
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -77, y: -177}
+  - name: Timer_Background_Interior
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1477
+      width: 82
+      height: 82
+    spriteID: 82bde4cd62d6c4c4db5029c121c07719
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 645, y: -452}
+  - name: Timer_Icon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1561
+      y: 954
+      width: 35
+      height: 65
+    spriteID: 6c9e7129bc16a87408dab50e31faf2ab
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1081, y: -978}
+  - name: HO_Description_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1842
+      width: 102
+      height: 79
+    spriteID: 25254f5fa9338074e8643af6685d856b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -221, y: -87}
+  - name: Red_Exit_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 943
+      width: 84
+      height: 84
+    spriteID: 31a5f766ec99c304eb16fcc8d145f5d6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 261, y: -984}
+  - name: Kathy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1853
+      width: 92
+      height: 106
+    spriteID: b383c3653259bbc4a85fa78bcea578d5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 172, y: 37}
+  - name: Kathy_Level_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1397
+      width: 106
+      height: 72
+    spriteID: b40589c8e9a18264da8c0ccb355a786a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 887, y: -430}
+  - name: Kathy_Exp_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1142
+      y: 1397
+      width: 107
+      height: 67
+    spriteID: f1a12264342661e479d7311c9baad021
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 864, y: -432}
+  - name: Diamond
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 856
+      width: 90
+      height: 79
+    spriteID: c5649be67c020e344bcfc5be2b427398
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 359, y: -964}
+  - name: Energy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1543
+      y: 1163
+      width: 59
+      height: 83
+    spriteID: bb3d0b4528086eb4bb76bd705f72f351
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 865, y: -653}
+  - name: Coins
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1035
+      width: 85
+      height: 80
+    spriteID: 4a347ac4c85ad6f45be045101e0c9d68
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 160, y: -784}
+  - name: Coins_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1483
+      y: 1397
+      width: 90
+      height: 68
+    spriteID: c73d912567cd7024ab229f159aefeccb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 614, y: -428}
+  - name: Add_Currency_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1530
+      y: 1078
+      width: 76
+      height: 76
+    spriteID: 5ec0037da4c5793479e156550efb64b3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 537, y: -741}
+  - name: Conector_Info_Windows
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1298
+      y: 1272
+      width: 201
+      height: 36
+    spriteID: 4228f876e6ab2234eb193681c2fcf930
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1253, y: -474}
+  - name: Interruptor_Back_Card
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1507
+      y: 1272
+      width: 49
+      height: 35
+    spriteID: ae5f221c545bb51429bca7ebf23e8077
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1190, y: -477}
+  - name: Kathy_Exp_Bar_Fill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1257
+      y: 1397
+      width: 101
+      height: 66
+    spriteID: 9ecb29a12fd174843bcad325b7ea4b84
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 824, y: -335}
+  - name: Play_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 739
+      y: 1794
+      width: 213
+      height: 208
+    spriteID: 0201f46127ae26841a4c17fbe437984b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 720, y: 280}
+  - name: Shop
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1383
+      y: 603
+      width: 196
+      height: 196
+    spriteID: 3aa8c5ab739531e4dba8e134fcff128b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1122, y: -916}
+  - name: Shinies
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1561
+      y: 1027
+      width: 37
+      height: 36
+    spriteID: 921a5e0629a1ce848bf1d37088e47ba5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 963, y: -710}
+  - name: 'Gifts '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1874
+      y: 4
+      width: 156
+      height: 150
+    spriteID: 44bc3be00c2d0cf478bf16d7dfc58075
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1385, y: -1537}
+  - name: Clue_Object_Hidden_Symbol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1743
+      width: 91
+      height: 91
+    spriteID: 2904ed545c2aebb43845a4e869f987b3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -672, y: 184}
+  - name: Star_White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 960
+      y: 1794
+      width: 56
+      height: 56
+    spriteID: 7d8585101e19e5349b2c76c53bfc4dc9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -42, y: 122}
+  - name: Star_Glow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 1873
+      width: 66
+      height: 67
+    spriteID: 0294e987331ba094ab4ba310db99621e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -572, y: 139}
+  - name: Star_Yellow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 960
+      y: 1858
+      width: 55
+      height: 56
+    spriteID: fbcca003491d21248a542cfbefd59807
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -112, y: 150}
+  - name: Lock_Icon_Yellow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 990
+      y: 1123
+      width: 30
+      height: 43
+    spriteID: 804ad0c1c1821654c86e0ec6389be04c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 81, y: -819}
+  - name: Lock_Icon_Gray
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1524
+      y: 807
+      width: 79
+      height: 115
+    spriteID: a27b39ea52bf09744aa1818bc3fc3706
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 535, y: -1111}
+  - name: LevelSelect_Card_Border
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1394
+      width: 90
+      height: 88
+    spriteID: 2ecd7edeb78a6654cab26518c6c57ea8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 149, y: -532}
+  - name: LevelSelect_Card_Ornament_RightLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 1236
+      width: 44
+      height: 629
+    spriteID: 1d97d8ea9d240fb4dbf49b412baeb743
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -513, y: 332}
+  - name: LevelSelect_Card_Ornament_TopBot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1163
+      width: 361
+      height: 101
+    spriteID: 5b799237d79234745b01a0dd9898389b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 568, y: -262}
+  - name: LevelSelect_Play_Green
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1397
+      y: 1163
+      width: 138
+      height: 82
+    spriteID: 8bda3e08654c3c44a8be0bb7705996e6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1372, y: -243}
+  - name: LevelSelect_Play_Blocked
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1551
+      width: 137
+      height: 80
+    spriteID: 4d8e914acaa48964398561f89b691c16
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 11, y: 142}
+  - name: LevelSelect_Current_Level
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1443
+      y: 954
+      width: 110
+      height: 110
+    spriteID: 931db09f7ff4a75439a63bbdbc2d3717
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1324, y: -323}
+  - name: LevelSelect_Card_Number
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1366
+      y: 1397
+      width: 109
+      height: 60
+    spriteID: 7695a64b75ea19c4daf6333b0dee8181
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1028, y: -36}
+  - name: LevelSelect_White_Fill_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1123
+      width: 54
+      height: 40
+    spriteID: 8313102ea93f84049ab60956fac3ed1c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 894, y: -185}
+  - name: LevelSelect_Found_Clue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1639
+      width: 96
+      height: 96
+    spriteID: 3a9ff1d1036c21549ba9a36bb94d504d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -577, y: -61}
+  - name: LevelSelect_Yellow_Fill_Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1929
+      width: 95
+      height: 35
+    spriteID: 615cdfa853393524cbaacdf2070e39ca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 61, y: 580}
+  - name: LevelSelect_Move_Button
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 1639
+      width: 111
+      height: 96
+    spriteID: 58e79146d32222e45b457c38df2d70e5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -172, y: 345}
+  - name: Paper_Tip
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1328
+      width: 129
+      height: 61
+    spriteID: 771f1a1ff32ea8d49996dd71cbc98dd0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 537, y: 9}
+  - name: LevelSelect_Picture_Blank_Folded
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 856
+      width: 411
+      height: 310
+    spriteID: 8a867c80366c60e439f7c45675e6fcdb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 64, y: -76}
+  - name: LevelSelect_Picture_Blank
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 1174
+      width: 411
+      height: 308
+    spriteID: e3e7afb6be472c8469e2e58e9a1f40c2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 487, y: 240}
+  - name: LevelSelect_Picture_Blocked
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 1490
+      width: 423
+      height: 296
+    spriteID: c80225d00f8aa2547acd0f27b48d5d72
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 499, y: 873}
+  - name: LevelSelect_Card_Pattern
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 342
+      width: 497
+      height: 886
+    spriteID: 0f753b5c0113eaa45a53f9af8c7e4577
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1005, y: -230}
+  - name: Dialogue_Ornament_Right-Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 1174
+      width: 82
+      height: 212
+    spriteID: ccdc80598932650498020ec6b9dc31e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -194, y: -627}
+  - name: Dialogue_GoldenDetail_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 1794
+      width: 222
+      height: 232
+    spriteID: 83317a0ddc8ce504882194a2545fca6e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -773, y: 13}
+  - name: Dialogue_Conector_Right-Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 960
+      y: 1922
+      width: 52
+      height: 27
+    spriteID: df69983bd71553e489c271b46caec968
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -598, y: -29}
+  - name: Dialogue_GoldenDetail_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 342
+      width: 581
+      height: 253
+    spriteID: 162b5ce74a529444aab1c8c8f533177c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -119, y: -1151}
+  - name: Dialogue_Box
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1862
+      height: 330
+    spriteID: 6437d0aeb07c20f4fbbef90ffaf0a8db
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2, y: -9}
+  - name: PopUp_GoldenDetail_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1236
+      width: 181
+      height: 730
+    spriteID: 949d3f9d6d6c2c24c8887e6c130905fa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1826, y: -55}
+  - name: PopUp_GoldenDetail_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 603
+      width: 347
+      height: 343
+    spriteID: 3d821d87557554a41825dc3c3a5c6654
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -605, y: -303}
+  - name: PopUp_Agree_Terms_Box
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1581
+      y: 1397
+      width: 25
+      height: 25
+    spriteID: e2a360f631064754bb8fe87ecdedc3f0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -65, y: 49}
+  - name: OrnamentsLoadingScreen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 954
+      width: 407
+      height: 116
+    spriteID: dda86c893dd7fec49bb18ebe0c7a7a9c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -521, y: 412}
+  - name: LoadingBar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1078
+      width: 494
+      height: 77
+    spriteID: fee2240293b194d48b4d816458c169ab
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -496, y: 278}
+  - name: LoadingBarFill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1974
+      width: 483
+      height: 68
+    spriteID: 0585363cb0cacd74f9c2c70bb945661c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1531, y: 1270}
+  - name: PopUp_ActivityIndicator
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1874
+      y: 162
+      width: 149
+      height: 148
+    spriteID: 7b495716170e31142a7d799b7b7ddc3b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1164, y: -1485}
+  - name: PopUp_ActivityIndicator_Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1028
+      y: 1272
+      width: 262
+      height: 48
+    spriteID: 9573296058f36954994c363af531ddb1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 360, y: -309}
+  - name: Hand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 509
+      y: 342
+      width: 511
+      height: 506
+    spriteID: c2cc386f553d12347bdf98a11653aea8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 53, y: -36}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 2048, y: 2048}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 1
+  characterMode: 0
+  mosaicPSDLayers:
+  - name: Yellow_Currency_Bar
+    spriteName: Yellow_Currency_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9fe5456433e87424da8ddb038ea9463c
+    layerID: 1970
+    mosaicPosition: {x: 193, y: 1472}
+  - name: Yellow_Currency_Ring
+    spriteName: Yellow_Currency_Ring
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 77428215e5cde7c4b8ac750696a73763
+    layerID: 1845
+    mosaicPosition: {x: 193, y: 1390}
+  - name: PopUp
+    spriteName: PopUp
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 63c2155035bb9d443928da144c230730
+    layerID: 1907
+    mosaicPosition: {x: 193, y: 1236}
+  - name: PopUp_Interior
+    spriteName: PopUp_Interior
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 52af5f6ed798fca42a2ac8320d182eb1
+    layerID: 1906
+    mosaicPosition: {x: 1564, y: 1272}
+  - name: Pause_Button
+    spriteName: Pause_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 883330109083e5048a2468336de24486
+    layerID: 2
+    mosaicPosition: {x: 338, y: 1551}
+  - name: Hint_Button
+    spriteName: Hint_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 351954ec6625b8d4db7b800c8e805417
+    layerID: 65
+    mosaicPosition: {x: 1383, y: 807}
+  - name: Timer_background
+    spriteName: Timer_background
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c0a83d13f1b48d6439a89b4724354d6c
+    layerID: 14
+    mosaicPosition: {x: 193, y: 1743}
+  - name: Timer_Background_Interior
+    spriteName: Timer_Background_Interior
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cab99557f32d8ff4ba7f359c39ff563b
+    layerID: 13
+    mosaicPosition: {x: 1028, y: 1477}
+  - name: Timer_Icon
+    spriteName: Timer_Icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: acd57b55f81b42a4ea5c6d46b2182814
+    layerID: 5
+    mosaicPosition: {x: 1561, y: 954}
+  - name: HO_Description_Bar
+    spriteName: HO_Description_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9fafbfdc9a5f2b94293f947b91dafc02
+    layerID: 7
+    mosaicPosition: {x: 312, y: 1842}
+  - name: Red_Exit_Button
+    spriteName: Red_Exit_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58a63802733b4bf4ab33377e7ba26fdc
+    layerID: 347
+    mosaicPosition: {x: 928, y: 943}
+  - name: Kathy
+    spriteName: Kathy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6f1466c5280f4944fb48fcaf3833c18c
+    layerID: 528
+    mosaicPosition: {x: 193, y: 1853}
+  - name: Kathy_Level_Bar
+    spriteName: Kathy_Level_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a02005d43773d1740931c25748af057e
+    layerID: 529
+    mosaicPosition: {x: 1028, y: 1397}
+  - name: Kathy_Exp_Bar
+    spriteName: Kathy_Exp_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a94ddbcff536dc40bbefc24e346a6a3
+    layerID: 80
+    mosaicPosition: {x: 1142, y: 1397}
+  - name: Diamond
+    spriteName: Diamond
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b31c56a948a8a174d9d0dd056dad1fd0
+    layerID: 450
+    mosaicPosition: {x: 928, y: 856}
+  - name: Energy
+    spriteName: Energy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f52ac9d07c8110a4593b90ecf8e4d65c
+    layerID: 451
+    mosaicPosition: {x: 1543, y: 1163}
+  - name: Coins
+    spriteName: Coins
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cb53f44964ce4f247b777ba29f974b52
+    layerID: 449
+    mosaicPosition: {x: 928, y: 1035}
+  - name: Coins_Bar
+    spriteName: Coins_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d229a8c7c7febaf4da2de26edc4d061c
+    layerID: 240
+    mosaicPosition: {x: 1483, y: 1397}
+  - name: Add_Currency_Button
+    spriteName: Add_Currency_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: daa37706db9c7c34ca10b1dc04f3f28b
+    layerID: 531
+    mosaicPosition: {x: 1530, y: 1078}
+  - name: Conector_Info_Windows
+    spriteName: Conector_Info_Windows
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2fe13c0cd9c41f54dba18671a6b1db7d
+    layerID: 163
+    mosaicPosition: {x: 1298, y: 1272}
+  - name: Interruptor_Back_Card
+    spriteName: Interruptor_Back_Card
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ddc5e4c6913de36499a900bfdfd52cf3
+    layerID: 87
+    mosaicPosition: {x: 1507, y: 1272}
+  - name: Kathy_Exp_Bar_Fill
+    spriteName: Kathy_Exp_Bar_Fill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: babdffd04debf9d4cbacfdb141a5d2cb
+    layerID: 662
+    mosaicPosition: {x: 1257, y: 1397}
+  - name: Play_Button
+    spriteName: Play_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d7dc6d3df36c5e429afb97b6507981b
+    layerID: 388
+    mosaicPosition: {x: 739, y: 1794}
+  - name: Shop
+    spriteName: Shop
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 073e75272555bc144b7da9b387ff5b36
+    layerID: 533
+    mosaicPosition: {x: 1383, y: 603}
+  - name: Shinies
+    spriteName: Shinies
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cba2d1ccc6eb2674294db9fa6540e0cf
+    layerID: 536
+    mosaicPosition: {x: 1561, y: 1027}
+  - name: 'Gifts '
+    spriteName: 'Gifts '
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4ebba4214709f2f4eb11920980074599
+    layerID: 534
+    mosaicPosition: {x: 1874, y: 4}
+  - name: Clue_Object_Hidden_Symbol
+    spriteName: Clue_Object_Hidden_Symbol
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fe8806029ffad2049a76a9db4ff136ec
+    layerID: 166
+    mosaicPosition: {x: 312, y: 1743}
+  - name: Star_White
+    spriteName: Star_White
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1957c6568bb5ff34f8a2d874a87eedf9
+    layerID: 171
+    mosaicPosition: {x: 960, y: 1794}
+  - name: Star_Glow
+    spriteName: Star_Glow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3048d2c3078b5234aaca19357a03438b
+    layerID: 938
+    mosaicPosition: {x: 424, y: 1873}
+  - name: Star_Yellow
+    spriteName: Star_Yellow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f9f1037a99a664647adff57d280c96bf
+    layerID: 169
+    mosaicPosition: {x: 960, y: 1858}
+  - name: Lock_Icon_Yellow
+    spriteName: Lock_Icon_Yellow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 90739c587c101a84da1a2c6ccca68204
+    layerID: 146
+    mosaicPosition: {x: 990, y: 1123}
+  - name: Lock_Icon_Gray
+    spriteName: Lock_Icon_Gray
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6ead739706cb744aabd8090cc5007b8
+    layerID: 147
+    mosaicPosition: {x: 1524, y: 807}
+  - name: LevelSelect_Card_Border
+    spriteName: LevelSelect_Card_Border
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c57e3a959c03c1e42994090ae82f0020
+    layerID: 530
+    mosaicPosition: {x: 928, y: 1394}
+  - name: LevelSelect_Card_Ornament_RightLeft
+    spriteName: LevelSelect_Card_Ornament_RightLeft
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bf48e60bc32f8814f85d8b5fdfdc99b4
+    layerID: 584
+    mosaicPosition: {x: 424, y: 1236}
+  - name: LevelSelect_Card_Ornament_TopBot
+    spriteName: LevelSelect_Card_Ornament_TopBot
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c09812c3672dd1940a3e69ff80efd6a3
+    layerID: 583
+    mosaicPosition: {x: 1028, y: 1163}
+  - name: LevelSelect_Play_Green
+    spriteName: LevelSelect_Play_Green
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6eac68e4a97404b42a5da291079e021a
+    layerID: 348
+    mosaicPosition: {x: 1397, y: 1163}
+  - name: LevelSelect_Play_Blocked
+    spriteName: LevelSelect_Play_Blocked
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a04b68a548e611641bfadcfc3d8280f2
+    layerID: 349
+    mosaicPosition: {x: 193, y: 1551}
+  - name: LevelSelect_Current_Level
+    spriteName: LevelSelect_Current_Level
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6de5eaf227447d349a8c1c377c1a518c
+    layerID: 116
+    mosaicPosition: {x: 1443, y: 954}
+  - name: LevelSelect_Card_Number
+    spriteName: LevelSelect_Card_Number
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d964d3647273c1478703446300b9b3b
+    layerID: 84
+    mosaicPosition: {x: 1366, y: 1397}
+  - name: LevelSelect_White_Fill_Bar
+    spriteName: LevelSelect_White_Fill_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a201d69637e781e4280a68f37761340b
+    layerID: 118
+    mosaicPosition: {x: 928, y: 1123}
+  - name: LevelSelect_Found_Clue
+    spriteName: LevelSelect_Found_Clue
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ef0e2fe063ad224ba7909a9432cdabc
+    layerID: 586
+    mosaicPosition: {x: 312, y: 1639}
+  - name: LevelSelect_Yellow_Fill_Bar
+    spriteName: LevelSelect_Yellow_Fill_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d4b9daa086ab2624b9af6311759797d1
+    layerID: 119
+    mosaicPosition: {x: 312, y: 1929}
+  - name: LevelSelect_Move_Button
+    spriteName: LevelSelect_Move_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 572581e5590f29040b9537780f7f8230
+    layerID: 148
+    mosaicPosition: {x: 193, y: 1639}
+  - name: Paper_Tip
+    spriteName: Paper_Tip
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 59d810433546a4e45a1f50853717d83e
+    layerID: 410
+    mosaicPosition: {x: 1028, y: 1328}
+  - name: LevelSelect_Picture_Blank_Folded
+    spriteName: LevelSelect_Picture_Blank_Folded
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 387aef8e4c39c6143865cd1065d301f7
+    layerID: 405
+    mosaicPosition: {x: 509, y: 856}
+  - name: LevelSelect_Picture_Blank
+    spriteName: LevelSelect_Picture_Blank
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 033db8d5ceff5844d8571fe0ae9b8fc9
+    layerID: 408
+    mosaicPosition: {x: 509, y: 1174}
+  - name: LevelSelect_Picture_Blocked
+    spriteName: LevelSelect_Picture_Blocked
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9b87c6ea94302014f9c5e700e1a1bf17
+    layerID: 406
+    mosaicPosition: {x: 509, y: 1490}
+  - name: LevelSelect_Card_Pattern
+    spriteName: LevelSelect_Card_Pattern
+    isGroup: 0
+    parentIndex: -1
+    spriteID: da575982fdf59ec41bdbc4a87c6fa463
+    layerID: 604
+    mosaicPosition: {x: 4, y: 342}
+  - name: Dialogue_Ornament_Right-Left
+    spriteName: Dialogue_Ornament_Right-Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9e2adb1a82a3f86498de53c403cd007e
+    layerID: 585
+    mosaicPosition: {x: 928, y: 1174}
+  - name: Dialogue_GoldenDetail_Right
+    spriteName: Dialogue_GoldenDetail_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a4827d3400a09324b91bb16aadf85edc
+    layerID: 589
+    mosaicPosition: {x: 509, y: 1794}
+  - name: Dialogue_Conector_Right-Left
+    spriteName: Dialogue_Conector_Right-Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d73d0f7a041a532408d93ad03355ad42
+    layerID: 596
+    mosaicPosition: {x: 960, y: 1922}
+  - name: Dialogue_GoldenDetail_Left
+    spriteName: Dialogue_GoldenDetail_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a1e0c5a331bacee478a87c7f0d1b265b
+    layerID: 590
+    mosaicPosition: {x: 1028, y: 342}
+  - name: Dialogue_Box
+    spriteName: Dialogue_Box
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 04443378be37aa44fae6cb337c70b2db
+    layerID: 601
+    mosaicPosition: {x: 4, y: 4}
+  - name: PopUp_GoldenDetail_Left
+    spriteName: PopUp_GoldenDetail_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8dd1b06c0b1d70343a56ec4d01ee84d5
+    layerID: 605
+    mosaicPosition: {x: 4, y: 1236}
+  - name: PopUp_GoldenDetail_Right
+    spriteName: PopUp_GoldenDetail_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7bf9a6688f2e6634d9a15992917bd226
+    layerID: 606
+    mosaicPosition: {x: 1028, y: 603}
+  - name: PopUp_Agree_Terms_Box
+    spriteName: PopUp_Agree_Terms_Box
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4eae03bdd54fe13488e87408cb8f584d
+    layerID: 607
+    mosaicPosition: {x: 1581, y: 1397}
+  - name: OrnamentsLoadingScreen
+    spriteName: OrnamentsLoadingScreen
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 88db27cb8075b2740aa4eecf77ec05d0
+    layerID: 874
+    mosaicPosition: {x: 1028, y: 954}
+  - name: LoadingBar
+    spriteName: LoadingBar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6b14fc8aac830584a86c85f93d94db51
+    layerID: 872
+    mosaicPosition: {x: 1028, y: 1078}
+  - name: LoadingBarFill
+    spriteName: LoadingBarFill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a26038f6ec48f440950d9587016a05b
+    layerID: 873
+    mosaicPosition: {x: 4, y: 1974}
+  - name: PopUp_ActivityIndicator
+    spriteName: PopUp_ActivityIndicator
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4c6025d0d46d4224aa58ff4b2db3b8d9
+    layerID: 877
+    mosaicPosition: {x: 1874, y: 162}
+  - name: PopUp_ActivityIndicator_Shadow
+    spriteName: PopUp_ActivityIndicator_Shadow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10098afc8746168428710daea411ef79
+    layerID: 876
+    mosaicPosition: {x: 1028, y: 1272}
+  - name: Hand
+    spriteName: Hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 43332a52f6816a14fb822172448b406e
+    layerID: 879
+    mosaicPosition: {x: 509, y: 342}
+  rigPSDLayers:
+  - name: Yellow_Currency_Bar
+    spriteName: Yellow_Currency_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 85ef92659d2c8094f9b56847fbbb9254
+    layerID: 1970
+    mosaicPosition: {x: 193, y: 1472}
+  - name: Yellow_Currency_Ring
+    spriteName: Yellow_Currency_Ring
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e9a988f741ad163449cda541551d27e9
+    layerID: 1845
+    mosaicPosition: {x: 193, y: 1390}
+  - name: PopUp
+    spriteName: PopUp
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c099c07ee3a01e1479464db025e6e869
+    layerID: 1907
+    mosaicPosition: {x: 193, y: 1236}
+  - name: PopUp_Interior
+    spriteName: PopUp_Interior
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fbb33f53f74a20b43a2e3f9d5bc4a27d
+    layerID: 1906
+    mosaicPosition: {x: 1564, y: 1272}
+  - name: Pause_Button
+    spriteName: Pause_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d8c33a207f262e34280d9a920dfa812c
+    layerID: 2
+    mosaicPosition: {x: 338, y: 1551}
+  - name: Hint_Button
+    spriteName: Hint_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8799bef1531ba9248baa21e4556f764b
+    layerID: 65
+    mosaicPosition: {x: 1383, y: 807}
+  - name: Timer_background
+    spriteName: Timer_background
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6bab3c78ec0b73249a5229ae96e0bcef
+    layerID: 14
+    mosaicPosition: {x: 193, y: 1743}
+  - name: Timer_Background_Interior
+    spriteName: Timer_Background_Interior
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 82bde4cd62d6c4c4db5029c121c07719
+    layerID: 13
+    mosaicPosition: {x: 1028, y: 1477}
+  - name: Timer_Icon
+    spriteName: Timer_Icon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6c9e7129bc16a87408dab50e31faf2ab
+    layerID: 5
+    mosaicPosition: {x: 1561, y: 954}
+  - name: HO_Description_Bar
+    spriteName: HO_Description_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 25254f5fa9338074e8643af6685d856b
+    layerID: 7
+    mosaicPosition: {x: 312, y: 1842}
+  - name: Red_Exit_Button
+    spriteName: Red_Exit_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 31a5f766ec99c304eb16fcc8d145f5d6
+    layerID: 347
+    mosaicPosition: {x: 928, y: 943}
+  - name: Kathy
+    spriteName: Kathy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b383c3653259bbc4a85fa78bcea578d5
+    layerID: 528
+    mosaicPosition: {x: 193, y: 1853}
+  - name: Kathy_Level_Bar
+    spriteName: Kathy_Level_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b40589c8e9a18264da8c0ccb355a786a
+    layerID: 529
+    mosaicPosition: {x: 1028, y: 1397}
+  - name: Kathy_Exp_Bar
+    spriteName: Kathy_Exp_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f1a12264342661e479d7311c9baad021
+    layerID: 80
+    mosaicPosition: {x: 1142, y: 1397}
+  - name: Diamond
+    spriteName: Diamond
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5649be67c020e344bcfc5be2b427398
+    layerID: 450
+    mosaicPosition: {x: 928, y: 856}
+  - name: Energy
+    spriteName: Energy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb3d0b4528086eb4bb76bd705f72f351
+    layerID: 451
+    mosaicPosition: {x: 1543, y: 1163}
+  - name: Coins
+    spriteName: Coins
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4a347ac4c85ad6f45be045101e0c9d68
+    layerID: 449
+    mosaicPosition: {x: 928, y: 1035}
+  - name: Coins_Bar
+    spriteName: Coins_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c73d912567cd7024ab229f159aefeccb
+    layerID: 240
+    mosaicPosition: {x: 1483, y: 1397}
+  - name: Add_Currency_Button
+    spriteName: Add_Currency_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5ec0037da4c5793479e156550efb64b3
+    layerID: 531
+    mosaicPosition: {x: 1530, y: 1078}
+  - name: Conector_Info_Windows
+    spriteName: Conector_Info_Windows
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4228f876e6ab2234eb193681c2fcf930
+    layerID: 163
+    mosaicPosition: {x: 1298, y: 1272}
+  - name: Interruptor_Back_Card
+    spriteName: Interruptor_Back_Card
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae5f221c545bb51429bca7ebf23e8077
+    layerID: 87
+    mosaicPosition: {x: 1507, y: 1272}
+  - name: Kathy_Exp_Bar_Fill
+    spriteName: Kathy_Exp_Bar_Fill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9ecb29a12fd174843bcad325b7ea4b84
+    layerID: 662
+    mosaicPosition: {x: 1257, y: 1397}
+  - name: Play_Button
+    spriteName: Play_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0201f46127ae26841a4c17fbe437984b
+    layerID: 388
+    mosaicPosition: {x: 739, y: 1794}
+  - name: Shop
+    spriteName: Shop
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3aa8c5ab739531e4dba8e134fcff128b
+    layerID: 533
+    mosaicPosition: {x: 1383, y: 603}
+  - name: Shinies
+    spriteName: Shinies
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 921a5e0629a1ce848bf1d37088e47ba5
+    layerID: 536
+    mosaicPosition: {x: 1561, y: 1027}
+  - name: 'Gifts '
+    spriteName: 'Gifts '
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 44bc3be00c2d0cf478bf16d7dfc58075
+    layerID: 534
+    mosaicPosition: {x: 1874, y: 4}
+  - name: Clue_Object_Hidden_Symbol
+    spriteName: Clue_Object_Hidden_Symbol
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2904ed545c2aebb43845a4e869f987b3
+    layerID: 166
+    mosaicPosition: {x: 312, y: 1743}
+  - name: Star_White
+    spriteName: Star_White
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7d8585101e19e5349b2c76c53bfc4dc9
+    layerID: 171
+    mosaicPosition: {x: 960, y: 1794}
+  - name: Star_Glow
+    spriteName: Star_Glow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0294e987331ba094ab4ba310db99621e
+    layerID: 938
+    mosaicPosition: {x: 424, y: 1873}
+  - name: Star_Yellow
+    spriteName: Star_Yellow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fbcca003491d21248a542cfbefd59807
+    layerID: 169
+    mosaicPosition: {x: 960, y: 1858}
+  - name: Lock_Icon_Yellow
+    spriteName: Lock_Icon_Yellow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 804ad0c1c1821654c86e0ec6389be04c
+    layerID: 146
+    mosaicPosition: {x: 990, y: 1123}
+  - name: Lock_Icon_Gray
+    spriteName: Lock_Icon_Gray
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a27b39ea52bf09744aa1818bc3fc3706
+    layerID: 147
+    mosaicPosition: {x: 1524, y: 807}
+  - name: LevelSelect_Card_Border
+    spriteName: LevelSelect_Card_Border
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ecd7edeb78a6654cab26518c6c57ea8
+    layerID: 530
+    mosaicPosition: {x: 928, y: 1394}
+  - name: LevelSelect_Card_Ornament_RightLeft
+    spriteName: LevelSelect_Card_Ornament_RightLeft
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1d97d8ea9d240fb4dbf49b412baeb743
+    layerID: 584
+    mosaicPosition: {x: 424, y: 1236}
+  - name: LevelSelect_Card_Ornament_TopBot
+    spriteName: LevelSelect_Card_Ornament_TopBot
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5b799237d79234745b01a0dd9898389b
+    layerID: 583
+    mosaicPosition: {x: 1028, y: 1163}
+  - name: LevelSelect_Play_Green
+    spriteName: LevelSelect_Play_Green
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8bda3e08654c3c44a8be0bb7705996e6
+    layerID: 348
+    mosaicPosition: {x: 1397, y: 1163}
+  - name: LevelSelect_Play_Blocked
+    spriteName: LevelSelect_Play_Blocked
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4d8e914acaa48964398561f89b691c16
+    layerID: 349
+    mosaicPosition: {x: 193, y: 1551}
+  - name: LevelSelect_Current_Level
+    spriteName: LevelSelect_Current_Level
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 931db09f7ff4a75439a63bbdbc2d3717
+    layerID: 116
+    mosaicPosition: {x: 1443, y: 954}
+  - name: LevelSelect_Card_Number
+    spriteName: LevelSelect_Card_Number
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7695a64b75ea19c4daf6333b0dee8181
+    layerID: 84
+    mosaicPosition: {x: 1366, y: 1397}
+  - name: LevelSelect_White_Fill_Bar
+    spriteName: LevelSelect_White_Fill_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8313102ea93f84049ab60956fac3ed1c
+    layerID: 118
+    mosaicPosition: {x: 928, y: 1123}
+  - name: LevelSelect_Found_Clue
+    spriteName: LevelSelect_Found_Clue
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3a9ff1d1036c21549ba9a36bb94d504d
+    layerID: 586
+    mosaicPosition: {x: 312, y: 1639}
+  - name: LevelSelect_Yellow_Fill_Bar
+    spriteName: LevelSelect_Yellow_Fill_Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 615cdfa853393524cbaacdf2070e39ca
+    layerID: 119
+    mosaicPosition: {x: 312, y: 1929}
+  - name: LevelSelect_Move_Button
+    spriteName: LevelSelect_Move_Button
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58e79146d32222e45b457c38df2d70e5
+    layerID: 148
+    mosaicPosition: {x: 193, y: 1639}
+  - name: Paper_Tip
+    spriteName: Paper_Tip
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 771f1a1ff32ea8d49996dd71cbc98dd0
+    layerID: 410
+    mosaicPosition: {x: 1028, y: 1328}
+  - name: LevelSelect_Picture_Blank_Folded
+    spriteName: LevelSelect_Picture_Blank_Folded
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8a867c80366c60e439f7c45675e6fcdb
+    layerID: 405
+    mosaicPosition: {x: 509, y: 856}
+  - name: LevelSelect_Picture_Blank
+    spriteName: LevelSelect_Picture_Blank
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e3e7afb6be472c8469e2e58e9a1f40c2
+    layerID: 408
+    mosaicPosition: {x: 509, y: 1174}
+  - name: LevelSelect_Picture_Blocked
+    spriteName: LevelSelect_Picture_Blocked
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c80225d00f8aa2547acd0f27b48d5d72
+    layerID: 406
+    mosaicPosition: {x: 509, y: 1490}
+  - name: LevelSelect_Card_Pattern
+    spriteName: LevelSelect_Card_Pattern
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0f753b5c0113eaa45a53f9af8c7e4577
+    layerID: 604
+    mosaicPosition: {x: 4, y: 342}
+  - name: Dialogue_Ornament_Right-Left
+    spriteName: Dialogue_Ornament_Right-Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ccdc80598932650498020ec6b9dc31e3
+    layerID: 585
+    mosaicPosition: {x: 928, y: 1174}
+  - name: Dialogue_GoldenDetail_Right
+    spriteName: Dialogue_GoldenDetail_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 83317a0ddc8ce504882194a2545fca6e
+    layerID: 589
+    mosaicPosition: {x: 509, y: 1794}
+  - name: Dialogue_Conector_Right-Left
+    spriteName: Dialogue_Conector_Right-Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: df69983bd71553e489c271b46caec968
+    layerID: 596
+    mosaicPosition: {x: 960, y: 1922}
+  - name: Dialogue_GoldenDetail_Left
+    spriteName: Dialogue_GoldenDetail_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 162b5ce74a529444aab1c8c8f533177c
+    layerID: 590
+    mosaicPosition: {x: 1028, y: 342}
+  - name: Dialogue_Box
+    spriteName: Dialogue_Box
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6437d0aeb07c20f4fbbef90ffaf0a8db
+    layerID: 601
+    mosaicPosition: {x: 4, y: 4}
+  - name: PopUp_GoldenDetail_Left
+    spriteName: PopUp_GoldenDetail_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 949d3f9d6d6c2c24c8887e6c130905fa
+    layerID: 605
+    mosaicPosition: {x: 4, y: 1236}
+  - name: PopUp_GoldenDetail_Right
+    spriteName: PopUp_GoldenDetail_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3d821d87557554a41825dc3c3a5c6654
+    layerID: 606
+    mosaicPosition: {x: 1028, y: 603}
+  - name: PopUp_Agree_Terms_Box
+    spriteName: PopUp_Agree_Terms_Box
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e2a360f631064754bb8fe87ecdedc3f0
+    layerID: 607
+    mosaicPosition: {x: 1581, y: 1397}
+  - name: OrnamentsLoadingScreen
+    spriteName: OrnamentsLoadingScreen
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dda86c893dd7fec49bb18ebe0c7a7a9c
+    layerID: 874
+    mosaicPosition: {x: 1028, y: 954}
+  - name: LoadingBar
+    spriteName: LoadingBar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fee2240293b194d48b4d816458c169ab
+    layerID: 872
+    mosaicPosition: {x: 1028, y: 1078}
+  - name: LoadingBarFill
+    spriteName: LoadingBarFill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0585363cb0cacd74f9c2c70bb945661c
+    layerID: 873
+    mosaicPosition: {x: 4, y: 1974}
+  - name: PopUp_ActivityIndicator
+    spriteName: PopUp_ActivityIndicator
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7b495716170e31142a7d799b7b7ddc3b
+    layerID: 877
+    mosaicPosition: {x: 1874, y: 162}
+  - name: PopUp_ActivityIndicator_Shadow
+    spriteName: PopUp_ActivityIndicator_Shadow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9573296058f36954994c363af531ddb1
+    layerID: 876
+    mosaicPosition: {x: 1028, y: 1272}
+  - name: Hand
+    spriteName: Hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c2cc386f553d12347bdf98a11653aea8
+    layerID: 879
+    mosaicPosition: {x: 509, y: 342}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 1
+  textureAssetName: Atlas_UI_001 Texture
+  prefabAssetName: Atlas_UI_001 Prefab
+  spriteLibAssetName: Atlas_UI_001 Sprite Lib
+  secondarySpriteTextures: []
