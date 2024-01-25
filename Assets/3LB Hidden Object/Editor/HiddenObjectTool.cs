@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEditor;
-using UnityEngine.UI;
-using UnityEditorInternal;
+//using UnityEngine.UI;
+//using UnityEditorInternal;
 using System.Collections.Generic;
-using System.Collections;
+//using System.Collections;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System;
+using UnityEngine.UI;
+//using System.Runtime.Serialization.Formatters.Binary;
+//using System;
 
 namespace ThreeLittleBerkana
 {
@@ -24,8 +25,16 @@ namespace ThreeLittleBerkana
         public static bool _createEmptyLevelPrefab;
         public static UnityEngine.Object prefabFolder;
         public static string newPrefabName;
-
-        
+        //LOCALIZATION
+        public static bool _localizationFoldout;
+        public static bool _newDictionary;
+        public static bool _editDictionary;
+        public GameObject localizationLevel;
+        public SerializedProperty levelToLocalize;
+        public string[] languages;
+        public SerializedProperty languagesToAdd;
+        public TextAsset localizationFile;
+        public SerializedProperty localizationProperty;
 
         [MenuItem("Hidden Object/Hidden Object Tool")]
         public static void ShowWindow()
@@ -46,6 +55,12 @@ namespace ThreeLittleBerkana
         {
             ScriptableObject target = this;
             SerializedObject so = new SerializedObject(target);
+            if(languagesToAdd == null)
+                languagesToAdd = so.FindProperty("languages");
+            if (levelToLocalize == null)
+                levelToLocalize = so.FindProperty("localizationLevel");
+            if (localizationProperty == null)
+                localizationProperty = so.FindProperty("localizationFile");
             so.Update();
             EditorStyling.DrawSplitter(10, 10);
             _managersFoldout = EditorGUILayout.Foldout(_managersFoldout, "MANAGERS");
@@ -111,33 +126,110 @@ namespace ThreeLittleBerkana
                 }
             }
             EditorStyling.DrawSplitter(10, 10);
+            _localizationFoldout = EditorGUILayout.Foldout(_localizationFoldout, "LOCALIZATION");
+            if (_localizationFoldout)
+            {
+                //localizationLevel = EditorGUILayout.ObjectField("Level to Localize", localizationLevel, typeof(GameObject), true) as GameObject;
+                EditorGUILayout.PropertyField(levelToLocalize, new GUIContent("Level to localize"), true);
+                _newDictionary = EditorGUILayout.Foldout(_newDictionary, "New Dictionary");
+                if (_newDictionary)
+                {
+                    GUILayout.Label("Type the language headers you'll use for localization.", EditorStyles.boldLabel);
+                    EditorGUILayout.PropertyField(languagesToAdd, new GUIContent("Languages to add"), true);
+                    EditorGUILayout.BeginHorizontal();
+                    if (GUILayout.Button("Create Localization Dictionary"))
+                    {
+                        if (localizationLevel != null)
+                        {
+                            var path = EditorUtility.SaveFilePanel("Save new csv", Application.dataPath, localizationLevel.gameObject.name, "csv");
+                            if (path.Length != 0)
+                            {
+                                CreateCsvFile(localizationLevel, path);
+                            }
+                        }
+                        
+                    }
+                    EditorGUILayout.EndHorizontal();
+                }
+            }
+            EditorStyling.DrawSplitter(10, 10);
             so.ApplyModifiedProperties();
         }
         public void CreateLevelTemplate()
         {
             LevelTemplate newLevelTemplate = CreateInstance<LevelTemplate>();
             AssetDatabase.CreateAsset(newLevelTemplate, AssetDatabase.GetAssetPath(levelTemplateFolder) + "/" + newLevelTemplateName + ".asset");
-            AssetDatabase.SaveAssets();
-            EditorUtility.FocusProjectWindow();
+            newLevelTemplate.gameType = templateType;
             if (_createEmptyLevelPrefab)
             {
-                GameObject newPrefabObject = PrefabUtility.SaveAsPrefabAssetAndConnect(new GameObject(newPrefabName, typeof(Level)), AssetDatabase.GetAssetPath(prefabFolder) + "/" + newPrefabName + ".prefab", InteractionMode.UserAction, out bool prefabCreatedSuccessfully);
-                if (!prefabCreatedSuccessfully)
+                GameObject newPrefabObject;
+                if (templateType == GAME_TYPE.TWO_D_UI_WIP)
                 {
-                    Debug.LogError("Prefab was not created successfully.");
+                    newPrefabObject = PrefabUtility.SaveAsPrefabAssetAndConnect(new GameObject(newPrefabName, typeof(Canvas)), AssetDatabase.GetAssetPath(prefabFolder) + "/" + newPrefabName + ".prefab", InteractionMode.UserAction, out bool prefabCreatedSuccessfully);
+                    CanvasScaler canvasScaler = newPrefabObject.AddComponent<CanvasScaler>();
+                    GraphicRaycaster graphicRaycaster = newPrefabObject.AddComponent<GraphicRaycaster>();
+                    Canvas canvas = newPrefabObject.GetComponent<Canvas>();
+                    newPrefabObject.AddComponent<Level>();
+                    canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+                    if (!prefabCreatedSuccessfully)
+                    {
+                        Debug.LogError("Prefab was not created successfully.");
+                    }
+                    else
+                    {
+                        EditorUtility.FocusProjectWindow();
+                        Selection.activeObject = newPrefabObject;
+                    }
                 }
                 else
                 {
-                    newLevelTemplate.levelPrefab = newPrefabObject;
-                    EditorUtility.FocusProjectWindow();
-                    Selection.activeObject = newPrefabObject;
+                    newPrefabObject = PrefabUtility.SaveAsPrefabAssetAndConnect(new GameObject(newPrefabName, typeof(Level)), AssetDatabase.GetAssetPath(prefabFolder) + "/" + newPrefabName + ".prefab", InteractionMode.UserAction, out bool prefabCreatedSuccessfully);
+                    if (!prefabCreatedSuccessfully)
+                    {
+                        Debug.LogError("Prefab was not created successfully.");
+                    }
+                    else
+                    {
+                        EditorUtility.FocusProjectWindow();
+                        Selection.activeObject = newPrefabObject;
+                    }
                 }
             }
             else
             {
                 Selection.activeObject = newLevelTemplate;
             }
-            newLevelTemplate.gameType = templateType;
+            AssetDatabase.SaveAssets();
+            EditorUtility.FocusProjectWindow();
+        }
+
+        public void CreateCsvFile(GameObject v_levelObject, string v_path)
+        {
+            //Create Headers
+            string csvValues = "\"ObjectKey\"";
+            string csvLine = "";
+            for (int i = 0; i < languages.Length; i++)
+            {
+                csvValues += ",\"" + languages[i] + "\"";
+                csvLine += ",\"\"";
+            }
+            csvValues += "\n";
+            //Create object list with Key
+            List<HiddenObject> levelHiddenObjects = new List<HiddenObject>();
+            levelHiddenObjects.AddRange(v_levelObject.GetComponentsInChildren<HiddenObject>(true));
+            for (int i = 0; i < levelHiddenObjects.Count; i++)
+            {
+                csvValues += "\"" + levelHiddenObjects[i].gameObject.name + "\"" + csvLine;
+                if (i != levelHiddenObjects.Count - 1)
+                {
+                    csvValues += "\n";
+                }
+            }
+            //Create text file
+            using StreamWriter file = new StreamWriter(v_path);
+            file.Write(csvValues);
+            Debug.Log("Dictionary Created");
+            AssetDatabase.Refresh();
         }
     }
 }

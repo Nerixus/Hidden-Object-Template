@@ -21,29 +21,24 @@ namespace ThreeLittleBerkana
     {
     }
     [System.Serializable]
-    public class TapEventMobile : UnityEvent<Vector2>
-    {
-    }
-    [System.Serializable]
-    public class TapEventPC : UnityEvent<Vector3>
+    public class TapEvent : UnityEvent<Vector2>
     {
     }
 
-    public class GestureDetector : MonoBehaviour
+    public class GestureDetector : StaticInstance<GestureDetector>
     {
-        public GESTURE_STATUS gestureState;
+        public GESTURE_STATUS currentGesture;
+        public float dragDeadZone;
+
+        private Vector3 gestureStartPosition;
+        private Camera camera;
 
         public PinchEventMobile OnPinchMobile;
         public ScrollWheelEventPC OnScrollWheelPC;
         public DragEvent OnDragEvent;
-        public TapEventMobile OnTapMobile;
-        public TapEventPC OnTapPc;
+        public TapEvent OnTapGesture;
+        //public TapEventPC OnTapPc;
         
-
-        public float dragDistance;
-        private Vector3 dragOrigin;
-        private Camera camera;
-
         public void SetupCamera(Camera v_camera)
         {
             camera = v_camera;
@@ -53,84 +48,75 @@ namespace ThreeLittleBerkana
         {
             if (Application.isMobilePlatform)
             {
-                if (Input.touchCount >= 2 && gestureState != GESTURE_STATUS.DRAGGING )
+                if (Input.touchCount >= 2 && currentGesture != GESTURE_STATUS.DRAGGING )
                 {
-                    gestureState = GESTURE_STATUS.PINCHING;
+                    currentGesture = GESTURE_STATUS.PINCHING;
                     OnPinchMobile.Invoke(Input.GetTouch(0), Input.GetTouch(1));
                 }
-                else if (Input.touchCount == 1 && gestureState != GESTURE_STATUS.PINCHING)
+                else if (Input.touchCount == 1 && currentGesture != GESTURE_STATUS.PINCHING)
                 {
                     if (Input.touches[0].phase == TouchPhase.Began)
                     {
-                        dragOrigin = camera.ScreenToWorldPoint(Input.touches[0].position);
+                        gestureStartPosition = camera.ScreenToWorldPoint(Input.touches[0].position);
                     }
                     else if (Input.touches[0].phase == TouchPhase.Moved)
                     {
-                        Vector3 difference = dragOrigin - camera.ScreenToWorldPoint(Input.touches[0].position);
-                        if (difference.magnitude > dragDistance)
+                        Vector3 difference = gestureStartPosition - camera.ScreenToWorldPoint(Input.touches[0].position);
+                        if (difference.magnitude > dragDeadZone)
                         {
-                            gestureState = GESTURE_STATUS.DRAGGING;
+                            currentGesture = GESTURE_STATUS.DRAGGING;
                             OnDragEvent.Invoke(difference);
                         }
                     }
                     else if (Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled)//End drag or tap
                     {
-                        if (gestureState == GESTURE_STATUS.DRAGGING) // end drag
+                        if (currentGesture == GESTURE_STATUS.DRAGGING) // end drag
                         {
-                            gestureState = GESTURE_STATUS.IDLE;
+                            currentGesture = GESTURE_STATUS.IDLE;
                         }
                         else
                         {
-                            gestureState = GESTURE_STATUS.TAP;
-                            OnTapMobile.Invoke(Input.touches[0].position);
+                            currentGesture = GESTURE_STATUS.TAP;
+                            OnTapGesture.Invoke(Input.touches[0].position);
                             
                         }
                     }
                 }
                 else if (Input.touchCount == 0)
                 {
-                    gestureState = GESTURE_STATUS.IDLE;
+                    currentGesture = GESTURE_STATUS.IDLE;
                 }
             }
             else
             {
-                if (Input.mouseScrollDelta.y != 0 && gestureState != GESTURE_STATUS.DRAGGING)
+                if (Input.mouseScrollDelta.y != 0)
                 {
-                    gestureState = GESTURE_STATUS.PINCHING;
-                    OnScrollWheelPC.Invoke(Input.GetAxis("Mouse ScrollWheel"));
+                    OnScrollWheelPC.Invoke(Input.GetAxis("Mouse ScrollWheel") * 2f);
                 }
-                else if (gestureState != GESTURE_STATUS.PINCHING)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    if (Input.GetMouseButtonDown(0))
+                    gestureStartPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+                }
+                if (Input.GetMouseButton(0))
+                {
+                    Vector3 difference = gestureStartPosition - camera.ScreenToWorldPoint(Input.mousePosition);
+                    if (difference.magnitude > dragDeadZone)
                     {
-                        dragOrigin = camera.ScreenToWorldPoint(Input.mousePosition);
-                    }
-                    if (Input.GetMouseButton(0))
-                    {
-                        Vector3 difference = dragOrigin - camera.ScreenToWorldPoint(Input.mousePosition);
-                        if (difference.magnitude > dragDistance)
-                        {
-                            gestureState = GESTURE_STATUS.DRAGGING;
-                            OnDragEvent.Invoke(difference);
-                        }
-                    }
-                    if (Input.GetMouseButtonUp(0))
-                    {
-                        Vector3 difference = dragOrigin - camera.ScreenToWorldPoint(Input.mousePosition);
-                        if (gestureState != GESTURE_STATUS.DRAGGING)
-                        {
-                            //gestureState = GESTURE_STATUS.TAP;
-                            OnTapPc.Invoke(Input.mousePosition);
-                        }
-                        else
-                        {
-                            gestureState = GESTURE_STATUS.IDLE;
-                        }
+                        currentGesture = GESTURE_STATUS.DRAGGING;
+                        OnDragEvent.Invoke(difference);
                     }
                 }
-                else if (gestureState != GESTURE_STATUS.IDLE)
+                if (Input.GetMouseButtonUp(0))
                 {
-                    gestureState = GESTURE_STATUS.IDLE;
+                    Vector3 difference = gestureStartPosition - camera.ScreenToWorldPoint(Input.mousePosition);
+                    if (currentGesture != GESTURE_STATUS.DRAGGING)
+                    {
+                        OnTapGesture.Invoke(Input.mousePosition);
+                    }
+                    else
+                    {
+                        currentGesture = GESTURE_STATUS.IDLE;
+                    }
                 }
 
             }

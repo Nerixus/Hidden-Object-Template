@@ -2572,7 +2572,7 @@ ScriptedImporter:
     overridden: 1
     maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: 33
+    textureFormat: 31
     textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0

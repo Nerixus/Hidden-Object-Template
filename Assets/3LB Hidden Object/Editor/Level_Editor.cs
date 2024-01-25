@@ -83,28 +83,28 @@ namespace ThreeLittleBerkana
                     {
                         EditorStyling.DrawSplitterWithTitle("Options:", 10, 10);
 
-                        GUILayout.Label("Use these to convert to Hidden Objects.", EditorStyles.boldLabel);
+                        GUILayout.Label("Using these buttons will set the objects as Hidden Objects if they match the type specified in the button.", EditorStyles.boldLabel);
 
                         GUILayout.BeginHorizontal();
-                        if (GUILayout.Button("Convert to Sprite hidden object"))
+                        if (GUILayout.Button("Set as Sprite hidden object"))
                         {
                             myTarget.FilterType<SpriteRenderer>();
                             myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
                             myTarget.ConvertToHiddenObject<SpriteRenderer, HiddenObject_Sprite>(); //We convert while validating a second time if the list wasn't cleared
                             EditorUtility.SetDirty(myTarget);
                         }
-                        if (GUILayout.Button("Convert to 3D hidden object"))
+                        if (GUILayout.Button("Set as 3D hidden object"))
                         {
                             myTarget.FilterType<MeshRenderer>();
                             myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
-                            myTarget.ConvertToHiddenObject<MeshRenderer, HiddenObject_3D>(); //We convert while validating a second time if the list wasn't cleared
+                            myTarget.ConvertToHiddenObject<Transform, HiddenObject_3D>(); //We convert while validating a second time if the list wasn't cleared
                             EditorUtility.SetDirty(myTarget);
                         }
-                        if (GUILayout.Button("Convert to GUI hidden object"))
+                        if (GUILayout.Button("Set as GUI hidden object"))
                         {
                             myTarget.FilterType<Image>();
                             myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
-                            myTarget.ConvertToHiddenObject<Image, HiddenObject_UI>(); //We convert while validating a second time if the list wasn't cleared
+                            myTarget.ConvertToHiddenObject<RectTransform, HiddenObject_UI>(); //We convert while validating a second time if the list wasn't cleared
                             EditorUtility.SetDirty(myTarget);
                         }
                         GUILayout.EndHorizontal();
@@ -141,50 +141,29 @@ namespace ThreeLittleBerkana
                     if (myTarget.numberOfObjectsToFind > 0)
                     {
                         EditorGUILayout.Space(10);
-                        myTarget.manualSetup = EditorGUILayout.Toggle("Manual Setup", myTarget.manualSetup);
-                        EditorGUILayout.Space(10);
-                        if (myTarget.manualSetup)
+                        if (GUILayout.Button("Pick " + myTarget.numberOfObjectsToFind + " random objects from the scene."))
                         {
-                            myTarget.setupType = (SETUP_TYPE)EditorGUILayout.EnumPopup("Setup Type", myTarget.setupType);
-                            EditorGUILayout.Space(10);
-                            switch (myTarget.setupType)
+                            myTarget.SelectRandomHiddenObjects();
+                            EditorUtility.SetDirty(myTarget);
+                        }
+                        EditorGUILayout.Space(10);
+                        EditorGUILayout.PropertyField(hiddenObjectsToFind, new GUIContent("Hidden Objects to Find"), true);
+                        if (myTarget.hiddenObjectsToFind.Count > 0)
+                        {
+                            GUILayout.Label("Use these buttons to disable unused Hidden Objects");
+                            GUILayout.BeginHorizontal();
+                            if (GUILayout.Button("Disable"))
                             {
-                                default:
-                                case SETUP_TYPE.RANDOM:
-                                    if (GUILayout.Button("Pick " + myTarget.numberOfObjectsToFind + " random objects from the scene."))
-                                    {
-                                        myTarget.SelectRandomHiddenObjects();
-                                        EditorUtility.SetDirty(myTarget);
-                                    }
-                                    break;
-                                case SETUP_TYPE.ORDERED:
-                                    GUILayout.Label("Drag the objects you wish to setup. The order on the list will be used for gameplay.");
-                                    break;
+                                myTarget.TurnOffUnusedHiddenObjects();
+                                EditorUtility.SetDirty(myTarget);
                             }
-                            EditorGUILayout.Space(10);
-                            EditorGUILayout.PropertyField(hiddenObjectsToFind, new GUIContent("Hidden Objects to Find"), true);
-                            if (myTarget.hiddenObjectsToFind.Count > 0)
-                            {
-                                GUILayout.Label("Use these buttons to disable unused Hidden Objects");
-                                GUILayout.BeginHorizontal();
-                                if (GUILayout.Button("Game Object"))
-                                {
-                                    myTarget.TurnOffUnusedHiddenObjects();
-                                    EditorUtility.SetDirty(myTarget);
-                                }
-                                if (GUILayout.Button("Colliders"))
-                                {
-                                    myTarget.TurnOffUnusedHiddenObjectColliders();
-                                    EditorUtility.SetDirty(myTarget);
-                                }
-                                GUILayout.EndHorizontal();
+                            GUILayout.EndHorizontal();
 
-                                GUILayout.Label("Reset all objects to their original state.");
-                                if (GUILayout.Button("Reset"))
-                                {
-                                    myTarget.ResetAllObjects();
-                                    EditorUtility.SetDirty(myTarget);
-                                }
+                            GUILayout.Label("Reset all objects to their original state.");
+                            if (GUILayout.Button("Reset"))
+                            {
+                                myTarget.ResetAllObjects();
+                                EditorUtility.SetDirty(myTarget);
                             }
                         }
                     }

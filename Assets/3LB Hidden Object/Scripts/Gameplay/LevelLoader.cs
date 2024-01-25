@@ -6,28 +6,28 @@ namespace ThreeLittleBerkana
 {
     public class LevelLoader : MonoBehaviour
     {
-        public List<LevelTemplate> levelTemplates = new List<LevelTemplate>();
+        public List<LevelTemplate> levelTemplates = new List<LevelTemplate>();//WIP
+
         private LevelTemplate levelTemplate;
-        private Level currentLoadedLevel;
         public void LoadLevel(string v_levelID)
         {
-            levelTemplate = Resources.Load("Level Instances/" + v_levelID) as LevelTemplate;
-            GameObject levelInstance = Instantiate(levelTemplate.levelPrefab);
-            currentLoadedLevel = levelInstance.GetComponent<Level>();
-            GameplayManager.Instance.GameType = levelTemplate.gameType;
+            levelTemplate = Resources.Load(GameplayManager.Instance.levelLoaderTemplatesPath + v_levelID) as LevelTemplate;
+            InstantiateLevel();
         }
 
-        public void LoadLevel(int v_levelIndex)
+        public void LoadLevel(int v_levelIndex)//WIP
         {
             levelTemplate = levelTemplates[v_levelIndex];
-            GameObject levelInstance = Instantiate(levelTemplate.levelPrefab);
-            currentLoadedLevel = levelInstance.GetComponent<Level>();
-            GameplayManager.Instance.GameType = levelTemplate.gameType;
+            InstantiateLevel();
         }
 
-        public Level CurrentLoadedLevel
+        private void InstantiateLevel()
         {
-            get { return currentLoadedLevel; }
+            GameObject levelInstance = Instantiate(levelTemplate.levelPrefab);
+            Level currentLoadedLevel = levelInstance.GetComponent<Level>();
+            GameplayManager.Instance.GameType = levelTemplate.gameType;
+            GameplayManager.Instance.CurrentLoadedLevel = currentLoadedLevel;
+            currentLoadedLevel.StartLevel(levelTemplate);
         }
     }
 }

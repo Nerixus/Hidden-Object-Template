@@ -7,27 +7,30 @@ namespace ThreeLittleBerkana
     public class GameplayManager : StaticInstance<GameplayManager>
     {
         public LevelLoader levelLoader;
+        public string levelLoaderTemplatesPath = "Level Instances/";
+        
+        public string LANGUAGE
+        {
+            get { return language; }
+        }
+
+        private string language;
         private Level currentLoadedLevel;
+        private GAME_TYPE gameType;
+
         public delegate void HandleGameVictory();
         public static HandleGameVictory OnGameVictory;
 
-        GAME_TYPE gameType;
-
         public GAME_TYPE GameType
         {
-            get
-            {
-                return gameType;
-            }
-            set
-            {
-                gameType = value;
-            }
+            get { return gameType; }
+            set { gameType = value; }
         }
 
         public Level CurrentLoadedLevel
         {
             get { return currentLoadedLevel; }
+            set { currentLoadedLevel = value; }
         }
 
         private void OnEnable()
@@ -42,24 +45,25 @@ namespace ThreeLittleBerkana
             HiddenObject.OnObjectFound -= ProcessObjectFound;
         }
 
-        void LoadHiddenObjectLevel(string v_levelID)
+        private void LoadHiddenObjectLevel(string v_levelID, string v_language)
         {
+            language = v_language;
             levelLoader.LoadLevel(v_levelID);
-            currentLoadedLevel = levelLoader.CurrentLoadedLevel;
         }
 
-        void LoadHiddenObjectLevel(int v_levelIndex)
+        private void LoadHiddenObjectLevel(int v_index, string v_language)
         {
-
+            language = v_language;
+            levelLoader.LoadLevel(v_index);
         }
 
-        void ProcessObjectFound(HiddenObject v_hiddenObject)
+        private void ProcessObjectFound(HiddenObject v_hiddenObject)
         {
             currentLoadedLevel.ProcessHiddenObjectFound(v_hiddenObject);
             ReviewGameStatus();
         }
 
-        void ReviewGameStatus()
+        private void ReviewGameStatus()
         {
             if (currentLoadedLevel.IsHiddenObjectListEmpty())
                 OnGameVictory?.Invoke();

@@ -1,32 +1,16 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace ThreeLittleBerkana
 {
     public class RaycastHandler : MonoBehaviour
     {
-        public Action OnRaycastFail;
-        public Action OnRaycastSuccess;
+        private List<RaycastResult> raycastResults = new List<RaycastResult>();
 
-        public void ProcessRaycastPC(Vector3 mousePosition, Camera controllerCamera)
-        {
-            if (GameplayManager.Instance.GameType == GAME_TYPE.THREE_D)
-            {
-                RaycastHit hit;
-                Ray ray = controllerCamera.ScreenPointToRay(mousePosition);
-
-                if (Physics.Raycast(ray, out hit))
-                    ProcessRaycast3D(hit);
-            }
-            else
-            {
-                RaycastHit2D hit = Physics2D.Raycast(controllerCamera.ScreenToWorldPoint(mousePosition), Vector2.zero);
-                ProcessRaycast2D(hit);
-            }
-        }
-
-        public void ProcessRaycastMobile(Vector2 touchPosition, Camera controllerCamera)
+        public void CastRay(Vector2 touchPosition, Camera controllerCamera)
         {
             if (GameplayManager.Instance.GameType == GAME_TYPE.THREE_D)
             {
@@ -36,27 +20,22 @@ namespace ThreeLittleBerkana
                 if (Physics.Raycast(ray, out hit))
                     ProcessRaycast3D(hit);
             }
-            else
+            else if (GameplayManager.Instance.GameType == GAME_TYPE.TWO_D_SPRITE)
             {
-                RaycastHit2D hit = Physics2D.Raycast(controllerCamera.ScreenToWorldPoint(touchPosition), Vector2.zero);
+                RaycastHit2D[] hit = Physics2D.RaycastAll(controllerCamera.ScreenToWorldPoint(touchPosition), Vector2.zero);
                 ProcessRaycast2D(hit);
             }
-        }
-        void ProcessRaycast2D(RaycastHit2D hit)
-        {
-            if (GameplayManager.Instance.GameType == GAME_TYPE.TWO_D_UI_WIP)
+            else
             {
-                ProcessTouchedObject(hit);
-            }
-            else if(GameplayManager.Instance.GameType == GAME_TYPE.TWO_D_SPRITE)
-            {
-                if (IsPointerOverUIObject())
-                    return;
-                ProcessTouchedObject(hit);
+                PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+                pointerEventData.position = touchPosition;
+                raycastResults.Clear();
+                EventSystem.current.RaycastAll(pointerEventData, raycastResults);
+                ProcessRaycastUI();
             }
         }
 
-        void ProcessRaycast3D(RaycastHit hit)
+        private void ProcessRaycast3D(RaycastHit hit)
         {
             if (IsPointerOverUIObject())
                 return;
@@ -68,20 +47,40 @@ namespace ThreeLittleBerkana
                     if (clickableComponent != null)
                         clickableComponent.OnObjectTouched();
                 }
+                else
+                {
+
+                }
             }
         }
 
-        void ProcessTouchedObject(RaycastHit2D hit)
+        private void ProcessRaycast2D(RaycastHit2D[] hit)
         {
-            if (hit.transform != null)
+            if (IsPointerOverUIObject())
+                return;
+            foreach (RaycastHit2D RH2D in hit)
             {
-                ITouchableObject clickableComponent = hit.transform.GetComponent<ITouchableObject>();
+                if (RH2D.transform != null)
+                {
+                    ITouchableObject clickableComponent = RH2D.transform.GetComponent<ITouchableObject>();
+                    if (clickableComponent != null)
+                        clickableComponent.OnObjectTouched();
+                }
+            }
+        }
+
+        private void ProcessRaycastUI()
+        {
+            foreach (RaycastResult RR in raycastResults)
+            {
+                Debug.Log(RR.gameObject.name);
+                ITouchableObject clickableComponent = RR.gameObject.GetComponent<ITouchableObject>();
                 if (clickableComponent != null)
                     clickableComponent.OnObjectTouched();
             }
         }
 
-        bool IsPointerOverUIObject()
+        private bool IsPointerOverUIObject()
         {
             if (Application.isMobilePlatform)
             {

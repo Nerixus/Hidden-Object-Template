@@ -7,30 +7,14 @@ namespace ThreeLittleBerkana
 {
     public class LocalizationManager : StaticInstance<LocalizationManager>
     {
-        public static Action OnLanguageUpdated;
-        public static Action OnLocalizationLoaded;
-
-        static string language;
-
-        [Header("UI Localization")]
-        public string UILocalizationPath;
-        private Dictionary<string, string> uiLocalizationDictionary;
-
         private static char csvLineSeparator = '\n';
         private static char csvLineSurrounder = '"';
         private static string[] csvFieldSeparator = { "\",\"" };
 
-        public static string LANGUAGE
-        {
-            get { return language; }
-            set { language = value; }
-        }
-
-        public static Dictionary<string, string> GetLocalizationDictionary(string v_language, string v_csvPath)
+        public static Dictionary<string, string> GetLocalizationDictionary(string v_language, TextAsset csvFile)
         {
             Dictionary<string, string> dictionary = new Dictionary<string, string>();
-            TextAsset interfaceCsvFile = CsvLoader.LoadCSV(v_csvPath);
-            string[] lines = interfaceCsvFile.text.Split(csvLineSeparator);
+            string[] lines = csvFile.text.Split(csvLineSeparator);
             int attributeIndex = -1;
             string[] headers = lines[0].Split(csvFieldSeparator, StringSplitOptions.None);
 
@@ -62,44 +46,7 @@ namespace ThreeLittleBerkana
                     dictionary.Add(key, fields[attributeIndex]);
                 }
             }
-
             return dictionary;
         }
-
-        public string GetLocalizationText(dictionaryType v_dictionaryType, string v_localizationKey)
-        {
-            switch (v_dictionaryType)
-            {
-                default:
-                    return "ERROR";
-                case dictionaryType.UI:
-                    return uiLocalizationDictionary[v_localizationKey];
-            }
-        }
-
-        private void Start()
-        {
-            switch (Application.systemLanguage)
-            {
-                default:
-                case SystemLanguage.English:
-                    LANGUAGE = "EN";
-                    break;
-                    /*case SystemLanguage.Spanish:
-                        LANGUAGE = "ES";
-                        break;*/
-            }
-            OnLanguageUpdated?.Invoke();
-
-            uiLocalizationDictionary = GetLocalizationDictionary(LANGUAGE, UILocalizationPath);
-            OnLocalizationLoaded?.Invoke();
-        }
     }
-
-    public enum dictionaryType
-    {
-        UI,
-        HIDDEN_OBJECT,
-        DIALOGUE
-    };
 }

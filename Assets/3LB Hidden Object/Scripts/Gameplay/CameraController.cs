@@ -9,34 +9,22 @@ using System.Threading.Tasks;
 namespace ThreeLittleBerkana
 {
     [RequireComponent(typeof(RaycastHandler), typeof(GestureDetector))]
-    public class CameraController : MonoBehaviour
+    public class CameraController : StaticInstance<CameraController>
     {
+        [Header("Setup")]
         public Camera camera;
-        GestureDetector gestureDetector;
-        RaycastHandler raycastHitInterpreter;
-        //public ParticleSystem failParticles;
-        //public ParticleSystem successParticles;
-        //public ParticleSystem hoSparks;
+        public Vector2 originResolution;
+        public float zoomStepMobile, unZoomSpeed;
 
-        [SerializeField]
-        private Vector2 intendedResolution;
+        [SerializeField] private float minOrthographicSize, maxOrthographicSize;
+        [SerializeField] private SpriteRenderer playAreaViewport;
 
-        [SerializeField]
-        public float zoomStepMobile, minCamSize, maxCamSize, unZoomSpeed;
-
-        [SerializeField]
-        private SpriteRenderer sceneRenderer;
+        private RaycastHandler raycastHitInterpreter;
         private float sceneMinX, sceneMaxX, sceneMinY, sceneMaxY;
+        private Vector3 cameraStartPosition;
+        private bool isZoomed = false;
 
-        private Vector3 cameraStart;
-
-        bool isZoomed = false;
-
-        public static Action OnFrustrumChange;
-        static bool isTouchActive = true;
-        public static bool wrongParticlesAvailable { private set; get; }
-
-        public static Action OnUserBlockRequested;
+        private static bool isTouchActive = true;
 
         private void Awake()
         {
@@ -46,27 +34,25 @@ namespace ThreeLittleBerkana
             SetupOrthographicCamera();
             //Get components
             raycastHitInterpreter = GetComponent<RaycastHandler>();
-            gestureDetector = GetComponent<GestureDetector>();
             //Setup components
-            gestureDetector.SetupCamera(camera);
+            GestureDetector.Instance.SetupCamera(camera);
             //Setup Events
             SetupListeners();
         }
 
         private void SetupListeners()
         {
-            gestureDetector.OnPinchMobile.AddListener(MobileZoom);
-            gestureDetector.OnDragEvent.AddListener(MoveCamera);
-            gestureDetector.OnTapMobile.AddListener(ProcessTapMobile);
-            gestureDetector.OnScrollWheelPC.AddListener(Zoom);
-            gestureDetector.OnTapPc.AddListener(ProcessTapPC);
+            GestureDetector.Instance.OnPinchMobile.AddListener(MobileZoom);
+            GestureDetector.Instance.OnDragEvent.AddListener(MoveCamera);
+            GestureDetector.Instance.OnTapGesture.AddListener(ProcessTapGesture);
+            GestureDetector.Instance.OnScrollWheelPC.AddListener(OrthographicZoom);
         }
 
-        void SetupOrthographicCamera()
+        private void SetupOrthographicCamera()
         {
-            sceneRenderer.size = new Vector2(intendedResolution.x / 100, intendedResolution.y / 100);
+            playAreaViewport.size = new Vector2(originResolution.x / 100, originResolution.y / 100);
             float scaleFactor;
-            float originalScreenRatio = (float)intendedResolution.x / (float)intendedResolution.y;
+            float originalScreenRatio = (float)originResolution.x / (float)originResolution.y;
             float newScreenRatio = (float)Screen.width / (float)Screen.height;
             //Calculate OrthographicSize changes if screen ratio is different from original
             if (originalScreenRatio > newScreenRatio) //taller screen ratio
@@ -79,8 +65,8 @@ namespace ThreeLittleBerkana
 
 
                 float differenceInSize = originalScreenRatio / newScreenRatio;
-                camera.orthographicSize = sceneRenderer.bounds.size.y / 2 * differenceInSize;
-                sceneRenderer.transform.localScale = new Vector3(1, scaleFactor, 1);
+                camera.orthographicSize = playAreaViewport.bounds.size.y / 2 * differenceInSize;
+                playAreaViewport.transform.localScale = new Vector3(1, scaleFactor, 1);
             }
             else if (newScreenRatio >= originalScreenRatio) //wider screen ratio
             {
@@ -89,77 +75,35 @@ namespace ThreeLittleBerkana
                     scaleFactor = (float)Screen.width / intendedWidth;
                 else
                     scaleFactor = intendedWidth / (float)Screen.width;
-                camera.orthographicSize = sceneRenderer.bounds.size.y / 2;
-                sceneRenderer.transform.localScale = new Vector3(scaleFactor, 1, 1);
+                camera.orthographicSize = playAreaViewport.bounds.size.y / 2;
+                playAreaViewport.transform.localScale = new Vector3(scaleFactor, 1, 1);
             }
-            maxCamSize = camera.orthographicSize;
-            minCamSize = camera.orthographicSize / 2f;
+            maxOrthographicSize = camera.orthographicSize;
+            minOrthographicSize = camera.orthographicSize / 2f;
             //Set Bounds
-            sceneMinX = sceneRenderer.transform.position.x - sceneRenderer.bounds.size.x / 2f;
-            sceneMaxX = sceneRenderer.transform.position.x + sceneRenderer.bounds.size.x / 2f;
-            sceneMinY = sceneRenderer.transform.position.y - sceneRenderer.bounds.size.y / 2f;
-            sceneMaxY = sceneRenderer.transform.position.y + sceneRenderer.bounds.size.y / 2f;
+            sceneMinX = playAreaViewport.transform.position.x - playAreaViewport.bounds.size.x / 2f;
+            sceneMaxX = playAreaViewport.transform.position.x + playAreaViewport.bounds.size.x / 2f;
+            sceneMinY = playAreaViewport.transform.position.y - playAreaViewport.bounds.size.y / 2f;
+            sceneMaxY = playAreaViewport.transform.position.y + playAreaViewport.bounds.size.y / 2f;
             //End Setup
-            sceneRenderer.gameObject.SetActive(false);
-            cameraStart = camera.transform.position;
+            playAreaViewport.gameObject.SetActive(false);
+            cameraStartPosition = camera.transform.position;
         }
-
-        public static void SetTouchStatus(bool v_value)
-        {
-            isTouchActive = v_value;
-        }
-
-        public static void SetTouchStatus(bool v_value, int v_delayMiliseconds)
-        {
-            Task.Delay(v_delayMiliseconds).ContinueWith(t => SetTouchStatus(v_value));
-        }
-
-        public static void SetWrongParticlesAvailability(bool v_particlesAreAvailable)
-        {
-            wrongParticlesAvailable = v_particlesAreAvailable;
-        }
-
-        #region Mobile
-        private void MobileZoom(Touch touchZero, Touch touchOne)
-        {
-            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
-            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
-
-            float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
-            float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
-
-            float difference = currentMagnitude - prevMagnitude;
-
-            Zoom(difference * zoomStepMobile);
-        }
-
-        private void ProcessTapMobile(Vector2 v_tapPosition)
-        {
-            raycastHitInterpreter.ProcessRaycastMobile(v_tapPosition, camera);
-        }
-        #endregion
-
-        #region PC
-        private void ProcessTapPC(Vector3 v_tapPosition)
-        {
-            raycastHitInterpreter.ProcessRaycastPC(v_tapPosition, camera);
-        }
-        #endregion
 
         #region Shared Device
-        private void Zoom(float zoomValue)
+        private void OrthographicZoom(float zoomValue)
         {
             float newSize = camera.orthographicSize - zoomValue;
-            camera.orthographicSize = Mathf.Clamp(newSize, minCamSize, maxCamSize);
-            if (camera.orthographicSize == maxCamSize)
+            camera.orthographicSize = Mathf.Clamp(newSize, minOrthographicSize, maxOrthographicSize);
+            if (camera.orthographicSize == maxOrthographicSize)
             {
                 isZoomed = false;
-                camera.transform.position = cameraStart;
+                camera.transform.position = cameraStartPosition;
             }
             else
             {
                 isZoomed = true;
-                camera.transform.position = ClampCameraPosition(camera.transform.position);
+                camera.transform.position = ClampCameraPositionOrthographic(camera.transform.position);
             }
 
         }
@@ -181,8 +125,8 @@ namespace ThreeLittleBerkana
             while (current != target)
             {
                 current = Mathf.MoveTowards(current, target, unZoomSpeed * Time.deltaTime);
-                camera.orthographicSize = Mathf.Lerp(currentZoomSize, maxCamSize, current);
-                camera.transform.position = ClampCameraPosition(camera.transform.position);
+                camera.orthographicSize = Mathf.Lerp(currentZoomSize, maxOrthographicSize, current);
+                camera.transform.position = ClampCameraPositionOrthographic(camera.transform.position);
                 yield return null;
             }
             isZoomed = false;
@@ -190,12 +134,13 @@ namespace ThreeLittleBerkana
             isTouchActive = true;
         }
 
-        private void MoveCamera(Vector3 v_moveDelta)
+        private void MoveCamera(Vector3 v_moveDelta)//TODO
         {
-            camera.transform.position = ClampCameraPosition(camera.transform.position + v_moveDelta);
+            //add method for UI and 3D
+            camera.transform.position = ClampCameraPositionOrthographic(camera.transform.position + v_moveDelta);
         }
 
-        private Vector3 ClampCameraPosition(Vector3 targetPosition)
+        private Vector3 ClampCameraPositionOrthographic(Vector3 targetPosition)
         {
             float cameraHeight = camera.orthographicSize;
             float camWidth = camera.orthographicSize * camera.aspect;
@@ -211,5 +156,35 @@ namespace ThreeLittleBerkana
             return new Vector3(newX, newY, targetPosition.z);
         }
         #endregion
+
+        #region Mobile
+        private void MobileZoom(Touch touchZero, Touch touchOne)
+        {
+            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+
+            float prevMagnitude = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+            float currentMagnitude = (touchZero.position - touchOne.position).magnitude;
+
+            float difference = currentMagnitude - prevMagnitude;
+
+            OrthographicZoom(difference * zoomStepMobile);
+        }
+
+        private void ProcessTapGesture(Vector2 v_tapPosition)
+        {
+            raycastHitInterpreter.CastRay(v_tapPosition, camera);
+        }
+        #endregion
+
+        public static void SetTouchStatus(bool v_value)
+        {
+            isTouchActive = v_value;
+        }
+
+        public static void SetTouchStatus(bool v_value, int v_delayMiliseconds)
+        {
+            Task.Delay(v_delayMiliseconds).ContinueWith(t => SetTouchStatus(v_value));
+        }
     }
 }

@@ -131,12 +131,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 3226751377197327199}
-  intendedResolution: {x: 1920, y: 1080}
+  originResolution: {x: 1920, y: 1080}
   zoomStepMobile: 0.01
-  minCamSize: 2.7
-  maxCamSize: 5.4
   unZoomSpeed: 4
-  sceneRenderer: {fileID: 3226751377845924322}
+  minOrthographicSize: 0
+  maxOrthographicSize: 0
+  playAreaViewport: {fileID: 0}
 --- !u!114 &3226751377608754990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0385e0b133caa4f4e9a9df717209c522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gestureState: 0
+  currentGesture: 0
+  dragDeadZone: 0
   OnPinchMobile:
     m_PersistentCalls:
       m_Calls: []
@@ -177,7 +178,6 @@ MonoBehaviour:
   OnTapPc:
     m_PersistentCalls:
       m_Calls: []
-  dragDistance: 0.2
 --- !u!1 &3226751377845924320
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,43 +8,52 @@ namespace ThreeLittleBerkana
 {
     public class Level : MonoBehaviour
     {
-        //[Header("First Setup")] //Uncomment if you decide to not use the editor tool
+        //[Header("First Setup"), Space(10)] //Uncomment if you decide to not use the editor tool
         public List<GameObject> objectsToConvert = new List<GameObject>();
         public bool alreadyHasHiddenObjects;
         public bool searchByName;
         public string hiddenObjectSubstring;
 
-        //[Header("Setup")] //Uncomment if you decide to not use the editor tool
+        //[Header("Setup"), Space(10)] //Uncomment if you decide to not use the editor tool
         public List<HiddenObject> levelHiddenObjects = new List<HiddenObject>();
         public bool displayLevelHiddenObjects;
         public bool allowManualChanges;
         public int numberOfObjectsToFind = 8;
-        public bool manualSetup;
-        public SETUP_TYPE setupType;
+        //public bool manualSetup;
         public bool shouldFindInOrder;
 
-        //[Header("Gameplay")] //Uncomment if you decide to not use the editor tool
+        //[Header("Gameplay"), Space(10)] //Uncomment if you decide to not use the editor tool
         public List<HiddenObject> hiddenObjectsToFind = new List<HiddenObject>();
         public bool selectRandomObjects;
         private Queue<HiddenObject> hiddenObjectQueue = new Queue<HiddenObject>();
         public int numberOfSimultaneousObjectsToFind = 3;
-
+        public delegate void HandleObjectFound(HiddenObject v_foundHiddenObject, HiddenObject v_newHiddenObject);
+        public static HandleObjectFound OnObjectFound;
+        public delegate void HandleObjectDequeued(HiddenObject v_dequeuedObject);
+        public static HandleObjectDequeued OnObjectDequeued;
+        public Dictionary<string, string> levelDictionary;
+        public HIDDEN_OBJECT_EXIT_MODE foundHiddenObjectFeedback;
 
         #region Gameplay
 
-        private void Start()
+        public void StartLevel(LevelTemplate v_levelTemplate)
         {
+            levelDictionary = LocalizationManager.GetLocalizationDictionary(GameplayManager.Instance.LANGUAGE, v_levelTemplate.localizationFile);
+            foundHiddenObjectFeedback = v_levelTemplate.foundFeedback;
+            SetupFoundHiddenObjectFeedback();
+            SetupGameColliders();
             if (hiddenObjectsToFind != null)
             {
-                if (hiddenObjectsToFind.Count > 0)
+                if (hiddenObjectsToFind.Count == 0)
                 {
-                    FillObjectQueue();
+                    SelectRandomHiddenObjects();
                 }
             }
             else
             {
                 SelectRandomHiddenObjects();
             }
+            FillObjectQueue();
             SetupGame();
         }
 
@@ -61,23 +70,38 @@ namespace ThreeLittleBerkana
         {
             for (int i = 0; i < numberOfSimultaneousObjectsToFind; i++)
             {
-                hiddenObjectsToFind.Add(hiddenObjectQueue.Dequeue());
+                HiddenObject newHiddenObject = hiddenObjectQueue.Dequeue();
+                hiddenObjectsToFind.Add(newHiddenObject);
+                OnObjectDequeued?.Invoke(newHiddenObject);
+                newHiddenObject.ActivateHiddenObject();
             }
         }
 
         public bool IsHiddenObjectOnList(HiddenObject v_hiddenObject)
         {
-            if (hiddenObjectsToFind.Contains(v_hiddenObject))//ganti
+            if (hiddenObjectsToFind.Contains(v_hiddenObject))
                 return true;
             else
                 return false;
         }
 
-        public void ProcessHiddenObjectFound(HiddenObject hiddenObject)
+        public void ProcessHiddenObjectFound(HiddenObject v_foundHiddenObject)
         {
-            hiddenObjectsToFind.Remove(hiddenObject);
+            //Remove found object
+            hiddenObjectsToFind.Remove(v_foundHiddenObject);
+            //Get new object if queue still has one
+            HiddenObject newHiddenObject;
             if (hiddenObjectQueue.Count > 0)
-                hiddenObjectsToFind.Add(hiddenObjectQueue.Dequeue());
+            {
+                newHiddenObject = hiddenObjectQueue.Dequeue();
+                newHiddenObject.ActivateHiddenObject();
+                hiddenObjectsToFind.Add(newHiddenObject);
+                OnObjectFound?.Invoke(v_foundHiddenObject, newHiddenObject);
+            }
+            else
+            {
+                OnObjectFound?.Invoke(v_foundHiddenObject, null);
+            }
         }
 
         public bool IsHiddenObjectListEmpty()
@@ -89,6 +113,22 @@ namespace ThreeLittleBerkana
             else
             {
                 return false;
+            }
+        }
+
+        public void SetupFoundHiddenObjectFeedback()
+        {
+            foreach (HiddenObject HO in levelHiddenObjects)
+            {
+                HO.SetupHiddenObjectFoundFeedback(foundHiddenObjectFeedback);
+            }
+        }
+
+        void SetupGameColliders()
+        {
+            foreach (HiddenObject HO in levelHiddenObjects)
+            {
+                HO.SetupHiddenObjectCollider();
             }
         }
         #endregion
@@ -145,6 +185,7 @@ namespace ThreeLittleBerkana
                     if (GO.GetComponent<U>() == null)
                         GO.AddComponent<U>();
                     levelHiddenObjects.Add(GO.GetComponent<HiddenObject>());
+                    GO.GetComponent<HiddenObject>().displayNameCode = GO.name;
                 }
                 else
                 {
@@ -262,14 +303,10 @@ namespace ThreeLittleBerkana
             levelHiddenObjects.Clear();
             hiddenObjectsToFind.Clear();
         }
+
+        
         #endregion
 
         #endregion
-    }
-
-    public enum SETUP_TYPE
-    {
-        RANDOM,
-        ORDERED
     }
 }
