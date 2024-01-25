@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelPrefab: {fileID: 321846071490032392, guid: d5f5f314facd7f848b6eed0bbe1e8a70, type: 3}
   gameType: 2
-  localizationFile: {fileID: 4900000, guid: f02c6f93a9d26a1449c00275d6e660a8, type: 3}
+  displayMode: 1
+  simultaneousObjectsToFind: 5
+  localizationFile: {fileID: 4900000, guid: 0aa05cba5d1bf7c47b998cb9d8caa6cb, type: 3}
   foundFeedback: 3
+  foundParticles: {fileID: 5306812388367897395, guid: 834f30c7852cf124192fbed685946279, type: 3}

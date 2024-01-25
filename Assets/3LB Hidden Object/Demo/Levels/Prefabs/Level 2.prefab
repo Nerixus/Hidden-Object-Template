@@ -135,39 +135,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf703dc57955c74e9b9a64e1b853162, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToConvert: []
-  alreadyHasHiddenObjects: 1
-  searchByName: 0
-  hiddenObjectSubstring: 
+  objectsToSetUp: []
+  containsHiddenObjects: 0
+  searchByName: 1
+  hiddenObjectSubstring: _HO
+  shouldPreserveColliders: 0
   levelHiddenObjects:
-  - {fileID: 1598890114203667190}
-  - {fileID: 8652667366481844123}
-  - {fileID: 8862502857000682445}
-  - {fileID: 5505764147473120379}
-  - {fileID: 2446573876121495005}
-  - {fileID: 1212532520917281061}
-  - {fileID: 4533353637416138930}
-  - {fileID: 7744033508763439768}
-  - {fileID: 3428132054169304162}
+  - {fileID: 1330800516978401160}
+  - {fileID: 1446174795069738565}
+  - {fileID: 836856782738114719}
+  - {fileID: 1369729564312951943}
+  - {fileID: 6037834077578068352}
+  - {fileID: 8389234486116898141}
+  - {fileID: 8434097931323015712}
+  - {fileID: 422990271102520688}
+  - {fileID: 3573536121288893412}
   displayLevelHiddenObjects: 0
-  allowManualChanges: 0
+  allowHiddenObjectListChanges: 0
   numberOfObjectsToFind: 9
-  manualSetup: 1
-  setupType: 1
-  shouldFindInOrder: 0
   hiddenObjectsToFind:
-  - {fileID: 2446573876121495005}
-  - {fileID: 1212532520917281061}
-  - {fileID: 5505764147473120379}
-  - {fileID: 4533353637416138930}
-  - {fileID: 1598890114203667190}
-  - {fileID: 7744033508763439768}
-  - {fileID: 3428132054169304162}
-  - {fileID: 8862502857000682445}
-  - {fileID: 8652667366481844123}
-  selectRandomObjects: 0
+  - {fileID: 1330800516978401160}
+  - {fileID: 6037834077578068352}
+  - {fileID: 1446174795069738565}
+  - {fileID: 8389234486116898141}
+  - {fileID: 8434097931323015712}
+  - {fileID: 422990271102520688}
+  - {fileID: 1369729564312951943}
+  - {fileID: 3573536121288893412}
+  - {fileID: 836856782738114719}
   numberOfSimultaneousObjectsToFind: 3
-  foundHiddenObjectFeedback: 3
 --- !u!1 &432029162219298169
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,10 +174,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1568952698670203397}
   - component: {fileID: 4876575077780051243}
-  - component: {fileID: 732008287501796866}
-  - component: {fileID: 1598890114203667190}
+  - component: {fileID: 5272300584165920204}
+  - component: {fileID: 1330800516978401160}
   m_Layer: 0
-  m_Name: Arcade Machine
+  m_Name: Arcade_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -252,7 +248,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &732008287501796866
+--- !u!60 &5272300584165920204
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,7 +292,7 @@ PolygonCollider2D:
       - {x: 0.79999995, y: -1.0699999}
       - {x: 0.79999995, y: 1.02}
       - {x: 0.78999996, y: 1.0799999}
---- !u!114 &1598890114203667190
+--- !u!114 &1330800516978401160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -308,13 +304,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Arcade Machine
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Arcade_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &1253894070000667144
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,10 +323,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7654383906355438328}
   - component: {fileID: 1502619256601961305}
-  - component: {fileID: 782058442217357827}
-  - component: {fileID: 4533353637416138930}
+  - component: {fileID: 1333446384138189190}
+  - component: {fileID: 8434097931323015712}
   m_Layer: 0
-  m_Name: Lobster
+  m_Name: Lobster_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,7 +397,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &782058442217357827
+--- !u!60 &1333446384138189190
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,7 +608,7 @@ PolygonCollider2D:
       - {x: 0.83, y: -0.44}
     - - {x: -0.06, y: -0.089999996}
       - {x: -0.07, y: -0.089999996}
---- !u!114 &4533353637416138930
+--- !u!114 &8434097931323015712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -622,13 +620,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Lobster
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Lobster_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &1628655051255176169
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,10 +639,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3172746763835219205}
   - component: {fileID: 7773097021090853519}
-  - component: {fileID: 590992640938657690}
-  - component: {fileID: 7744033508763439768}
+  - component: {fileID: 7320546090657534239}
+  - component: {fileID: 422990271102520688}
   m_Layer: 0
-  m_Name: pizza
+  m_Name: Pizza_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,7 +713,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &590992640938657690
+--- !u!60 &7320546090657534239
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -759,7 +759,7 @@ PolygonCollider2D:
       - {x: 0.59, y: -0.89}
       - {x: 0.81, y: -0.82}
       - {x: 0.89, y: -0.74}
---- !u!114 &7744033508763439768
+--- !u!114 &422990271102520688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -771,13 +771,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: pizza
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Pizza_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &2125556385747304091
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,10 +790,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7303244776675359258}
   - component: {fileID: 8871496050800306297}
-  - component: {fileID: 1866024022407327034}
-  - component: {fileID: 2446573876121495005}
+  - component: {fileID: 8141490136665269659}
+  - component: {fileID: 6037834077578068352}
   m_Layer: 0
-  m_Name: Dog
+  m_Name: Dog_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -862,7 +864,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &1866024022407327034
+--- !u!60 &8141490136665269659
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1061,7 +1063,7 @@ PolygonCollider2D:
       - {x: 0.53, y: 1.23}
       - {x: 0.52, y: 1.1899999}
       - {x: 0.53, y: 1.1899999}
---- !u!114 &2446573876121495005
+--- !u!114 &6037834077578068352
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1073,13 +1075,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Dog
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Dog_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &2642682773009132736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,10 +1094,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6383310391169345917}
   - component: {fileID: 4996501317434601983}
-  - component: {fileID: 2998309799651530799}
-  - component: {fileID: 8862502857000682445}
+  - component: {fileID: 8556172039060493805}
+  - component: {fileID: 836856782738114719}
   m_Layer: 0
-  m_Name: Bird
+  m_Name: Bird_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1164,7 +1168,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2998309799651530799
+--- !u!60 &8556172039060493805
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1344,7 +1348,7 @@ PolygonCollider2D:
       - {x: 0.02, y: 1.03}
       - {x: 0.01, y: 1.03}
       - {x: 0, y: 1.04}
---- !u!114 &8862502857000682445
+--- !u!114 &836856782738114719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1356,13 +1360,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Bird
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Bird_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &2699169091484750470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,10 +1379,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8339638000154318312}
   - component: {fileID: 7316429622732566127}
-  - component: {fileID: 6806944405847433900}
-  - component: {fileID: 8652667366481844123}
+  - component: {fileID: 8041398957809327277}
+  - component: {fileID: 1446174795069738565}
   m_Layer: 0
-  m_Name: Balloons
+  m_Name: Balloons_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1447,7 +1453,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &6806944405847433900
+--- !u!60 &8041398957809327277
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1504,7 +1510,7 @@ PolygonCollider2D:
       - {x: 0.089999996, y: -0.74}
       - {x: 0.13, y: -0.61}
       - {x: 0.28, y: -0.65}
---- !u!114 &8652667366481844123
+--- !u!114 &1446174795069738565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1516,13 +1522,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Balloons
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Balloons_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &5166454121918679517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,10 +1541,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3795070762872016159}
   - component: {fileID: 4495183594484347289}
-  - component: {fileID: 5136677778910004538}
-  - component: {fileID: 3428132054169304162}
+  - component: {fileID: 5737633065801455261}
+  - component: {fileID: 3573536121288893412}
   m_Layer: 0
-  m_Name: Sign
+  m_Name: Sign_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1607,7 +1615,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &5136677778910004538
+--- !u!60 &5737633065801455261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1680,7 +1688,7 @@ PolygonCollider2D:
       - {x: 0.06, y: -0.29}
       - {x: 0.049999997, y: -0.29999998}
       - {x: 0.06, y: -0.29999998}
---- !u!114 &3428132054169304162
+--- !u!114 &3573536121288893412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1692,13 +1700,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Sign
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Sign_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &6641323471962545928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,10 +1719,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2691394159472986295}
   - component: {fileID: 8076504046334337654}
-  - component: {fileID: 9220060600169456765}
-  - component: {fileID: 5505764147473120379}
+  - component: {fileID: 5031733383778685040}
+  - component: {fileID: 1369729564312951943}
   m_Layer: 0
-  m_Name: Cake
+  m_Name: Cake_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1783,7 +1793,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &9220060600169456765
+--- !u!60 &5031733383778685040
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1863,7 +1873,7 @@ PolygonCollider2D:
       - {x: 0.19, y: 0.47}
       - {x: 0.19, y: 0.53999996}
       - {x: 0.17999999, y: 0.59}
---- !u!114 &5505764147473120379
+--- !u!114 &1369729564312951943
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1875,13 +1885,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Cake
-  displayImage: {fileID: 0}
+  displayMode: 0
+  localizationKey: Cake_HO
+  silhouetteSprite: {fileID: 0}
+  feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  feedbackDuration: 0.5
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &6933396864527120502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,10 +1904,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1328623718396846501}
   - component: {fileID: 2726044581745948254}
-  - component: {fileID: 863060132137583245}
-  - component: {fileID: 1212532520917281061}
+  - component: {fileID: 2140546004274948719}
+  - component: {fileID: 8389234486116898141}
   m_Layer: 0
-  m_Name: Lily
+  m_Name: Lily_HO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1966,7 +1978,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &863060132137583245
+--- !u!60 &2140546004274948719
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2039,7 +2051,7 @@ PolygonCollider2D:
       - {x: -0.08, y: -1.06}
       - {x: -0.02, y: -1.1}
       - {x: 0.07, y: -1.06}
---- !u!114 &1212532520917281061
+--- !u!114 &8389234486116898141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2051,10 +2063,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5dfabcf6ea1a24abf4eddca7708a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayNameCode: Lily
-  displayImage: {fileID: 0}
-  overrideFoundFeedback: 1
-  customFeedback: 0
+  displayMode: 0
+  localizationKey: Lily_HO
+  silhouetteSprite: {fileID: 0}
   feedbackDuration: 0.5
-  useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  overrideFoundFeedback: 0
+  customFeedback: 0
+  useCustomParticles: 1
+  customParticles: {fileID: 5306812388367897395, guid: d0a52dfa1a897dc438e54ecd2b05cae8, type: 3}
+  particleOrigin: {x: 0, y: 0, z: 0}

@@ -9,18 +9,20 @@ namespace ThreeLittleBerkana
     /// </summary>
     public class HiddenObject : MonoBehaviour
     {
-        [Header("GUI Variables")]
-        public string displayNameCode;
-        //public Sprite displayImage; TODO
+        public DISPLAY_MODE displayMode;
+        public string localizationKey;
+        public Sprite silhouetteSprite;
 
-        [Header("Found Variables")]
+        [Space(10), Header("Found Feedbacks")]
+        public float feedbackDuration = .5f;
         public bool overrideFoundFeedback = false;
         public HIDDEN_OBJECT_EXIT_MODE customFeedback;
-        public float feedbackDuration = .5f;
         public bool useCustomParticles = false;
-        public ParticleSystem foundParticles;
+        public GameObject customParticles;
+        public Vector3 particleOrigin;
         //private Variables
         protected HIDDEN_OBJECT_EXIT_MODE foundFeedback;
+        protected GameObject foundParticles;
 
         public delegate void HandleObjectFound(HiddenObject v_hiddenObject);
         public static HandleObjectFound OnObjectFound;
@@ -35,15 +37,20 @@ namespace ThreeLittleBerkana
             ProcessOverrides();
             if (ValidateIfObjectIsFound())
             {
-                if (useCustomParticles && foundParticles != null)
-                    foundParticles.Play();
+                if(foundParticles != null)
+                    Instantiate(foundParticles, GestureDetector.Instance.lastGestureStartPosition, foundParticles.transform.rotation);
                 OnObjectFound?.Invoke(this);
             }    
         }
 
-        public virtual void SetupHiddenObjectFoundFeedback(HIDDEN_OBJECT_EXIT_MODE v_feedbackType)
+        public void SetupHiddenObjectFoundFeedback(HIDDEN_OBJECT_EXIT_MODE v_feedbackType)
         {
             foundFeedback = v_feedbackType;
+        }
+
+        public void SetupHiddenObjectFoundParticles(GameObject v_foundParticles)
+        {
+            foundParticles = v_foundParticles;
         }
 
         public virtual void SetupHiddenObjectCollider()
@@ -60,6 +67,8 @@ namespace ThreeLittleBerkana
         {
             if (overrideFoundFeedback)
                 foundFeedback = customFeedback;
+            if (useCustomParticles)
+                foundParticles = customParticles;
         }
 
         public void SetInactive(float v_delay)
@@ -79,5 +88,11 @@ namespace ThreeLittleBerkana
         DESTROY,
         ANIMATE,
         FADE
+    }
+
+    public enum DISPLAY_MODE
+    {
+        LOCALIZATION_NAME,
+        SILHOUETTE
     }
 }

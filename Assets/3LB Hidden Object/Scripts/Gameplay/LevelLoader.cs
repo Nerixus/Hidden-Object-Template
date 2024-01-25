@@ -27,6 +27,7 @@ namespace ThreeLittleBerkana
             Level currentLoadedLevel = levelInstance.GetComponent<Level>();
             GameplayManager.Instance.GameType = levelTemplate.gameType;
             GameplayManager.Instance.CurrentLoadedLevel = currentLoadedLevel;
+            GameplayManager.Instance.DisplayMode = levelTemplate.displayMode;
             currentLoadedLevel.StartLevel(levelTemplate);
         }
     }

@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using ThreeLittleBerkana;
 
 public class DemoHiddenObject : MonoBehaviour
 {
     public string levelID;
+    public bool useIndexToLoad;
+    public int levelIndex;
     public string language;
 
     public delegate void HandleLevelLoaded(string v_levelID, string v_language);
     public static HandleLevelLoaded OnLevelLoaded;
-    // Start is called before the first frame update
+    public delegate void HandleLevelLoadedIndex(int v_levelIndex, string v_language);
+    public static HandleLevelLoadedIndex OnLevelLoadedIndex;
+    
     void Start()
     {
-        OnLevelLoaded?.Invoke(levelID, language);
+        if (useIndexToLoad)
+            OnLevelLoadedIndex?.Invoke(levelIndex, language);
+        else
+            OnLevelLoaded?.Invoke(levelID, language);
     }
 }

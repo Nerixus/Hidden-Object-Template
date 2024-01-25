@@ -14,7 +14,8 @@ namespace ThreeLittleBerkana
             shouldFindInOrder,
             hiddenObjectsToFind,
             selectRandomObjects,
-            objectsToConvert;
+            objectsToSetUp,
+            shouldPreserveColliders;
 
         public static bool _firstSetup;
         public static bool _setupArea;
@@ -29,20 +30,22 @@ namespace ThreeLittleBerkana
             shouldFindInOrder = serializedObject.FindProperty("shouldFindInOrder");
             hiddenObjectsToFind = serializedObject.FindProperty("hiddenObjectsToFind");
             selectRandomObjects = serializedObject.FindProperty("selectRandomObjects");
-            objectsToConvert = serializedObject.FindProperty("objectsToConvert");
+            objectsToSetUp = serializedObject.FindProperty("objectsToSetUp");
+            shouldPreserveColliders = serializedObject.FindProperty("shouldPreserveColliders");
         }
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
+            EditorGUI.BeginChangeCheck();
             Level myTarget = target as Level;
             if (myTarget.levelHiddenObjects != null && myTarget.levelHiddenObjects.Count == 0)
             {
                 _firstSetup = EditorGUILayout.Foldout(_firstSetup, "First Steps", true, EditorStyles.foldout);
                 if (_firstSetup)
                 {
-                    myTarget.alreadyHasHiddenObjects = EditorGUILayout.Toggle("Already has hidden objects", myTarget.alreadyHasHiddenObjects);
+                    myTarget.containsHiddenObjects = EditorGUILayout.Toggle("Already has hidden objects", myTarget.containsHiddenObjects);
                     EditorStyling.DrawSplitter(10, 10);
-                    if (myTarget.alreadyHasHiddenObjects)
+                    if (myTarget.containsHiddenObjects)
                     {
                         if (GUILayout.Button("Get Hidden Objects"))
                         {
@@ -69,42 +72,43 @@ namespace ThreeLittleBerkana
                                 }
                             }
                             GUI.enabled = false;
-                            EditorGUILayout.PropertyField(objectsToConvert, true);
+                            EditorGUILayout.PropertyField(objectsToSetUp, true);
                             GUI.enabled = true;
                             GUILayout.Label("*Manual changes disabled while using search by name", EditorStyles.boldLabel);
                         }
                         else
                         {
                             GUILayout.Label("Drag all objects that you wish to convert into hidden objects.", EditorStyles.boldLabel);
-                            EditorGUILayout.PropertyField(objectsToConvert, true);
+                            EditorGUILayout.PropertyField(objectsToSetUp, true);
                         }
                     }
-                    if (myTarget.objectsToConvert != null && myTarget.objectsToConvert.Count > 0)
+                    if (myTarget.objectsToSetUp != null && myTarget.objectsToSetUp.Count > 0)
                     {
                         EditorStyling.DrawSplitterWithTitle("Options:", 10, 10);
 
                         GUILayout.Label("Using these buttons will set the objects as Hidden Objects if they match the type specified in the button.", EditorStyles.boldLabel);
-
+                        EditorGUILayout.PropertyField(shouldPreserveColliders, new GUIContent("Preserve existing colliders"), true);
                         GUILayout.BeginHorizontal();
                         if (GUILayout.Button("Set as Sprite hidden object"))
                         {
                             myTarget.FilterType<SpriteRenderer>();
-                            myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
-                            myTarget.ConvertToHiddenObject<SpriteRenderer, HiddenObject_Sprite>(); //We convert while validating a second time if the list wasn't cleared
+                            if(!myTarget.shouldPreserveColliders)
+                                myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
+                            myTarget.SetAsHiddenObject<SpriteRenderer, HiddenObject_Sprite>(); //We convert while validating a second time if the list wasn't cleared
                             EditorUtility.SetDirty(myTarget);
                         }
                         if (GUILayout.Button("Set as 3D hidden object"))
                         {
-                            myTarget.FilterType<MeshRenderer>();
-                            myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
-                            myTarget.ConvertToHiddenObject<Transform, HiddenObject_3D>(); //We convert while validating a second time if the list wasn't cleared
+                            myTarget.FilterType<Transform>();
+                            if (!myTarget.shouldPreserveColliders)
+                                myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
+                            myTarget.SetAsHiddenObject<Transform, HiddenObject_3D>(); //We convert while validating a second time if the list wasn't cleared
                             EditorUtility.SetDirty(myTarget);
                         }
                         if (GUILayout.Button("Set as GUI hidden object"))
                         {
                             myTarget.FilterType<Image>();
-                            myTarget.ClearExistingColliders(); //First we remove existing 2D colliders to avoid issues as well as 3D ones
-                            myTarget.ConvertToHiddenObject<RectTransform, HiddenObject_UI>(); //We convert while validating a second time if the list wasn't cleared
+                            myTarget.SetAsHiddenObject<RectTransform, HiddenObject_UI>(); //We convert while validating a second time if the list wasn't cleared
                             EditorUtility.SetDirty(myTarget);
                         }
                         GUILayout.EndHorizontal();
@@ -123,8 +127,8 @@ namespace ThreeLittleBerkana
                     myTarget.displayLevelHiddenObjects = EditorGUILayout.Toggle("Show Hidden Objects List", myTarget.displayLevelHiddenObjects);
                     if (myTarget.displayLevelHiddenObjects)
                     {
-                        myTarget.allowManualChanges = EditorGUILayout.Toggle("Allow Changes", myTarget.allowManualChanges, EditorStyles.toggle);
-                        if (myTarget.allowManualChanges)
+                        myTarget.allowHiddenObjectListChanges = EditorGUILayout.Toggle("Allow Changes", myTarget.allowHiddenObjectListChanges, EditorStyles.toggle);
+                        if (myTarget.allowHiddenObjectListChanges)
                         {
                             EditorGUILayout.PropertyField(levelHiddenObjects, true);
                         }
@@ -162,7 +166,7 @@ namespace ThreeLittleBerkana
                             GUILayout.Label("Reset all objects to their original state.");
                             if (GUILayout.Button("Reset"))
                             {
-                                myTarget.ResetAllObjects();
+                                myTarget.TurnOnAllObjects();
                                 EditorUtility.SetDirty(myTarget);
                             }
                         }
@@ -198,6 +202,8 @@ namespace ThreeLittleBerkana
                     GUILayout.Label("*WARNING* Doing this will reset all changes made to this level object.", EditorStyles.label);
                 }
             }
+            if (EditorGUI.EndChangeCheck())
+                EditorUtility.SetDirty(myTarget);
             serializedObject.ApplyModifiedProperties();
         }
     }

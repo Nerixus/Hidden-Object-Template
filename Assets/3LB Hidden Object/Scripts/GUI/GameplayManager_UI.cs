@@ -12,8 +12,10 @@ namespace ThreeLittleBerkana
         public GameObject hudPanel;
 
         [Header("Objects to find")]
-        public GameObject hiddenObjectDescriptionPrefab;
-        public Transform hiddenObjectDescriptionParent;
+        public GameObject hiddenObjectTextDisplayPrefab;
+        public Transform hiddenObjectTextDisplayParent;
+        public GameObject hiddenObjectSilhouetteDisplayPrefab;
+        public Transform hiddenObjectSilhouetteDisplayParent;
         public List<HiddenObject_Display> displayedHiddenObjects = new List<HiddenObject_Display>();
 
         
@@ -37,12 +39,27 @@ namespace ThreeLittleBerkana
         {
             if (displayedHiddenObjects.Count < GameplayManager.Instance.CurrentLoadedLevel.numberOfSimultaneousObjectsToFind)
             {
-                GameObject newDisplayObject = Instantiate(hiddenObjectDescriptionPrefab, hiddenObjectDescriptionParent);
-                if(newDisplayObject.TryGetComponent<HiddenObject_Display>(out HiddenObject_Display displayComponent))
+                switch (GameplayManager.Instance.DisplayMode)
                 {
-                    displayedHiddenObjects.Add(displayComponent);
-                    displayComponent.Activate(v_hiddenObject);
+                    default:
+                    case DISPLAY_MODE.LOCALIZATION_NAME:
+                        GameObject newTextDisplayObject = Instantiate(hiddenObjectTextDisplayPrefab, hiddenObjectTextDisplayParent);
+                        if (newTextDisplayObject.TryGetComponent<HiddenObject_Display>(out HiddenObject_Display textDisplayComponent))
+                        {
+                            displayedHiddenObjects.Add(textDisplayComponent);
+                            textDisplayComponent.Activate(v_hiddenObject);
+                        }
+                        break;
+                    case DISPLAY_MODE.SILHOUETTE:
+                        GameObject newSilhoutteDisplayObject = Instantiate(hiddenObjectSilhouetteDisplayPrefab, hiddenObjectSilhouetteDisplayParent);
+                        if (newSilhoutteDisplayObject.TryGetComponent<HiddenObject_Display>(out HiddenObject_Display silhoutteDisplayComponent))
+                        {
+                            displayedHiddenObjects.Add(silhoutteDisplayComponent);
+                            silhoutteDisplayComponent.Activate(v_hiddenObject);
+                        }
+                        break;
                 }
+                
             }
         }
 

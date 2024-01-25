@@ -10,6 +10,8 @@ namespace ThreeLittleBerkana
     {
         public RectTransform background;
         public TextMeshProUGUI displayNameText;
+        public Sprite emptySilhoutte;
+        public Image silhoutteImage;
         public bool animateOnEnter;
         public CanvasGroup canvasGroup;
 
@@ -44,6 +46,34 @@ namespace ThreeLittleBerkana
             StartCoroutine(CloseAnimation(.5f));
         }
 
+        private void TurnOnDisplay()
+        {
+            switch (GameplayManager.Instance.DisplayMode)
+            {
+                default:
+                case DISPLAY_MODE.LOCALIZATION_NAME:
+                    displayNameText.text = GameplayManager.Instance.CurrentLoadedLevel.levelDictionary[hiddenObjectReference.localizationKey];
+                    break;
+                case DISPLAY_MODE.SILHOUETTE:
+                    silhoutteImage.sprite = hiddenObjectReference.silhouetteSprite;
+                    break;
+            }
+        }
+
+        private void TurnOffDisplay()
+        {
+            switch (GameplayManager.Instance.DisplayMode)
+            {
+                default:
+                case DISPLAY_MODE.LOCALIZATION_NAME:
+                    displayNameText.text = "";
+                    break;
+                case DISPLAY_MODE.SILHOUETTE:
+                    silhoutteImage.sprite = emptySilhoutte;
+                    break;
+            }
+        }
+
         #region Animations
         IEnumerator LerpInHorizontalScale(float v_animSpeed = 1f)
         {
@@ -51,20 +81,20 @@ namespace ThreeLittleBerkana
                 yield return StartCoroutine(Tweening.Instance.RectTransformLerpInHorizontalScale(background, v_animSpeed));
             else
                 yield return null;
-            displayNameText.text = GameplayManager.Instance.CurrentLoadedLevel.levelDictionary[hiddenObjectReference.displayNameCode];
+            TurnOnDisplay();
         }
 
         IEnumerator SwitchObjectRoutine(float v_animSpeed = 1f)
         {
-            displayNameText.text = "";
+            TurnOffDisplay();
             yield return StartCoroutine(Tweening.Instance.RectTransformShrinkHorizontal(background, v_animSpeed/2));
-            displayNameText.text = GameplayManager.Instance.CurrentLoadedLevel.levelDictionary[hiddenObjectReference.displayNameCode];
+            TurnOnDisplay();
             yield return StartCoroutine(Tweening.Instance.RectTransformMaximizeHorizontal(background, v_animSpeed / 2));
         }
 
         IEnumerator CloseAnimation(float v_animSpeed = 1f)
         {
-            displayNameText.text = "";
+            TurnOffDisplay();
             yield return StartCoroutine(Tweening.Instance.RectTransformShrinkHorizontal(background, v_animSpeed));
             yield return StartCoroutine(Tweening.Instance.CanvasGroupFadeOut(canvasGroup, v_animSpeed));
             OnDisplayOff?.Invoke(this);

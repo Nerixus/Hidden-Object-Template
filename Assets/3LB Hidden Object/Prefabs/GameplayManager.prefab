@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180119493034622361}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoader: {fileID: 7716691290933328637}
+  levelLoaderTemplatesPath: Level Instances/
 --- !u!1 &7716691290933328639
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,4 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea9bd8228cbf944dbbab367a66edeb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTemplates: []
+  levelTemplates:
+  - {fileID: 11400000, guid: b8f1dc9a6fd194f4d9a507c22cd6c30c, type: 2}
+  - {fileID: 11400000, guid: 6edaa6dc3975f8a429d7fb01a8a16faa, type: 2}
+  - {fileID: 11400000, guid: a6e44165aa4fa8f409ad0533634bb47e, type: 2}
+  - {fileID: 11400000, guid: b547dcd0800ca4f4d8502ad53ca59372, type: 2}

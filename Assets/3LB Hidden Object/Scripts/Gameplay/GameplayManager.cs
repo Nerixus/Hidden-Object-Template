@@ -17,6 +17,7 @@ namespace ThreeLittleBerkana
         private string language;
         private Level currentLoadedLevel;
         private GAME_TYPE gameType;
+        private DISPLAY_MODE displayMode;
 
         public delegate void HandleGameVictory();
         public static HandleGameVictory OnGameVictory;
@@ -27,6 +28,12 @@ namespace ThreeLittleBerkana
             set { gameType = value; }
         }
 
+        public DISPLAY_MODE DisplayMode
+        {
+            get { return displayMode; }
+            set { displayMode = value; }
+        }
+
         public Level CurrentLoadedLevel
         {
             get { return currentLoadedLevel; }
@@ -35,12 +42,14 @@ namespace ThreeLittleBerkana
 
         private void OnEnable()
         {
+            DemoHiddenObject.OnLevelLoadedIndex += LoadHiddenObjectLevel; //You should subscribe your own method when you wish to start the level
             DemoHiddenObject.OnLevelLoaded += LoadHiddenObjectLevel; //You should subscribe your own method when you wish to start the level
             HiddenObject.OnObjectFound += ProcessObjectFound;
         }
 
         private void OnDisable()
         {
+            DemoHiddenObject.OnLevelLoadedIndex -= LoadHiddenObjectLevel;
             DemoHiddenObject.OnLevelLoaded -= LoadHiddenObjectLevel;
             HiddenObject.OnObjectFound -= ProcessObjectFound;
         }
@@ -74,7 +83,7 @@ namespace ThreeLittleBerkana
     {
         TWO_D_SPRITE,
         THREE_D,
-        TWO_D_UI_WIP
+        TWO_D_UI
     }
 }
 

@@ -93,19 +93,21 @@ namespace ThreeLittleBerkana
         #region Shared Device
         private void OrthographicZoom(float zoomValue)
         {
-            float newSize = camera.orthographicSize - zoomValue;
-            camera.orthographicSize = Mathf.Clamp(newSize, minOrthographicSize, maxOrthographicSize);
-            if (camera.orthographicSize == maxOrthographicSize)
+            if (GameplayManager.Instance.GameType == GAME_TYPE.TWO_D_SPRITE)
             {
-                isZoomed = false;
-                camera.transform.position = cameraStartPosition;
+                float newSize = camera.orthographicSize - zoomValue;
+                camera.orthographicSize = Mathf.Clamp(newSize, minOrthographicSize, maxOrthographicSize);
+                if (camera.orthographicSize == maxOrthographicSize)
+                {
+                    isZoomed = false;
+                    camera.transform.position = cameraStartPosition;
+                }
+                else
+                {
+                    isZoomed = true;
+                    camera.transform.position = ClampCameraPositionOrthographic(camera.transform.position);
+                }
             }
-            else
-            {
-                isZoomed = true;
-                camera.transform.position = ClampCameraPositionOrthographic(camera.transform.position);
-            }
-
         }
 
         private void UnZoom(string v_objectName)

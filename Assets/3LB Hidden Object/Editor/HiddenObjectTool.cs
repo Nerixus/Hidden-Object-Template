@@ -1,13 +1,9 @@
 using UnityEngine;
 using UnityEditor;
-//using UnityEngine.UI;
-//using UnityEditorInternal;
 using System.Collections.Generic;
-//using System.Collections;
 using System.IO;
 using UnityEngine.UI;
-//using System.Runtime.Serialization.Formatters.Binary;
-//using System;
+using System;
 
 namespace ThreeLittleBerkana
 {
@@ -29,12 +25,13 @@ namespace ThreeLittleBerkana
         public static bool _localizationFoldout;
         public static bool _newDictionary;
         public static bool _editDictionary;
-        public GameObject localizationLevel;
+        public Level localizationLevel;
         public SerializedProperty levelToLocalize;
         public string[] languages;
         public SerializedProperty languagesToAdd;
         public TextAsset localizationFile;
         public SerializedProperty localizationProperty;
+
 
         [MenuItem("Hidden Object/Hidden Object Tool")]
         public static void ShowWindow()
@@ -62,6 +59,7 @@ namespace ThreeLittleBerkana
             if (localizationProperty == null)
                 localizationProperty = so.FindProperty("localizationFile");
             so.Update();
+            EditorGUI.BeginChangeCheck();
             EditorStyling.DrawSplitter(10, 10);
             _managersFoldout = EditorGUILayout.Foldout(_managersFoldout, "MANAGERS");
             if (_managersFoldout)
@@ -153,6 +151,8 @@ namespace ThreeLittleBerkana
                 }
             }
             EditorStyling.DrawSplitter(10, 10);
+            if (EditorGUI.EndChangeCheck())
+                EditorUtility.SetDirty(target);
             so.ApplyModifiedProperties();
         }
         public void CreateLevelTemplate()
@@ -163,7 +163,7 @@ namespace ThreeLittleBerkana
             if (_createEmptyLevelPrefab)
             {
                 GameObject newPrefabObject;
-                if (templateType == GAME_TYPE.TWO_D_UI_WIP)
+                if (templateType == GAME_TYPE.TWO_D_UI)
                 {
                     newPrefabObject = PrefabUtility.SaveAsPrefabAssetAndConnect(new GameObject(newPrefabName, typeof(Canvas)), AssetDatabase.GetAssetPath(prefabFolder) + "/" + newPrefabName + ".prefab", InteractionMode.UserAction, out bool prefabCreatedSuccessfully);
                     CanvasScaler canvasScaler = newPrefabObject.AddComponent<CanvasScaler>();
@@ -203,7 +203,7 @@ namespace ThreeLittleBerkana
             EditorUtility.FocusProjectWindow();
         }
 
-        public void CreateCsvFile(GameObject v_levelObject, string v_path)
+        public void CreateCsvFile(Level v_levelObject, string v_path)
         {
             //Create Headers
             string csvValues = "\"ObjectKey\"";
@@ -216,7 +216,7 @@ namespace ThreeLittleBerkana
             csvValues += "\n";
             //Create object list with Key
             List<HiddenObject> levelHiddenObjects = new List<HiddenObject>();
-            levelHiddenObjects.AddRange(v_levelObject.GetComponentsInChildren<HiddenObject>(true));
+            levelHiddenObjects.AddRange(v_levelObject.gameObject.GetComponentsInChildren<HiddenObject>(true));
             for (int i = 0; i < levelHiddenObjects.Count; i++)
             {
                 csvValues += "\"" + levelHiddenObjects[i].gameObject.name + "\"" + csvLine;

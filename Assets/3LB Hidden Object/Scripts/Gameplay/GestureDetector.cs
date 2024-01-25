@@ -24,7 +24,6 @@ namespace ThreeLittleBerkana
     public class TapEvent : UnityEvent<Vector2>
     {
     }
-
     public class GestureDetector : StaticInstance<GestureDetector>
     {
         public GESTURE_STATUS currentGesture;
@@ -37,7 +36,7 @@ namespace ThreeLittleBerkana
         public ScrollWheelEventPC OnScrollWheelPC;
         public DragEvent OnDragEvent;
         public TapEvent OnTapGesture;
-        //public TapEventPC OnTapPc;
+        public Vector3 lastGestureStartPosition;
         
         public void SetupCamera(Camera v_camera)
         {
@@ -58,6 +57,7 @@ namespace ThreeLittleBerkana
                     if (Input.touches[0].phase == TouchPhase.Began)
                     {
                         gestureStartPosition = camera.ScreenToWorldPoint(Input.touches[0].position);
+                        lastGestureStartPosition = new Vector3(gestureStartPosition.x, gestureStartPosition.y, 0);
                     }
                     else if (Input.touches[0].phase == TouchPhase.Moved)
                     {
@@ -96,6 +96,7 @@ namespace ThreeLittleBerkana
                 if (Input.GetMouseButtonDown(0))
                 {
                     gestureStartPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+                    lastGestureStartPosition = new Vector3(gestureStartPosition.x, gestureStartPosition.y, 0);
                 }
                 if (Input.GetMouseButton(0))
                 {

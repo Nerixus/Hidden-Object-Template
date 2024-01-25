@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3226751377197327197}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3226751377608754988}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -136,7 +136,7 @@ MonoBehaviour:
   unZoomSpeed: 4
   minOrthographicSize: 0
   maxOrthographicSize: 0
-  playAreaViewport: {fileID: 0}
+  playAreaViewport: {fileID: 3226751377845924322}
 --- !u!114 &3226751377608754990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGesture: 0
-  dragDeadZone: 0
+  dragDeadZone: 0.2
   OnPinchMobile:
     m_PersistentCalls:
       m_Calls: []
@@ -172,10 +172,7 @@ MonoBehaviour:
   OnDragEvent:
     m_PersistentCalls:
       m_Calls: []
-  OnTapMobile:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTapPc:
+  OnTapGesture:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3226751377845924320
@@ -254,7 +251,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

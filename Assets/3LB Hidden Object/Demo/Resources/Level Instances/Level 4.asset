@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998d27c75af53ba4d827056e01520ed0, type: 3}
+  m_Name: Level 4
+  m_EditorClassIdentifier: 
+  levelPrefab: {fileID: 3729376938635656957, guid: 60d11455236b3b14d9a0896b2f9fccc5, type: 3}
+  gameType: 1
+  displayMode: 0
+  simultaneousObjectsToFind: 1
+  localizationFile: {fileID: 4900000, guid: 83ee5ca1887d113458a925e3c6884b78, type: 3}
+  foundFeedback: 2
+  foundParticles: {fileID: 4957047002140000440, guid: c0302c5814d068f42904bad0ffef744c, type: 3}
