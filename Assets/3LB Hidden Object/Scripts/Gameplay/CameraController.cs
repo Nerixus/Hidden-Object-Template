@@ -26,7 +26,7 @@ namespace ThreeLittleBerkana
 
         private static bool isTouchActive = true;
 
-        private void Awake()
+        private void Start()
         {
             //Set Camera
             if (camera == null)
@@ -34,8 +34,6 @@ namespace ThreeLittleBerkana
             SetupOrthographicCamera();
             //Get components
             raycastHitInterpreter = GetComponent<RaycastHandler>();
-            //Setup components
-            GestureDetector.Instance.SetupCamera(camera);
             //Setup Events
             SetupListeners();
         }

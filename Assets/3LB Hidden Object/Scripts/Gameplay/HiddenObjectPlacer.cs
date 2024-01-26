@@ -9,7 +9,7 @@ namespace ThreeLittleBerkana
     {
         public Level levelToPosition;
         public TextAsset positioningCsvFile;
-        public GameObject referenceObject;
+        public RectTransform referenceObject;
 
         private char csvLineSeparator = '\n';
         private char csvLineSurrounder = '"';
@@ -52,7 +52,14 @@ namespace ThreeLittleBerkana
                 if (objectPositions.ContainsKey(HO.gameObject.name))
                 {
                     RectTransform rectTransform = HO.GetComponent<RectTransform>();
-                    rectTransform.anchoredPosition = new Vector3(objectPositions[HO.gameObject.name].x, objectPositions[HO.gameObject.name].y, 0);
+                    if (referenceObject != null)
+                    {
+                        rectTransform.anchoredPosition = new Vector3(objectPositions[HO.gameObject.name].x, objectPositions[HO.gameObject.name].y, 0);
+                    }
+                    else
+                    {
+                        rectTransform.anchoredPosition = new Vector3(objectPositions[HO.gameObject.name].x, objectPositions[HO.gameObject.name].y, 0);
+                    }
                 }
             }
         }

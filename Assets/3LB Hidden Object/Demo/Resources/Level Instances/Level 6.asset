@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 998d27c75af53ba4d827056e01520ed0, type: 3}
-  m_Name: Level 3
+  m_Name: Level 6
   m_EditorClassIdentifier: 
-  levelPrefab: {fileID: 321846071490032392, guid: d5f5f314facd7f848b6eed0bbe1e8a70, type: 3}
+  levelPrefab: {fileID: 321846071490032392, guid: 236238cda59d72d4da95794b7dcbca57, type: 3}
   gameType: 2
-  displayMode: 1
-  simultaneousObjectsToFind: 7
+  displayMode: 0
+  simultaneousObjectsToFind: 3
   localizationFile: {fileID: 4900000, guid: 0aa05cba5d1bf7c47b998cb9d8caa6cb, type: 3}
-  foundFeedback: 3
-  foundParticles: {fileID: 5306812388367897395, guid: 834f30c7852cf124192fbed685946279, type: 3}
+  foundFeedback: 2
+  foundParticles: {fileID: 4957047002140000440, guid: c0302c5814d068f42904bad0ffef744c, type: 3}

@@ -97,12 +97,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayMode: 0
   localizationKey: Cube
-  silhoutteSprite: {fileID: 0}
+  silhouetteSprite: {fileID: 0}
   feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
-  useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  useCustomParticles: 1
+  customParticles: {fileID: 5306812388367897395, guid: d0a52dfa1a897dc438e54ecd2b05cae8, type: 3}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!65 &1239802308194862849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -263,6 +264,7 @@ MonoBehaviour:
   containsHiddenObjects: 0
   searchByName: 0
   hiddenObjectSubstring: 
+  shouldPreserveColliders: 0
   levelHiddenObjects:
   - {fileID: 4851795765590843517}
   - {fileID: 7444714806998514029}
@@ -277,7 +279,6 @@ MonoBehaviour:
   - {fileID: 4528061673997450549}
   - {fileID: 7444714806998514029}
   numberOfSimultaneousObjectsToFind: 3
-  foundHiddenObjectFeedback: 0
 --- !u!1 &4154754404966953792
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,12 +376,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayMode: 0
   localizationKey: Sphere
-  silhoutteSprite: {fileID: 0}
+  silhouetteSprite: {fileID: 0}
   feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!135 &2618605328225751804
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -491,12 +493,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayMode: 0
   localizationKey: Cylinder
-  silhoutteSprite: {fileID: 0}
+  silhouetteSprite: {fileID: 0}
   feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!136 &1820646217381956976
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -689,12 +692,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayMode: 0
   localizationKey: Capsule
-  silhoutteSprite: {fileID: 0}
+  silhouetteSprite: {fileID: 0}
   feedbackDuration: 0.5
   overrideFoundFeedback: 0
   customFeedback: 0
   useCustomParticles: 0
-  foundParticles: {fileID: 0}
+  customParticles: {fileID: 0}
+  particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!136 &4547100183652139371
 CapsuleCollider:
   m_ObjectHideFlags: 0

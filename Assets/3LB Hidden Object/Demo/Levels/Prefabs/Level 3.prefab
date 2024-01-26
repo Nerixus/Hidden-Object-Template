@@ -875,9 +875,9 @@ MonoBehaviour:
   localizationKey: Lily_HO
   silhouetteSprite: {fileID: 21300000, guid: a39a94317d1073e47a1dc8248ce4951c, type: 3}
   feedbackDuration: 0.5
-  overrideFoundFeedback: 0
-  customFeedback: 0
-  useCustomParticles: 1
+  overrideFoundFeedback: 1
+  customFeedback: 2
+  useCustomParticles: 0
   customParticles: {fileID: 5306812388367897395, guid: d0a52dfa1a897dc438e54ecd2b05cae8, type: 3}
   particleOrigin: {x: 0, y: 0, z: 0}
 --- !u!1 &285823110779860100

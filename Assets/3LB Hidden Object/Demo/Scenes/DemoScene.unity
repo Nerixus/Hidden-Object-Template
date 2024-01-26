@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &135787168
+--- !u!1001 &42526393
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5977230754278922599, guid: f43577227d445074ab294d42c032d9f6, type: 3}
+      propertyPath: levelTemplates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f43577227d445074ab294d42c032d9f6, type: 3}
 --- !u!1 &1044353630
@@ -211,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelID: 
   useIndexToLoad: 1
-  levelIndex: 0
+  levelIndex: 5
   language: EN
 --- !u!4 &1044353632
 Transform:

@@ -26,21 +26,23 @@ namespace ThreeLittleBerkana
     }
     public class GestureDetector : StaticInstance<GestureDetector>
     {
-        public GESTURE_STATUS currentGesture;
+        public GESTURE_STATUS currentGesture = GESTURE_STATUS.IDLE;
         public float dragDeadZone;
+        public Camera camera;
 
         private Vector3 gestureStartPosition;
-        private Camera camera;
+        
 
         public PinchEventMobile OnPinchMobile;
         public ScrollWheelEventPC OnScrollWheelPC;
         public DragEvent OnDragEvent;
         public TapEvent OnTapGesture;
         public Vector3 lastGestureStartPosition;
-        
-        public void SetupCamera(Camera v_camera)
+
+        private void Start()
         {
-            camera = v_camera;
+            if (camera == null)
+                camera = Camera.main;
         }
 
         void Update()
@@ -76,7 +78,6 @@ namespace ThreeLittleBerkana
                         }
                         else
                         {
-                            currentGesture = GESTURE_STATUS.TAP;
                             OnTapGesture.Invoke(Input.touches[0].position);
                             
                         }

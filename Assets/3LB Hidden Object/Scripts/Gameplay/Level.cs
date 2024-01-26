@@ -151,7 +151,7 @@ namespace ThreeLittleBerkana
                 {
                     DestroyImmediate(CO);
                 }
-                EditorUtility.SetDirty(GO);
+                //EditorUtility.SetDirty(GO);
             }
         }
 
@@ -165,12 +165,12 @@ namespace ThreeLittleBerkana
                 {
                     objectsToRemove.Add(GO);
                 }
-                EditorUtility.SetDirty(GO);
+                //EditorUtility.SetDirty(GO);
             }
             foreach (GameObject GO in objectsToRemove)
             {
                 objectsToSetUp.Remove(GO);
-                EditorUtility.SetDirty(GO);
+                //EditorUtility.SetDirty(GO);
             }
             objectsToRemove.Clear();
         }
@@ -192,7 +192,7 @@ namespace ThreeLittleBerkana
                 {
                     errorCount++;
                 }
-                EditorUtility.SetDirty(GO);
+                //EditorUtility.SetDirty(GO);
             }
             if (errorCount > 0)
             {

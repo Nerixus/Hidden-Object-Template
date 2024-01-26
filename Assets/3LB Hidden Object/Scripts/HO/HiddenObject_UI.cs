@@ -30,7 +30,7 @@ namespace ThreeLittleBerkana
                     case HIDDEN_OBJECT_EXIT_MODE.DESTROY:
                         Destroy(gameObject, feedbackDuration);
                         break;
-                    case HIDDEN_OBJECT_EXIT_MODE.ANIMATE:
+                    case HIDDEN_OBJECT_EXIT_MODE.SHRINK:
                         StartCoroutine(Tweening.Instance.RectTransformLerpOutScale(rectTransform, feedbackDuration));
                         SetInactive(feedbackDuration);
                         break;

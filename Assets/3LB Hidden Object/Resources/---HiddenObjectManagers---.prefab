@@ -264,12 +264,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7716691290933328637, guid: 10642b422b8b49e4fae897f565caa8af, type: 3}
       propertyPath: levelTemplates.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7716691290933328637, guid: 10642b422b8b49e4fae897f565caa8af, type: 3}
-      propertyPath: levelTemplates.Array.data[4]
+      propertyPath: levelTemplates.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 78560310ca7804241975e091efcdc339, type: 2}
+      objectReference: {fileID: 11400000, guid: dae31d3f550acc6418cc97d76c0399ef, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10642b422b8b49e4fae897f565caa8af, type: 3}
 --- !u!4 &4295233182716403201 stripped

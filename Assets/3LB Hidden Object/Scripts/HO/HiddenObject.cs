@@ -86,7 +86,7 @@ namespace ThreeLittleBerkana
     {
         NONE,
         DESTROY,
-        ANIMATE,
+        SHRINK,
         FADE
     }
 
