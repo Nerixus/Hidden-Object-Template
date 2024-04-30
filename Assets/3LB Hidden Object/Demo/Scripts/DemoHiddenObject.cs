@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DemoHiddenObject : MonoBehaviour
 {
@@ -7,16 +8,30 @@ public class DemoHiddenObject : MonoBehaviour
     public int levelIndex;
     public string language;
 
-    public delegate void HandleLevelLoaded(string v_levelID, string v_language);
-    public static HandleLevelLoaded OnLevelLoaded;
-    public delegate void HandleLevelLoadedIndex(int v_levelIndex, string v_language);
-    public static HandleLevelLoadedIndex OnLevelLoadedIndex;
-    
     void Start()
     {
-        if (useIndexToLoad)
-            OnLevelLoadedIndex?.Invoke(levelIndex, language);
+        if (PlayerPrefs.HasKey("useIndexToLoad"))
+        {
+            if (PlayerPrefs.GetInt("useIndexToLoad") == 1)
+            {
+                ThreeLittleBerkana.GameplayManager.Instance.LoadHiddenObjectLevel(PlayerPrefs.GetInt("levelIndex"), PlayerPrefs.GetString("language"));
+            }
+            else
+            {
+                ThreeLittleBerkana.GameplayManager.Instance.LoadHiddenObjectLevel(PlayerPrefs.GetString("levelID"), PlayerPrefs.GetString("language"));
+            }
+        }
         else
-            OnLevelLoaded?.Invoke(levelID, language);
+        {
+            if (useIndexToLoad)
+                ThreeLittleBerkana.GameplayManager.Instance.LoadHiddenObjectLevel(levelIndex, language);
+            else
+                ThreeLittleBerkana.GameplayManager.Instance.LoadHiddenObjectLevel(levelID, language);
+        }
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

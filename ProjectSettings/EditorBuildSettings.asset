@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/3LB Hidden Object/Demo/Scenes/DemoScene.unity
+    path: Assets/3LB Hidden Object/Demo/Scenes/DemoMenuScene.unity
+    guid: d6cf4b7ca3b7a0946abc4d7c9896cec6
+  - enabled: 1
+    path: Assets/3LB Hidden Object/Demo/Scenes/DemoGameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

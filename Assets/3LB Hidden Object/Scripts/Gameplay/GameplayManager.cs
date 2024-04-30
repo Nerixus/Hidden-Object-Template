@@ -42,25 +42,21 @@ namespace ThreeLittleBerkana
 
         private void OnEnable()
         {
-            DemoHiddenObject.OnLevelLoadedIndex += LoadHiddenObjectLevel; //You should subscribe your own method when you wish to start the level
-            DemoHiddenObject.OnLevelLoaded += LoadHiddenObjectLevel; //You should subscribe your own method when you wish to start the level
             HiddenObject.OnObjectFound += ProcessObjectFound;
         }
 
         private void OnDisable()
         {
-            DemoHiddenObject.OnLevelLoadedIndex -= LoadHiddenObjectLevel;
-            DemoHiddenObject.OnLevelLoaded -= LoadHiddenObjectLevel;
             HiddenObject.OnObjectFound -= ProcessObjectFound;
         }
 
-        private void LoadHiddenObjectLevel(string v_levelID, string v_language)
+        public void LoadHiddenObjectLevel(string v_levelID, string v_language)
         {
             language = v_language;
             levelLoader.LoadLevel(v_levelID);
         }
 
-        private void LoadHiddenObjectLevel(int v_index, string v_language)
+        public void LoadHiddenObjectLevel(int v_index, string v_language)
         {
             language = v_language;
             levelLoader.LoadLevel(v_index);

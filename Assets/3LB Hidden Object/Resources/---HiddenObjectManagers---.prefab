@@ -264,7 +264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7716691290933328637, guid: 10642b422b8b49e4fae897f565caa8af, type: 3}
       propertyPath: levelTemplates.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7716691290933328637, guid: 10642b422b8b49e4fae897f565caa8af, type: 3}
       propertyPath: levelTemplates.Array.data[5]

@@ -91,7 +91,7 @@ namespace ThreeLittleBerkana
         #region Shared Device
         private void OrthographicZoom(float zoomValue)
         {
-            if (GameplayManager.Instance.GameType == GAME_TYPE.TWO_D_SPRITE)
+            if (GameplayManager.Instance.GameType != GAME_TYPE.TWO_D_UI)
             {
                 float newSize = camera.orthographicSize - zoomValue;
                 camera.orthographicSize = Mathf.Clamp(newSize, minOrthographicSize, maxOrthographicSize);
