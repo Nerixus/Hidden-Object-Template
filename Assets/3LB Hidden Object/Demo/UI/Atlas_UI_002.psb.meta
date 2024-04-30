@@ -21,10 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -80,7 +83,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -88,8 +90,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData:
   - name: Settings_Bar_Green
     originalName: 
@@ -103,7 +105,6 @@ ScriptedImporter:
       width: 160
       height: 53
     spriteID: 257b4f91d38e07d43b8f636656e04032
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -111,8 +112,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -438, y: -797}
+    uvTransform: {x: 986, y: 49}
+    spritePosition: {x: 1424, y: 846}
   - name: Switch_Bar
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -125,7 +126,6 @@ ScriptedImporter:
       width: 80
       height: 46
     spriteID: 51efd7bb84667cd4993de9f639b1c29a
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -133,8 +133,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 55, y: -736}
+    uvTransform: {x: 1367, y: 110}
+    spritePosition: {x: 1312, y: 846}
   - name: Button_Green
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +147,6 @@ ScriptedImporter:
       width: 91
       height: 59
     spriteID: a0172d82c1c10ba418dc1ab6a7510b14
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,8 +154,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -310, y: -674}
+    uvTransform: {x: 881, y: 166}
+    spritePosition: {x: 1191, y: 840}
   - name: Popup_interior_Detail
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -169,7 +168,6 @@ ScriptedImporter:
       width: 309
       height: 154
     spriteID: 45fa8a3adfddb6548b61511ae8d4d42f
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,8 +175,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -160, y: -741}
+    uvTransform: {x: 669, y: 4}
+    spritePosition: {x: 829, y: 745}
   - name: FoundClue_Card_Reverse
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -191,7 +189,6 @@ ScriptedImporter:
       width: 645
       height: 991
     spriteID: b51efd88c4af813488487dfb9d1533f3
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,8 +196,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -103, y: 838}
+    uvTransform: {x: 4, y: 1002}
+    spritePosition: {x: 107, y: 164}
   - name: FoundClue _Card_Border
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -213,7 +210,6 @@ ScriptedImporter:
       width: 657
       height: 990
     spriteID: e17447be0a249e442aaca0c126fc5c98
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,8 +217,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -952, y: -956}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 956, y: 960}
   - name: Counter_Ornament_Right-Left
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -235,7 +231,6 @@ ScriptedImporter:
       width: 36
       height: 130
     spriteID: af035c9097263c545aba3ca732e6870d
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -243,8 +238,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 175, y: -1099}
+    uvTransform: {x: 669, y: 802}
+    spritePosition: {x: 494, y: 1901}
   - name: Counter_Ornament_Bot-Top
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -257,7 +252,6 @@ ScriptedImporter:
       width: 498
       height: 16
     spriteID: c24ec3d50aaa0ed46873347e0158c685
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,8 +259,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1137, y: -1814}
+    uvTransform: {x: 1154, y: 49}
+    spritePosition: {x: 17, y: 1863}
   - name: Counter_Star_White-01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -279,7 +273,6 @@ ScriptedImporter:
       width: 154
       height: 152
     spriteID: a8d522b42474e3a4e85b2393ef82278d
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -287,8 +280,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1729, y: -1678}
+    uvTransform: {x: 1741, y: 4}
+    spritePosition: {x: 12, y: 1682}
   - name: Counter_Star_Yellow_Small-01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -301,7 +294,6 @@ ScriptedImporter:
       width: 152
       height: 151
     spriteID: def36adc5d05a484591e19fede4a9e87
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -309,8 +301,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 531, y: -1517}
+    uvTransform: {x: 721, y: 166}
+    spritePosition: {x: 190, y: 1683}
   - name: Counter_Percent-Indicator_Base
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -323,7 +315,6 @@ ScriptedImporter:
       width: 184
       height: 38
     spriteID: d466a850307447e47bffd46e4662c33e
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -331,8 +322,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 968, y: -1457}
+    uvTransform: {x: 986, y: 110}
+    spritePosition: {x: 18, y: 1567}
   - name: Counter_Percent-Indicator_Fill
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -345,7 +336,6 @@ ScriptedImporter:
       width: 181
       height: 33
     spriteID: 5d3cd774786f79347b086ada8250eafc
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -353,8 +343,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 951, y: -1458}
+    uvTransform: {x: 1178, y: 110}
+    spritePosition: {x: 227, y: 1568}
   - name: FoundClue_Ornament_Bot
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -367,7 +357,6 @@ ScriptedImporter:
       width: 747
       height: 37
     spriteID: 2eb197eaf539de54fbffaab5147bf3d2
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -375,8 +364,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 974, y: -1252}
+    uvTransform: {x: 986, y: 4}
+    spritePosition: {x: 12, y: 1256}
   - name: FoundClue_Ornament_Right-Left
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -389,7 +378,6 @@ ScriptedImporter:
       width: 136
       height: 135
     spriteID: 8942e5d5ad90adc4f87c8d949a36f393
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -397,8 +385,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1862, y: -1390}
+    uvTransform: {x: 1903, y: 4}
+    spritePosition: {x: 41, y: 1394}
   - name: FoundClue_Ornament_Top
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -411,7 +399,6 @@ ScriptedImporter:
       width: 384
       height: 13
     spriteID: 1e5e44e5a3f90ae4c8374a640745a7f5
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -419,8 +406,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1142, y: -1255}
+    uvTransform: {x: 1154, y: 73}
+    spritePosition: {x: 12, y: 1328}
   - name: FoundClue_Ornament_Right-Left_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -433,7 +420,6 @@ ScriptedImporter:
       width: 44
       height: 628
     spriteID: afc5fd78392106f4ea64a2dc57352e84
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -441,8 +427,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 92, y: -1236}
+    uvTransform: {x: 669, y: 166}
+    spritePosition: {x: 577, y: 1402}
   rigSpriteImportData:
   - name: Settings_Bar_Green
     originalName: 
@@ -456,7 +442,6 @@ ScriptedImporter:
       width: 160
       height: 53
     spriteID: e91603ce41388504d9ff4120ac1f1fb1
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -464,8 +449,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -438, y: -797}
+    spritePosition: {x: 0, y: 0}
   - name: Switch_Bar
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -478,7 +463,6 @@ ScriptedImporter:
       width: 80
       height: 46
     spriteID: 0ad7256a411979d41a95edb09f5e7b49
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -486,8 +470,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 55, y: -736}
+    spritePosition: {x: 0, y: 0}
   - name: Button_Green
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -500,7 +484,6 @@ ScriptedImporter:
       width: 91
       height: 59
     spriteID: 5199353c7e9762d45b893fead6972df0
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -508,8 +491,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -310, y: -674}
+    spritePosition: {x: 0, y: 0}
   - name: Popup_interior_Detail
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -522,7 +505,6 @@ ScriptedImporter:
       width: 309
       height: 154
     spriteID: 6193f25f3ad8d484f86b7a833c717311
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -530,8 +512,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -160, y: -741}
+    spritePosition: {x: 0, y: 0}
   - name: FoundClue_Card_Reverse
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -544,7 +526,6 @@ ScriptedImporter:
       width: 645
       height: 991
     spriteID: 41a0858274663654cac29782244e3ba4
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,8 +533,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -103, y: 838}
+    spritePosition: {x: 0, y: 0}
   - name: FoundClue _Card_Border
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -566,7 +547,6 @@ ScriptedImporter:
       width: 657
       height: 990
     spriteID: e467f46a3ace18e47b1474b2b4944728
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -574,8 +554,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -952, y: -956}
+    spritePosition: {x: 0, y: 0}
   - name: Counter_Ornament_Right-Left
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -588,7 +568,6 @@ ScriptedImporter:
       width: 36
       height: 130
     spriteID: c5794c950d36d07488b4dbfa236c767e
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -596,8 +575,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 175, y: -1099}
+    spritePosition: {x: 0, y: 0}
   - name: Counter_Ornament_Bot-Top
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -610,7 +589,6 @@ ScriptedImporter:
       width: 498
       height: 16
     spriteID: 342a7a6185c07a2459e68541643c61ca
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -618,8 +596,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 1137, y: -1814}
+    spritePosition: {x: 0, y: 0}
   - name: Counter_Star_White-01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -632,7 +610,6 @@ ScriptedImporter:
       width: 154
       height: 152
     spriteID: 0a4bc2449cbed7441a671c26e83f8f9f
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -640,8 +617,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 1729, y: -1678}
+    spritePosition: {x: 0, y: 0}
   - name: Counter_Star_Yellow_Small-01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -654,7 +631,6 @@ ScriptedImporter:
       width: 152
       height: 151
     spriteID: 02125cf1147f13d42acdec971ca660a7
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -662,8 +638,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 531, y: -1517}
+    spritePosition: {x: 0, y: 0}
   - name: Counter_Percent-Indicator_Base
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -676,7 +652,6 @@ ScriptedImporter:
       width: 184
       height: 38
     spriteID: d5bfd29f053743946b887c93d618e9bf
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -684,8 +659,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 968, y: -1457}
+    spritePosition: {x: 0, y: 0}
   - name: Counter_Percent-Indicator_Fill
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -698,7 +673,6 @@ ScriptedImporter:
       width: 181
       height: 33
     spriteID: 05bb728ea42de7444b76b062d302a3a1
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -706,8 +680,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 951, y: -1458}
+    spritePosition: {x: 0, y: 0}
   - name: FoundClue_Ornament_Bot
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -720,7 +694,6 @@ ScriptedImporter:
       width: 747
       height: 37
     spriteID: 7610c4dde46224c458278604aa93d24d
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -728,8 +701,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 974, y: -1252}
+    spritePosition: {x: 0, y: 0}
   - name: FoundClue_Ornament_Right-Left
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -742,7 +715,6 @@ ScriptedImporter:
       width: 136
       height: 135
     spriteID: 81c7c6726b269ae47839908558e4fe8b
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -750,8 +722,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 1862, y: -1390}
+    spritePosition: {x: 0, y: 0}
   - name: FoundClue_Ornament_Top
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -764,7 +736,6 @@ ScriptedImporter:
       width: 384
       height: 13
     spriteID: 7744b967a1e16d24b9888f6974e12f9b
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,8 +743,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 1142, y: -1255}
+    spritePosition: {x: 0, y: 0}
   - name: FoundClue_Ornament_Right-Left_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -786,7 +757,6 @@ ScriptedImporter:
       width: 44
       height: 628
     spriteID: aebdec7ddbe88c7438bcf92f1503f61a
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -794,11 +764,27 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 92, y: -1236}
+    spritePosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -810,6 +796,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Standalone
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -821,6 +808,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: iPhone
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -832,6 +820,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Android
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -842,21 +831,21 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
+  characterMode: 0
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 2048
-  documentSize: {x: 2048, y: 2048}
+  layerMappingOption: 2
+  generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  padding: 4
+  spriteSizeExpand: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 2048
-  textureActualHeight: 2048
   spritePackingTag: 
   resliceFromLayer: 1
-  characterMode: 0
   mosaicPSDLayers:
   - name: Settings_Bar_Green
     spriteName: Settings_Bar_Green
@@ -865,6 +854,9 @@ ScriptedImporter:
     spriteID: 257b4f91d38e07d43b8f636656e04032
     layerID: 123
     mosaicPosition: {x: 986, y: 49}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Switch_Bar
     spriteName: Switch_Bar
     isGroup: 0
@@ -872,6 +864,9 @@ ScriptedImporter:
     spriteID: 51efd7bb84667cd4993de9f639b1c29a
     layerID: 122
     mosaicPosition: {x: 1367, y: 110}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Button_Green
     spriteName: Button_Green
     isGroup: 0
@@ -879,6 +874,9 @@ ScriptedImporter:
     spriteID: a0172d82c1c10ba418dc1ab6a7510b14
     layerID: 125
     mosaicPosition: {x: 881, y: 166}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Popup_interior_Detail
     spriteName: Popup_interior_Detail
     isGroup: 0
@@ -886,6 +884,9 @@ ScriptedImporter:
     spriteID: 45fa8a3adfddb6548b61511ae8d4d42f
     layerID: 104
     mosaicPosition: {x: 669, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: FoundClue_Card_Reverse
     spriteName: FoundClue_Card_Reverse
     isGroup: 0
@@ -893,6 +894,9 @@ ScriptedImporter:
     spriteID: b51efd88c4af813488487dfb9d1533f3
     layerID: 43
     mosaicPosition: {x: 4, y: 1002}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: FoundClue _Card_Border
     spriteName: FoundClue _Card_Border
     isGroup: 0
@@ -900,6 +904,19 @@ ScriptedImporter:
     spriteID: e17447be0a249e442aaca0c126fc5c98
     layerID: 42
     mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Counter_Points_Card
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2894ad923854c08458f24813c7dbc4c7
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Ornament_Right-Left
     spriteName: Counter_Ornament_Right-Left
     isGroup: 0
@@ -907,6 +924,9 @@ ScriptedImporter:
     spriteID: af035c9097263c545aba3ca732e6870d
     layerID: 5
     mosaicPosition: {x: 669, y: 802}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Counter_Ornament_Bot-Top
     spriteName: Counter_Ornament_Bot-Top
     isGroup: 0
@@ -914,6 +934,9 @@ ScriptedImporter:
     spriteID: c24ec3d50aaa0ed46873347e0158c685
     layerID: 6
     mosaicPosition: {x: 1154, y: 49}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Counter_Star_White-01
     spriteName: Counter_Star_White-01
     isGroup: 0
@@ -921,6 +944,9 @@ ScriptedImporter:
     spriteID: a8d522b42474e3a4e85b2393ef82278d
     layerID: 10
     mosaicPosition: {x: 1741, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Counter_Star_Yellow_Small-01
     spriteName: Counter_Star_Yellow_Small-01
     isGroup: 0
@@ -928,6 +954,9 @@ ScriptedImporter:
     spriteID: def36adc5d05a484591e19fede4a9e87
     layerID: 12
     mosaicPosition: {x: 721, y: 166}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Counter_Percent-Indicator_Base
     spriteName: Counter_Percent-Indicator_Base
     isGroup: 0
@@ -935,6 +964,9 @@ ScriptedImporter:
     spriteID: d466a850307447e47bffd46e4662c33e
     layerID: 14
     mosaicPosition: {x: 986, y: 110}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Counter_Percent-Indicator_Fill
     spriteName: Counter_Percent-Indicator_Fill
     isGroup: 0
@@ -942,6 +974,19 @@ ScriptedImporter:
     spriteID: 5d3cd774786f79347b086ada8250eafc
     layerID: 16
     mosaicPosition: {x: 1178, y: 110}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'FoundClue_Card '
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fd2318b3d4e070246a1cb7cd38066463
+    layerID: 38
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Ornament_Bot
     spriteName: FoundClue_Ornament_Bot
     isGroup: 0
@@ -949,6 +994,9 @@ ScriptedImporter:
     spriteID: 2eb197eaf539de54fbffaab5147bf3d2
     layerID: 41
     mosaicPosition: {x: 986, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: FoundClue_Ornament_Right-Left
     spriteName: FoundClue_Ornament_Right-Left
     isGroup: 0
@@ -956,6 +1004,9 @@ ScriptedImporter:
     spriteID: 8942e5d5ad90adc4f87c8d949a36f393
     layerID: 40
     mosaicPosition: {x: 1903, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: FoundClue_Ornament_Top
     spriteName: FoundClue_Ornament_Top
     isGroup: 0
@@ -963,6 +1014,19 @@ ScriptedImporter:
     spriteID: 1e5e44e5a3f90ae4c8374a640745a7f5
     layerID: 39
     mosaicPosition: {x: 1154, y: 73}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: FoundClue_Elipse
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffad551624675d04798e409ee9a01090
+    layerID: 18
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Ornament_Right-Left
     spriteName: FoundClue_Ornament_Right-Left_1
     isGroup: 0
@@ -970,6 +1034,19 @@ ScriptedImporter:
     spriteID: afc5fd78392106f4ea64a2dc57352e84
     layerID: 17
     mosaicPosition: {x: 669, y: 166}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BG
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a978669c277795241ac8fd3c0bbe75bf
+    layerID: 2
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   rigPSDLayers:
   - name: Settings_Bar_Green
     spriteName: Settings_Bar_Green
@@ -978,6 +1055,9 @@ ScriptedImporter:
     spriteID: e91603ce41388504d9ff4120ac1f1fb1
     layerID: 123
     mosaicPosition: {x: 986, y: 49}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Switch_Bar
     spriteName: Switch_Bar
     isGroup: 0
@@ -985,6 +1065,9 @@ ScriptedImporter:
     spriteID: 0ad7256a411979d41a95edb09f5e7b49
     layerID: 122
     mosaicPosition: {x: 1367, y: 110}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Button_Green
     spriteName: Button_Green
     isGroup: 0
@@ -992,6 +1075,9 @@ ScriptedImporter:
     spriteID: 5199353c7e9762d45b893fead6972df0
     layerID: 125
     mosaicPosition: {x: 881, y: 166}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Popup_interior_Detail
     spriteName: Popup_interior_Detail
     isGroup: 0
@@ -999,6 +1085,9 @@ ScriptedImporter:
     spriteID: 6193f25f3ad8d484f86b7a833c717311
     layerID: 104
     mosaicPosition: {x: 669, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Card_Reverse
     spriteName: FoundClue_Card_Reverse
     isGroup: 0
@@ -1006,6 +1095,9 @@ ScriptedImporter:
     spriteID: 41a0858274663654cac29782244e3ba4
     layerID: 43
     mosaicPosition: {x: 4, y: 1002}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue _Card_Border
     spriteName: FoundClue _Card_Border
     isGroup: 0
@@ -1013,6 +1105,9 @@ ScriptedImporter:
     spriteID: e467f46a3ace18e47b1474b2b4944728
     layerID: 42
     mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Ornament_Right-Left
     spriteName: Counter_Ornament_Right-Left
     isGroup: 0
@@ -1020,6 +1115,9 @@ ScriptedImporter:
     spriteID: c5794c950d36d07488b4dbfa236c767e
     layerID: 5
     mosaicPosition: {x: 669, y: 802}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Ornament_Bot-Top
     spriteName: Counter_Ornament_Bot-Top
     isGroup: 0
@@ -1027,6 +1125,9 @@ ScriptedImporter:
     spriteID: 342a7a6185c07a2459e68541643c61ca
     layerID: 6
     mosaicPosition: {x: 1154, y: 49}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Star_White-01
     spriteName: Counter_Star_White-01
     isGroup: 0
@@ -1034,6 +1135,9 @@ ScriptedImporter:
     spriteID: 0a4bc2449cbed7441a671c26e83f8f9f
     layerID: 10
     mosaicPosition: {x: 1741, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Star_Yellow_Small-01
     spriteName: Counter_Star_Yellow_Small-01
     isGroup: 0
@@ -1041,6 +1145,9 @@ ScriptedImporter:
     spriteID: 02125cf1147f13d42acdec971ca660a7
     layerID: 12
     mosaicPosition: {x: 721, y: 166}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Percent-Indicator_Base
     spriteName: Counter_Percent-Indicator_Base
     isGroup: 0
@@ -1048,6 +1155,9 @@ ScriptedImporter:
     spriteID: d5bfd29f053743946b887c93d618e9bf
     layerID: 14
     mosaicPosition: {x: 986, y: 110}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Counter_Percent-Indicator_Fill
     spriteName: Counter_Percent-Indicator_Fill
     isGroup: 0
@@ -1055,6 +1165,9 @@ ScriptedImporter:
     spriteID: 05bb728ea42de7444b76b062d302a3a1
     layerID: 16
     mosaicPosition: {x: 1178, y: 110}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Ornament_Bot
     spriteName: FoundClue_Ornament_Bot
     isGroup: 0
@@ -1062,6 +1175,9 @@ ScriptedImporter:
     spriteID: 7610c4dde46224c458278604aa93d24d
     layerID: 41
     mosaicPosition: {x: 986, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Ornament_Right-Left
     spriteName: FoundClue_Ornament_Right-Left
     isGroup: 0
@@ -1069,6 +1185,9 @@ ScriptedImporter:
     spriteID: 81c7c6726b269ae47839908558e4fe8b
     layerID: 40
     mosaicPosition: {x: 1903, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Ornament_Top
     spriteName: FoundClue_Ornament_Top
     isGroup: 0
@@ -1076,6 +1195,9 @@ ScriptedImporter:
     spriteID: 7744b967a1e16d24b9888f6974e12f9b
     layerID: 39
     mosaicPosition: {x: 1154, y: 73}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: FoundClue_Ornament_Right-Left
     spriteName: FoundClue_Ornament_Right-Left_1
     isGroup: 0
@@ -1083,13 +1205,17 @@ ScriptedImporter:
     spriteID: aebdec7ddbe88c7438bcf92f1503f61a
     layerID: 17
     mosaicPosition: {x: 669, y: 166}
-  characterData:
-    bones: []
-    parts: []
-    dimension: {x: 0, y: 0}
-    characterGroups: []
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: Atlas_UI_002 Texture
   prefabAssetName: Atlas_UI_002 Prefab
   spriteLibAssetName: Atlas_UI_002 Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []
